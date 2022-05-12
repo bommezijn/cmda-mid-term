@@ -12,7 +12,7 @@
 Een accreditatie is een tekstueel document die aangeeft of een school nog aan alle eisen voldoet en op basis daarvan wordt bepaald of de licentie wordt verlengd. Elke zes jaar is de accreditatie en om de drie jaar is er een midterm accreditatie. Tijdens de midterm accreditatie wordt beoordeeld of de opleiding nog steeds aan de opgetelde eisen voldoet. Mocht de opleiding niet aan de eisen voldoet, is er nog een mogelijkheid om dit te verbeteren voor de "echte" accreditatie. Een accreditatie is over het algemeen een lang tekstueel document waar weinig visuele aspecten in te vinden zijn. Als creatieve opleiding willen wij natuurlijk meer opleveren dan alleen een tekstueel document. Vandaar de opdracht om de accreditatie visueel en interactief te maken in de huisstijl van de opleiding CMD (Communication and Multimedia Design). Een groepje van vier CMD studenten die hun stage lopen bij CMD Agency zijn al bezig met deze opdracht en samen gaan jullie een mooie eindproduct opleveren.
 
 ## Opdrachtgever
-De opdrachtgevers zijn twee CMD docenten, Irene Kamp en David de vries. Samen (met andere docenten) hebben zij de Midterm accreditatie geschreven. 
+De opdrachtgevers zijn twee CMD docenten, Irene Kamp en David de Vries. Samen (met andere docenten) hebben zij de Midterm accreditatie geschreven. 
 
 ## Design challenge
 Ontwerp en ontwikkel een interactieve website in de CMD huisstijl voor de midterm accreditatie. De website moet de sfeer van CMD reflecteren en moet toegankelijk, responsive en duurzaam zijn.
