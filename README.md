@@ -1,5 +1,7 @@
 # CMDA Mid Term Website
 
+![CMDA Mid Term](https://github.com/cmda-minor-web-cases/cmda-mid-term/blob/main/assets/cmda-mid-term.png?raw=true)
+
 ## Inhoudsopgave
   * [Beschrijving](#beschrijving)
   * [Opdrachtgever](#opdrachtgever)
