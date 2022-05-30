@@ -1,0 +1,83 @@
+{
+  "id": "standaard",
+  "label": "Standaard",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "standaard-1",
+          "placeholder": "Standaard-num"
+        }
+      }
+    },
+    "Introduction": {
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading1",
+          "label": "Title",
+          "placeholder": "Title of standard"
+        }
+      },
+      "introduction": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+          "label": "Introduction",
+          "placeholder": "Introduction of standard"
+        }
+      }
+    },
+    "body": {
+      "chapters": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "img": {
+              "type": "Image",
+              "config": {
+                "constraint": {
+                  "width": 500,
+                  "height": 500
+                },
+                "thumbnails": [
+                  {
+                    "name": "small",
+                    "width": 250,
+                    "height": 250
+                  },
+                  {
+                    "name": "large",
+                    "width": 1600,
+                    "height": 900
+                  }
+                ],
+                "label": "img"
+              }
+            },
+            "chapter-title": {
+              "type": "StructuredText",
+              "config": {
+                "single": "heading2,heading3,heading4,heading5,heading6",
+                "label": "chapter-title",
+                "placeholder": "title of the chapter"
+              }
+            },
+            "content-of-chapter": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                "label": "content-of-chapter",
+                "placeholder": "The content of the chapter in rich text"
+              }
+            }
+          },
+          "label": "chapters"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "section",
+  "label": "section",
+  "repeatable": true,
+  "status": false,
+  "json": {
+    "Main": {}
+  }
+}
