@@ -1,4 +1,5 @@
 import { apiEndpoint } from './sm.json'
+import smConfig from './sm.json'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -42,7 +43,9 @@ export default {
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: [
+    ["@nuxtjs/prismic", {endpoint: smConfig.apiEndpoint || ""}]
+  ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
