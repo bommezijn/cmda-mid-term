@@ -9,6 +9,7 @@
         >{{ document.uid }}</nuxt-link
       >
     </div>
+    <p>hello</p>
   </div>
 </template>
 
