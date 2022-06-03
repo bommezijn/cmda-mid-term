@@ -29,6 +29,11 @@
         "items": {},
         "primary": {}
       }
+    },
+    "ArticleSlice": {
+      "default": {
+        "primary": {}
+      }
     }
   }
 }
