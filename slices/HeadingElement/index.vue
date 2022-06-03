@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <!-- <PrismicRichText :field="slice.primary.title" class="title" /> -->
-    <h1 class="title" v-if="slice.variation == 'default'">
+    <h1 v-if="slice.variation == 'default'" class="title" >
       <prismicText :field="slice.primary.title"> </prismicText>
     </h1>
     <h1 v-else>
