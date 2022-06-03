@@ -29,18 +29,22 @@
         }
       },
       "items": {
-        "competentiesOld": {
-          "type": "Text",
+        "oldComps": {
+          "type": "StructuredText",
           "config": {
-            "label": "OldCompetenties",
-            "placeholder": ""
+            "label": "Old Comps",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "competentiesNew": {
-          "type": "Text",
+        "newComps": {
+          "type": "StructuredText",
           "config": {
-            "label": "New Competenties",
-            "placeholder": ""
+            "label": "New Comps",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         }
       },
