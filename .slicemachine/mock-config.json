@@ -13,6 +13,12 @@
           }
         }
       }
+    },
+    "TableSlice": {
+      "default": {
+        "items": {},
+        "primary": {}
+      }
     }
   }
 }
