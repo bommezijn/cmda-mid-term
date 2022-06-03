@@ -18,9 +18,28 @@ export const _Default = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default","name":"Default","slice_type":"heading_element","items":[],"primary":{"title":[{"type":"heading1","text":"Embrace granular synergies","spans":[]}],"description":[{"type":"paragraph","text":"Culpa non laboris dolore ad nostrud mollit ad cillum commodo anim duis.","spans":[]}]},"id":"_Default"}
+      mock: {"variation":"default","name":"Default","slice_type":"heading_element","items":[],"primary":{"title":[{"type":"heading1","text":"Reinvent seamless web-readiness","spans":[]}],"description":[{"type":"paragraph","text":"Laborum consequat quis ut ea ex duis commodo. Qui tempor ea cillum dolor officia aute sunt magna Lorem Lorem fugiat voluptate minim.","spans":[]}]},"id":"_Default"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
 })
 _Default.storyName = 'Default'
+
+export const _Subheading = () => ({
+  components: {
+    MyComponent,
+    SliceZone
+  },
+  methods: {
+    resolve() {
+      return MyComponent
+    }
+  },
+  data() {
+    return {
+      mock: {"variation":"subheading","name":"subheading","slice_type":"heading_element","items":[],"primary":{"title":[{"type":"heading2","text":"Syndicate revolutionary mindshare","spans":[]}],"description":[{"type":"paragraph","text":"Et esse sint laborum commodo minim excepteur. Tempor enim duis enim ullamco aute deserunt. Labore magna deserunt anim ea aliqua consequat.","spans":[]}]},"id":"_Subheading"}
+    }
+  },
+  template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
+})
+_Subheading.storyName = 'subheading'
