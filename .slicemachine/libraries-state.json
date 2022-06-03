@@ -39,6 +39,34 @@
               },
               "items": {},
               "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "subheading",
+              "name": "subheading",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "HeadingElement",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title sub",
+                    "placeholder": "What is this chapter about",
+                    "allowTargetBlank": true,
+                    "single": "heading2,heading3"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your product"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
           ]
         },
@@ -52,14 +80,36 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Embrace granular synergies",
+                  "text": "Optimize efficient users",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Culpa non laboris dolore ad nostrud mollit ad cillum commodo anim duis.",
+                  "text": "Eu laboris consectetur amet do tempor id dolore eiusmod irure proident qui elit amet. Esse labore dolore in Lorem aliquip excepteur consequat tempor do sint aliquip et quis. Proident reprehenderit non tempor voluptate.",
+                  "spans": []
+                }
+              ]
+            }
+          },
+          "subheading": {
+            "variation": "subheading",
+            "name": "subheading",
+            "slice_type": "heading_element",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Integrate impactful functionalities",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Irure laborum fugiat sunt exercitation pariatur. Elit anim reprehenderit enim esse fugiat adipisicing.",
                   "spans": []
                 }
               ]
@@ -74,7 +124,12 @@
           "default": {
             "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/HeadingElement/default/preview.png",
             "width": 800,
-            "height": 260
+            "height": 247
+          },
+          "subheading": {
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/HeadingElement/subheading/preview.png",
+            "width": 800,
+            "height": 228
           }
         }
       }

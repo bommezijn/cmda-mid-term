@@ -8,14 +8,36 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Embrace granular synergies",
+          "text": "Optimize efficient users",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Culpa non laboris dolore ad nostrud mollit ad cillum commodo anim duis.",
+          "text": "Eu laboris consectetur amet do tempor id dolore eiusmod irure proident qui elit amet. Esse labore dolore in Lorem aliquip excepteur consequat tempor do sint aliquip et quis. Proident reprehenderit non tempor voluptate.",
+          "spans": []
+        }
+      ]
+    }
+  },
+  {
+    "variation": "subheading",
+    "name": "subheading",
+    "slice_type": "heading_element",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Integrate impactful functionalities",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Irure laborum fugiat sunt exercitation pariatur. Elit anim reprehenderit enim esse fugiat adipisicing.",
           "spans": []
         }
       ]
