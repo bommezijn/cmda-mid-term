@@ -39,6 +39,34 @@
               },
               "items": {},
               "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "subheading",
+              "name": "subheading",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "HeadingElement",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title sub",
+                    "placeholder": "Chapter name",
+                    "allowTargetBlank": true,
+                    "single": "heading2,heading3"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your product"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
           ]
         },
@@ -52,118 +80,36 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Embrace granular synergies",
+                  "text": "Reinvent seamless web-readiness",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Culpa non laboris dolore ad nostrud mollit ad cillum commodo anim duis.",
+                  "text": "Laborum consequat quis ut ea ex duis commodo. Qui tempor ea cillum dolor officia aute sunt magna Lorem Lorem fugiat voluptate minim.",
                   "spans": []
                 }
               ]
             }
-          }
-        },
-        "meta": {
-          "fileName": "index",
-          "extension": "vue"
-        },
-        "screenshotPaths": {
-          "default": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/HeadingElement/default/preview.png",
-            "width": 800,
-            "height": 260
-          }
-        }
-      },
-      "table_slice": {
-        "library": "slices",
-        "id": "table_slice",
-        "name": "TableSlice",
-        "description": "TableSlice",
-        "model": {
-          "id": "table_slice",
-          "type": "SharedSlice",
-          "name": "TableSlice",
-          "description": "TableSlice",
-          "variations": [
-            {
-              "id": "default",
-              "name": "Default",
-              "docURL": "...",
-              "version": "sktwi1xtmkfgx8626",
-              "description": "TableSlice",
-              "primary": {
-                "title": {
-                  "type": "StructuredText",
-                  "config": {
-                    "single": "heading1",
-                    "label": "Title",
-                    "placeholder": "This is where it all begins..."
-                  }
-                },
-                "description": {
-                  "type": "StructuredText",
-                  "config": {
-                    "single": "paragraph",
-                    "label": "Description",
-                    "placeholder": "A nice description of your product"
-                  }
-                }
-              },
-              "items": {
-                "competentiesOld": {
-                  "type": "Text",
-                  "config": {
-                    "label": "OldCompetenties",
-                    "placeholder": ""
-                  }
-                },
-                "competentiesNew": {
-                  "type": "Text",
-                  "config": {
-                    "label": "New Competenties",
-                    "placeholder": ""
-                  }
-                }
-              },
-              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-            }
-          ]
-        },
-        "mocks": {
-          "default": {
-            "variation": "default",
-            "name": "Default",
-            "slice_type": "table_slice",
-            "items": [
-              {
-                "competentiesOld": "leverage rich e-business",
-                "competentiesNew": "target sexy vortals"
-              },
-              {
-                "competentiesOld": "mesh world-class e-markets",
-                "competentiesNew": "engage global schemas"
-              },
-              {
-                "competentiesOld": "drive efficient relationships",
-                "competentiesNew": "synergize granular web-readiness"
-              }
-            ],
+          },
+          "subheading": {
+            "variation": "subheading",
+            "name": "subheading",
+            "slice_type": "heading_element",
+            "items": [],
             "primary": {
               "title": [
                 {
-                  "type": "heading1",
-                  "text": "Synergize end-to-end supply-chains",
+                  "type": "heading2",
+                  "text": "Syndicate revolutionary mindshare",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Fugiat qui nisi nisi est proident incididunt ad reprehenderit ad elit consectetur qui ex.",
+                  "text": "Et esse sint laborum commodo minim excepteur. Tempor enim duis enim ullamco aute deserunt. Labore magna deserunt anim ea aliqua consequat.",
                   "spans": []
                 }
               ]
@@ -174,13 +120,7 @@
           "fileName": "index",
           "extension": "vue"
         },
-        "screenshotPaths": {
-          "default": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/TableSlice/default/preview.png",
-            "width": 800,
-            "height": 250
-          }
-        }
+        "screenshotPaths": {}
       }
     }
   }
