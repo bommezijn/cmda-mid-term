@@ -51,7 +51,7 @@
                   "type": "StructuredText",
                   "config": {
                     "label": "Title sub",
-                    "placeholder": "What is this chapter about",
+                    "placeholder": "Chapter name",
                     "allowTargetBlank": true,
                     "single": "heading2,heading3"
                   }
@@ -80,14 +80,14 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Optimize efficient users",
+                  "text": "Reinvent seamless web-readiness",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Eu laboris consectetur amet do tempor id dolore eiusmod irure proident qui elit amet. Esse labore dolore in Lorem aliquip excepteur consequat tempor do sint aliquip et quis. Proident reprehenderit non tempor voluptate.",
+                  "text": "Laborum consequat quis ut ea ex duis commodo. Qui tempor ea cillum dolor officia aute sunt magna Lorem Lorem fugiat voluptate minim.",
                   "spans": []
                 }
               ]
@@ -102,14 +102,14 @@
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Integrate impactful functionalities",
+                  "text": "Syndicate revolutionary mindshare",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Irure laborum fugiat sunt exercitation pariatur. Elit anim reprehenderit enim esse fugiat adipisicing.",
+                  "text": "Et esse sint laborum commodo minim excepteur. Tempor enim duis enim ullamco aute deserunt. Labore magna deserunt anim ea aliqua consequat.",
                   "spans": []
                 }
               ]
@@ -120,18 +120,7 @@
           "fileName": "index",
           "extension": "vue"
         },
-        "screenshotPaths": {
-          "default": {
-            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/HeadingElement/default/preview.png",
-            "width": 800,
-            "height": 247
-          },
-          "subheading": {
-            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/HeadingElement/subheading/preview.png",
-            "width": 800,
-            "height": 228
-          }
-        }
+        "screenshotPaths": {}
       }
     }
   }

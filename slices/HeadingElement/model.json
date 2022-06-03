@@ -43,7 +43,7 @@
           "type": "StructuredText",
           "config": {
             "label": "Title sub",
-            "placeholder": "What is this chapter about",
+            "placeholder": "Chapter name",
             "allowTargetBlank": true,
             "single": "heading2,heading3"
           }
