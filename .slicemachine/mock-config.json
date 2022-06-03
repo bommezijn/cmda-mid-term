@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-{
-  "slices": {
-    "FirstSlice": {},
-    "Heading": {},
-    "HeadingElement": {
-      "default": {
-        "primary": {
-          "title": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          }
-        }
-      }
-    }
-  }
-=======
 {
   "slices": {
     "FirstSlice": {},
@@ -38,7 +19,11 @@
         "items": {},
         "primary": {}
       }
+    },
+    "ArticleSlice": {
+      "default": {
+        "primary": {}
+      }
     }
   }
->>>>>>> 34f73904ca90db43dde468b80d770f98ae831a93
 }

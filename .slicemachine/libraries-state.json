@@ -1,6 +1,93 @@
 {
   "slices": {
     "components": {
+      "article_slice": {
+        "library": "slices",
+        "id": "article_slice",
+        "name": "ArticleSlice",
+        "description": "ArticleSlice",
+        "model": {
+          "id": "article_slice",
+          "type": "SharedSlice",
+          "name": "ArticleSlice",
+          "description": "ArticleSlice",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ArticleSlice",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your product"
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "article_slice",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Strategize value-added architectures",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Consectetur eiusmod adipisicing do dolor consequat aliquip ad.",
+                  "spans": []
+                }
+              ],
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {}
+      },
       "heading_element": {
         "library": "slices",
         "id": "heading_element",
@@ -72,11 +159,7 @@
         },
         "screenshotPaths": {
           "default": {
-<<<<<<< HEAD
             "path": "/home/pip/cmda-mid-term/.slicemachine/assets/slices/HeadingElement/default/preview.png",
-=======
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/HeadingElement/default/preview.png",
->>>>>>> 34f73904ca90db43dde468b80d770f98ae831a93
             "width": 800,
             "height": 260
           }
@@ -180,7 +263,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/TableSlice/default/preview.png",
+            "path": "/home/pip/cmda-mid-term/.slicemachine/assets/slices/TableSlice/default/preview.png",
             "width": 800,
             "height": 250
           }
