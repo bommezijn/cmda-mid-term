@@ -72,7 +72,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/HeadingElement/default/preview.png",
+            "path": "/home/pip/cmda-mid-term/.slicemachine/assets/slices/HeadingElement/default/preview.png",
             "width": 800,
             "height": 260
           }
