@@ -1,30 +1,31 @@
 {
   "slices": {
     "components": {
-      "first_slice": {
+      "heading_element": {
         "library": "slices",
-        "id": "first_slice",
-        "name": "FirstSlice",
-        "description": "FirstSlice",
+        "id": "heading_element",
+        "name": "HeadingElement",
+        "description": "HeadingElement",
         "model": {
-          "id": "first_slice",
+          "id": "heading_element",
           "type": "SharedSlice",
-          "name": "FirstSlice",
-          "description": "FirstSlice",
+          "name": "HeadingElement",
+          "description": "HeadingElement",
           "variations": [
             {
               "id": "default",
               "name": "Default",
               "docURL": "...",
               "version": "sktwi1xtmkfgx8626",
-              "description": "FirstSlice",
+              "description": "HeadingElement",
               "primary": {
                 "title": {
                   "type": "StructuredText",
                   "config": {
-                    "single": "heading1",
                     "label": "Title",
-                    "placeholder": "This is where it all begins..."
+                    "placeholder": "What is this chapter about",
+                    "allowTargetBlank": true,
+                    "single": "heading1"
                   }
                 },
                 "description": {
@@ -33,15 +34,6 @@
                     "single": "paragraph",
                     "label": "Description",
                     "placeholder": "A nice description of your product"
-                  }
-                },
-                "rounded": {
-                  "type": "Boolean",
-                  "config": {
-                    "label": "Rounded",
-                    "default_value": false,
-                    "placeholder_true": "true",
-                    "placeholder_false": "false"
                   }
                 }
               },
@@ -54,24 +46,23 @@
           "default": {
             "variation": "default",
             "name": "Default",
-            "slice_type": "first_slice",
+            "slice_type": "heading_element",
             "items": [],
             "primary": {
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Brand end-to-end synergies",
+                  "text": "Embrace granular synergies",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Lorem adipisicing fugiat adipisicing cupidatat aliquip. Sit cillum non velit tempor enim ut minim culpa consectetur. Eu id sint enim.",
+                  "text": "Culpa non laboris dolore ad nostrud mollit ad cillum commodo anim duis.",
                   "spans": []
                 }
-              ],
-              "rounded": true
+              ]
             }
           }
         },
@@ -81,7 +72,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/FirstSlice/default/preview.png",
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/HeadingElement/default/preview.png",
             "width": 800,
             "height": 260
           }
