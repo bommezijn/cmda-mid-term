@@ -1,12 +1,15 @@
-:root{ 
-  --accent: #FFF021;
+:root {
+  --accent: #fff021;
   --black: #000000;
-  --white: #FFFFFF;
-  --sec-accent-1: #F0EBF0;
-  --sec-accent-2: #FAF0D7;
-  --sec-accent-3: #E0F4DF;
+  --white: #ffffff;
+  --sec-accent-1: #f0ebf0;
+  --sec-accent-2: #faf0d7;
+  --sec-accent-3: #e0f4df;
 }
 
 * {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
