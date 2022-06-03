@@ -1,22 +1,23 @@
 {
-  "id": "first_slice",
+  "id": "heading_element",
   "type": "SharedSlice",
-  "name": "FirstSlice",
-  "description": "FirstSlice",
+  "name": "HeadingElement",
+  "description": "HeadingElement",
   "variations": [
     {
       "id": "default",
       "name": "Default",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "FirstSlice",
+      "description": "HeadingElement",
       "primary": {
         "title": {
           "type": "StructuredText",
           "config": {
-            "single": "heading1",
             "label": "Title",
-            "placeholder": "This is where it all begins..."
+            "placeholder": "What is this chapter about",
+            "allowTargetBlank": true,
+            "single": "heading1"
           }
         },
         "description": {
@@ -25,15 +26,6 @@
             "single": "paragraph",
             "label": "Description",
             "placeholder": "A nice description of your product"
-          }
-        },
-        "rounded": {
-          "type": "Boolean",
-          "config": {
-            "label": "Rounded",
-            "default_value": false,
-            "placeholder_true": "true",
-            "placeholder_false": "false"
           }
         }
       },

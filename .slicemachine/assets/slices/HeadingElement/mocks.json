@@ -1,0 +1,24 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "heading_element",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Embrace granular synergies",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Culpa non laboris dolore ad nostrud mollit ad cillum commodo anim duis.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]

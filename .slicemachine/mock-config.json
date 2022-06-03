@@ -1,5 +1,18 @@
 {
   "slices": {
-    "FirstSlice": {}
+    "FirstSlice": {},
+    "Heading": {},
+    "HeadingElement": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
   }
 }
