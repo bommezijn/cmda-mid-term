@@ -1,0 +1,33 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "chapter_section",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "1.1 Humanity-centred ontwerpers van digitale, interactieve producten",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "CMD Amsterdam leidt studenten op tot (junior) Humanity-centred ontwerpers van digitale, interactieve producten1 (zie voor meer info visie CMD Amsterdam link). Iedere student krijgt een stevige basis van techniek, interactie-ontwerp en vormgeving. Daarnaast brengen ze de context in kaart en kunnen ze ontwerpuitdagingen bevragen en helder verwoorden. Afhankelijk van interesse en ambitie verbreden of verdiepen studenten deze basiskennis en -vaardigheden. Om een beeld te krijgen wat voor producten onze studenten maken bekijk hier de voorbeelden.",
+          "spans": []
+        }
+      ],
+      "chapterimage": {
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=900&h=500&fit=crop"
+      }
+    }
+  }
+]
