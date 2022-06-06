@@ -1,26 +1,36 @@
 <template>
-  <section class="section">
-    <section class="contentText">
-      <h2 class="title">{{$prismic.asText(slice.primary.title)}}</h2>
-      <p>{{$prismic.asText(slice.primary.description)}}</p>
+  <div>
+    <section v-if="slice.variation == 'default'" class="section">
+      <section class="contentText">
+        <h2 class="title">{{ $prismic.asText(slice.primary.title) }}</h2>
+        <p>{{ $prismic.asText(slice.primary.description) }}</p>
+      </section>
+      <PrismicImage :field="slice.primary.chapterimage" />
     </section>
-    
-    <PrismicImage :field="slice.primary.chapterimage" />
-    <!-- <p>{{$prismic.asText(document.data.hallo)}}</p> -->
-  </section>
+    <section v-else class="section alt">
+      <section class="contentText">
+        <h2 class="title">{{ $prismic.asText(slice.primary.title) }}</h2>
+        <p>{{ $prismic.asText(slice.primary.description) }}</p>
+      </section>
+      <PrismicImage :field="slice.primary.chapterimage" />
+    </section>
+  </div>
 </template>
 
 <script>
-import { getSliceComponentProps } from "@prismicio/vue/components";
+import { getSliceComponentProps } from '@prismicio/vue/components'
 
 export default {
-  name: "ChapterSection",
+  name: 'ChapterSection',
   // The array passed to `getSliceComponentProps` is purely optional and acts as a visual hint for you
-  props: getSliceComponentProps(["slice", "index", "slices", "context"]),
+  props: getSliceComponentProps(['slice', 'index', 'slices', 'context']),
 }
 </script>
 
 <style scoped>
+.alt {
+  flex-flow: row-reverse; 
+}
 .section {
   /* background: #f7f7f7; */
   color: #111;
@@ -50,7 +60,8 @@ export default {
   .section {
     flex-direction: column;
   }
-  .contentText, .contentText p {
+  .contentText,
+  .contentText p {
     width: 100%;
   }
 }
