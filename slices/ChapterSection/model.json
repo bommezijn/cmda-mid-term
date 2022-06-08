@@ -1,38 +1,36 @@
 {
-  "id": "heading_element",
+  "id": "chapter_section",
   "type": "SharedSlice",
-  "name": "HeadingElement",
-  "description": "HeadingElement",
+  "name": "ChapterSection",
+  "description": "ChapterSection",
   "variations": [
     {
       "id": "default",
       "name": "Default",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "HeadingElement",
+      "description": "ChapterSection",
       "primary": {
         "title": {
           "type": "StructuredText",
           "config": {
+            "single": "heading1",
             "label": "Title",
-            "placeholder": "`What is this chapter about",
-            "allowTargetBlank": true,
-            "single": "heading1"
+            "placeholder": "This is where it all begins..."
           }
         },
         "description": {
           "type": "StructuredText",
           "config": {
+            "single": "paragraph",
             "label": "Description",
-            "placeholder": "A nice description of your product",
-            "allowTargetBlank": true,
-            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+            "placeholder": "A nice description of your product"
           }
         },
-        "background": {
+        "chapterimage": {
           "type": "Image",
           "config": {
-            "label": "Background",
+            "label": "Chapter Image",
             "constraint": {},
             "thumbnails": []
           }
@@ -42,19 +40,18 @@
       "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
     },
     {
-      "id": "subheading",
-      "name": "subheading",
+      "id": "imageLeft",
+      "name": "Image-left",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "HeadingElement",
+      "description": "ChapterSection",
       "primary": {
         "title": {
           "type": "StructuredText",
           "config": {
-            "label": "Title sub",
-            "placeholder": "Chapter name",
-            "allowTargetBlank": true,
-            "single": "heading2,heading3"
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
           }
         },
         "description": {
@@ -63,6 +60,14 @@
             "single": "paragraph",
             "label": "Description",
             "placeholder": "A nice description of your product"
+          }
+        },
+        "chapterimage": {
+          "type": "Image",
+          "config": {
+            "label": "Chapter Image",
+            "constraint": {},
+            "thumbnails": []
           }
         }
       },

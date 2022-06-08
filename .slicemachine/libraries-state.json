@@ -1,23 +1,23 @@
 {
   "slices": {
     "components": {
-      "article_slice": {
+      "chapter_section": {
         "library": "slices",
-        "id": "article_slice",
-        "name": "ArticleSlice",
-        "description": "ArticleSlice",
+        "id": "chapter_section",
+        "name": "ChapterSection",
+        "description": "ChapterSection",
         "model": {
-          "id": "article_slice",
+          "id": "chapter_section",
           "type": "SharedSlice",
-          "name": "ArticleSlice",
-          "description": "ArticleSlice",
+          "name": "ChapterSection",
+          "description": "ChapterSection",
           "variations": [
             {
               "id": "default",
               "name": "Default",
               "docURL": "...",
               "version": "sktwi1xtmkfgx8626",
-              "description": "ArticleSlice",
+              "description": "ChapterSection",
               "primary": {
                 "title": {
                   "type": "StructuredText",
@@ -35,10 +35,45 @@
                     "placeholder": "A nice description of your product"
                   }
                 },
-                "image": {
+                "chapterimage": {
                   "type": "Image",
                   "config": {
-                    "label": "Image",
+                    "label": "Chapter Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "imageLeft",
+              "name": "Image-left",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ChapterSection",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your product"
+                  }
+                },
+                "chapterimage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Chapter Image",
                     "constraint": {},
                     "thumbnails": []
                   }
@@ -53,31 +88,62 @@
           "default": {
             "variation": "default",
             "name": "Default",
-            "slice_type": "article_slice",
+            "slice_type": "chapter_section",
             "items": [],
             "primary": {
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Strategize value-added architectures",
+                  "text": "Expedite frictionless applications",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Consectetur eiusmod adipisicing do dolor consequat aliquip ad.",
+                  "text": "Culpa non pariatur aute ad sit in laboris fugiat aute do proident eu incididunt. Eu qui reprehenderit sint deserunt. Mollit veniam nulla ipsum dolore magna et dolor sint cupidatat.",
                   "spans": []
                 }
               ],
-              "image": {
+              "chapterimage": {
                 "dimensions": {
                   "width": 900,
                   "height": 500
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=900&h=500&fit=crop"
+              }
+            }
+          },
+          "imageLeft": {
+            "variation": "imageLeft",
+            "name": "Image-left",
+            "slice_type": "chapter_section",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Transition compelling ROI",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Tempor ut proident veniam quis magna tempor deserunt ipsum deserunt irure enim et ad ad excepteur.",
+                  "spans": []
+                }
+              ],
+              "chapterimage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=900&h=500&fit=crop"
               }
             }
           }
@@ -86,7 +152,18 @@
           "fileName": "index",
           "extension": "vue"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/ChapterSection/default/preview.png",
+            "width": 800,
+            "height": 245
+          },
+          "imageLeft": {
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/ChapterSection/imageLeft/preview.png",
+            "width": 800,
+            "height": 245
+          }
+        }
       },
       "heading_element": {
         "library": "slices",
@@ -110,7 +187,7 @@
                   "type": "StructuredText",
                   "config": {
                     "label": "Title",
-                    "placeholder": "What is this chapter about",
+                    "placeholder": "`What is this chapter about",
                     "allowTargetBlank": true,
                     "single": "heading1"
                   }
@@ -118,9 +195,18 @@
                 "description": {
                   "type": "StructuredText",
                   "config": {
-                    "single": "paragraph",
                     "label": "Description",
-                    "placeholder": "A nice description of your product"
+                    "placeholder": "A nice description of your product",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "background": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Background",
+                    "constraint": {},
+                    "thumbnails": []
                   }
                 }
               },
@@ -167,17 +253,26 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Reinvent seamless web-readiness",
+                  "text": "Revolutionize innovative applications",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Laborum consequat quis ut ea ex duis commodo. Qui tempor ea cillum dolor officia aute sunt magna Lorem Lorem fugiat voluptate minim.",
+                  "text": "Reprehenderit adipisicing cillum dolore. Excepteur irure tempor cupidatat esse est aliquip adipisicing ullamco cupidatat ullamco ullamco ex. Deserunt reprehenderit officia officia commodo esse pariatur cupidatat tempor aliquip laboris dolore pariatur eu ea.",
                   "spans": []
                 }
-              ]
+              ],
+              "background": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=900&h=500&fit=crop"
+              }
             }
           },
           "subheading": {
@@ -189,14 +284,14 @@
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Syndicate revolutionary mindshare",
+                  "text": "Iterate value-added initiatives",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Et esse sint laborum commodo minim excepteur. Tempor enim duis enim ullamco aute deserunt. Labore magna deserunt anim ea aliqua consequat.",
+                  "text": "Cillum laboris anim enim dolor incididunt Lorem non velit commodo quis culpa exercitation. Enim in excepteur in dolore eiusmod sunt ad enim reprehenderit ipsum incididunt nisi eiusmod.",
                   "spans": []
                 }
               ]
@@ -209,190 +304,14 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/HeadingElement/default/preview.png",
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/HeadingElement/default/preview.png",
             "width": 800,
-            "height": 247
+            "height": 265
           },
           "subheading": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/HeadingElement/subheading/preview.png",
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/HeadingElement/subheading/preview.png",
             "width": 800,
             "height": 184
-          }
-        }
-      },
-      "table_slice": {
-        "library": "slices",
-        "id": "table_slice",
-        "name": "TableSlice",
-        "description": "TableSlice",
-        "model": {
-          "id": "table_slice",
-          "type": "SharedSlice",
-          "name": "TableSlice",
-          "description": "TableSlice",
-          "variations": [
-            {
-              "id": "default",
-              "name": "Default",
-              "docURL": "...",
-              "version": "sktwi1xtmkfgx8626",
-              "description": "TableSlice",
-              "primary": {
-                "title": {
-                  "type": "StructuredText",
-                  "config": {
-                    "single": "heading1",
-                    "label": "Title",
-                    "placeholder": "This is where it all begins..."
-                  }
-                },
-                "description": {
-                  "type": "StructuredText",
-                  "config": {
-                    "single": "paragraph",
-                    "label": "Description",
-                    "placeholder": "A nice description of your product"
-                  }
-                }
-              },
-              "items": {
-                "oldComps": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Old Comps",
-                    "placeholder": "",
-                    "allowTargetBlank": true,
-                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-                  }
-                },
-                "newComps": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "New Comps",
-                    "placeholder": "",
-                    "allowTargetBlank": true,
-                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-                  }
-                }
-              },
-              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-            }
-          ]
-        },
-        "mocks": {
-          "default": {
-            "variation": "default",
-            "name": "Default",
-            "slice_type": "table_slice",
-            "items": [
-              {
-                "oldComps": [
-                  {
-                    "type": "paragraph",
-                    "text": "Laboris commodo fugiat officia laboris veniam. Anim magna commodo ad nulla cillum consectetur mollit dolor occaecat incididunt.",
-                    "spans": []
-                  }
-                ],
-                "newComps": [
-                  {
-                    "type": "paragraph",
-                    "text": "Mollit consectetur officia veniam eiusmod aute dolor do eiusmod ad.",
-                    "spans": []
-                  }
-                ]
-              },
-              {
-                "oldComps": [
-                  {
-                    "type": "paragraph",
-                    "text": "Eiusmod sunt pariatur dolor elit pariatur officia. Magna incididunt ut laboris magna minim laborum nisi adipisicing labore.",
-                    "spans": []
-                  }
-                ],
-                "newComps": [
-                  {
-                    "type": "paragraph",
-                    "text": "Irure mollit est mollit elit voluptate consectetur pariatur. Voluptate excepteur est sunt exercitation.",
-                    "spans": []
-                  }
-                ]
-              },
-              {
-                "oldComps": [
-                  {
-                    "type": "paragraph",
-                    "text": "Amet do anim id nisi veniam cillum amet quis aute amet sit.",
-                    "spans": []
-                  }
-                ],
-                "newComps": [
-                  {
-                    "type": "paragraph",
-                    "text": "Esse est adipisicing eiusmod magna aliqua eiusmod Lorem. Tempor dolore Lorem anim.",
-                    "spans": []
-                  }
-                ]
-              },
-              {
-                "oldComps": [
-                  {
-                    "type": "paragraph",
-                    "text": "Tempor qui anim nulla aliqua in commodo sit incididunt qui dolore deserunt. Velit et ipsum duis.",
-                    "spans": []
-                  }
-                ],
-                "newComps": [
-                  {
-                    "type": "paragraph",
-                    "text": "Nulla eu nulla amet laborum do nulla sunt exercitation tempor aliqua occaecat in commodo officia nisi. Duis minim anim Lorem laborum.",
-                    "spans": []
-                  }
-                ]
-              },
-              {
-                "oldComps": [
-                  {
-                    "type": "paragraph",
-                    "text": "Elit non veniam anim commodo mollit qui sit aliquip amet velit aute ex ipsum irure. Aliquip elit est ullamco.",
-                    "spans": []
-                  }
-                ],
-                "newComps": [
-                  {
-                    "type": "paragraph",
-                    "text": "Quis enim mollit ex irure culpa reprehenderit deserunt do occaecat occaecat in incididunt cupidatat labore. Minim pariatur culpa eiusmod. In elit consectetur anim do consequat officia irure ea mollit.",
-                    "spans": []
-                  }
-                ]
-              }
-            ],
-            "primary": {
-              "title": [
-                {
-                  "type": "heading1",
-                  "text": "Embrace viral partnerships",
-                  "spans": []
-                }
-              ],
-              "description": [
-                {
-                  "type": "paragraph",
-                  "text": "Ea qui enim tempor eiusmod sit do eu pariatur. Irure qui do proident dolore eu ad quis ullamco amet eu voluptate cillum et.",
-                  "spans": []
-                }
-              ]
-            }
-          }
-        },
-        "meta": {
-          "fileName": "index",
-          "extension": "vue"
-        },
-        "screenshotPaths": {
-          "default": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/TableSlice/default/preview.png",
-            "width": 800,
-            "height": 236
           }
         }
       }
