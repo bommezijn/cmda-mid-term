@@ -3,7 +3,7 @@
     <slice-zone :components="components" :slices="document.data.slices" />
     <!-- <prismic-text :field="document.data.hallo"/> -->
     <p>{{$prismic.asText(document.data.hallo)}}</p>
-    <<slice-zone :components="components" :slices="document.data.body"/>
+    <slice-zone :components="components" :slices="document.data.body"/>
   </article>
 </template>
 

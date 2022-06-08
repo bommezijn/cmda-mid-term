@@ -5,7 +5,8 @@
         <h2 class="title">{{ $prismic.asText(slice.primary.title) }}</h2>
         <p>{{ $prismic.asText(slice.primary.description) }}</p>
       </section>
-      <PrismicImage :field="slice.primary.chapterimage" />
+      <!-- <img v-if="slice.primary.chapterimage" src="slice.primary.chapterimage.content" /> -->
+      <PrismicImage  :field="slice.primary.chapterimage" />
     </section>
     <section v-else class="section alt">
       <section class="contentText">

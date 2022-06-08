@@ -8,17 +8,26 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Reinvent seamless web-readiness",
+          "text": "Revolutionize innovative applications",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Laborum consequat quis ut ea ex duis commodo. Qui tempor ea cillum dolor officia aute sunt magna Lorem Lorem fugiat voluptate minim.",
+          "text": "Reprehenderit adipisicing cillum dolore. Excepteur irure tempor cupidatat esse est aliquip adipisicing ullamco cupidatat ullamco ullamco ex. Deserunt reprehenderit officia officia commodo esse pariatur cupidatat tempor aliquip laboris dolore pariatur eu ea.",
           "spans": []
         }
-      ]
+      ],
+      "background": {
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=900&h=500&fit=crop"
+      }
     }
   },
   {
@@ -30,14 +39,14 @@
       "title": [
         {
           "type": "heading2",
-          "text": "Syndicate revolutionary mindshare",
+          "text": "Iterate value-added initiatives",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Et esse sint laborum commodo minim excepteur. Tempor enim duis enim ullamco aute deserunt. Labore magna deserunt anim ea aliqua consequat.",
+          "text": "Cillum laboris anim enim dolor incididunt Lorem non velit commodo quis culpa exercitation. Enim in excepteur in dolore eiusmod sunt ad enim reprehenderit ipsum incididunt nisi eiusmod.",
           "spans": []
         }
       ]

@@ -15,7 +15,7 @@
           "type": "StructuredText",
           "config": {
             "label": "Title",
-            "placeholder": "What is this chapter about",
+            "placeholder": "`What is this chapter about",
             "allowTargetBlank": true,
             "single": "heading1"
           }
@@ -23,9 +23,18 @@
         "description": {
           "type": "StructuredText",
           "config": {
-            "single": "paragraph",
             "label": "Description",
-            "placeholder": "A nice description of your product"
+            "placeholder": "A nice description of your product",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "background": {
+          "type": "Image",
+          "config": {
+            "label": "Background",
+            "constraint": {},
+            "thumbnails": []
           }
         }
       },

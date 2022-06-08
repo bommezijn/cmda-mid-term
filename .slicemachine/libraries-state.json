@@ -153,6 +153,11 @@
           "extension": "vue"
         },
         "screenshotPaths": {
+          "default": {
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/ChapterSection/default/preview.png",
+            "width": 800,
+            "height": 245
+          },
           "imageLeft": {
             "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/ChapterSection/imageLeft/preview.png",
             "width": 800,
@@ -182,7 +187,7 @@
                   "type": "StructuredText",
                   "config": {
                     "label": "Title",
-                    "placeholder": "What is this chapter about",
+                    "placeholder": "`What is this chapter about",
                     "allowTargetBlank": true,
                     "single": "heading1"
                   }
@@ -190,9 +195,18 @@
                 "description": {
                   "type": "StructuredText",
                   "config": {
-                    "single": "paragraph",
                     "label": "Description",
-                    "placeholder": "A nice description of your product"
+                    "placeholder": "A nice description of your product",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "background": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Background",
+                    "constraint": {},
+                    "thumbnails": []
                   }
                 }
               },
@@ -239,17 +253,26 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Reinvent seamless web-readiness",
+                  "text": "Revolutionize innovative applications",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Laborum consequat quis ut ea ex duis commodo. Qui tempor ea cillum dolor officia aute sunt magna Lorem Lorem fugiat voluptate minim.",
+                  "text": "Reprehenderit adipisicing cillum dolore. Excepteur irure tempor cupidatat esse est aliquip adipisicing ullamco cupidatat ullamco ullamco ex. Deserunt reprehenderit officia officia commodo esse pariatur cupidatat tempor aliquip laboris dolore pariatur eu ea.",
                   "spans": []
                 }
-              ]
+              ],
+              "background": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=900&h=500&fit=crop"
+              }
             }
           },
           "subheading": {
@@ -261,14 +284,14 @@
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Syndicate revolutionary mindshare",
+                  "text": "Iterate value-added initiatives",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Et esse sint laborum commodo minim excepteur. Tempor enim duis enim ullamco aute deserunt. Labore magna deserunt anim ea aliqua consequat.",
+                  "text": "Cillum laboris anim enim dolor incididunt Lorem non velit commodo quis culpa exercitation. Enim in excepteur in dolore eiusmod sunt ad enim reprehenderit ipsum incididunt nisi eiusmod.",
                   "spans": []
                 }
               ]
@@ -283,7 +306,7 @@
           "default": {
             "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/HeadingElement/default/preview.png",
             "width": 800,
-            "height": 247
+            "height": 265
           },
           "subheading": {
             "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/HeadingElement/subheading/preview.png",
