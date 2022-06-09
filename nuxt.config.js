@@ -1,3 +1,5 @@
+import { apiEndpoint } from './sm.json'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -27,6 +29,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/prismic'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -41,7 +44,13 @@ export default {
       lang: 'en',
     },
   },
+  prismic: {
+    endpoint: apiEndpoint,
+    modern: true,
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    transpile: ['@prismicio/vue']
+  },
 }
