@@ -1,4 +1,5 @@
 import { apiEndpoint } from './sm.json'
+import smConfig from './sm.json'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -17,7 +18,9 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [
+    '../static/css/global.css'
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -36,6 +39,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    ["@nuxtjs/prismic", {endpoint: smConfig.apiEndpoint || ""}]
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
