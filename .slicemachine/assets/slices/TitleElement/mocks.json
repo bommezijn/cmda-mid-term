@@ -1,0 +1,24 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "title_element",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Envisioneer synergistic e-markets",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Reprehenderit exercitation ullamco magna laborum est do ut sit nulla occaecat. Proident nostrud ut cupidatat eu aliquip excepteur exercitation ullamco tempor id tempor voluptate.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]

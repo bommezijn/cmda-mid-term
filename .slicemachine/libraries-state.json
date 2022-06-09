@@ -1,5 +1,82 @@
 {
   "slices": {
-    "components": {}
+    "components": {
+      "title_element": {
+        "library": "slices",
+        "id": "title_element",
+        "name": "TitleElement",
+        "description": "TitleElement",
+        "model": {
+          "id": "title_element",
+          "type": "SharedSlice",
+          "name": "TitleElement",
+          "description": "TitleElement",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "TitleElement",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your product"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "title_element",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Envisioneer synergistic e-markets",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Reprehenderit exercitation ullamco magna laborum est do ut sit nulla occaecat. Proident nostrud ut cupidatat eu aliquip excepteur exercitation ullamco tempor id tempor voluptate.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/TitleElement/default/preview.png",
+            "width": 800,
+            "height": 259
+          }
+        }
+      }
+    }
   }
 }
