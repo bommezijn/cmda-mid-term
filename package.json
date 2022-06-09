@@ -1,5 +1,5 @@
 {
-  "name": "cmda-midterm",
+  "name": "dump",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -10,12 +10,10 @@
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint:prettier": "prettier --check .",
     "lint": "npm run lint:js && npm run lint:prettier",
-    "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix",
-    "slicemachine": "start-slicemachine"
+    "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix"
   },
   "dependencies": {
-    "@nuxtjs/prismic": "^1.4.2",
-    "@prismicio/slice-simulator-vue": "^0.2.1",
+    "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
     "vue": "^2.6.14",
@@ -31,7 +29,6 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^3.1.0",
     "eslint-plugin-vue": "^8.2.0",
-    "prettier": "^2.5.1",
-    "slice-machine-ui": "^0.3.8"
+    "prettier": "^2.5.1"
   }
 }
