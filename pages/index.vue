@@ -1,5 +1,7 @@
 <template>
-  <Tutorial />
+  <div>
+    <PopupComponent />
+  </div>
 </template>
 
 <script>
