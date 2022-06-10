@@ -1,0 +1,12 @@
+:root {
+  --geel: #FFF021;
+  --pepermunt: #E0F5DF;
+  --papaya: #FAF0D7;
+  --lavendel: #F0EBF0;
+  --black: #000000;
+  --white: #FFFFFF;
+}
+
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
