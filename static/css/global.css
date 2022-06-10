@@ -6,3 +6,7 @@
   --black: #000000;
   --white: #FFFFFF;
 }
+
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
