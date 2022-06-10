@@ -1,5 +1,7 @@
 <template>
-  <Tutorial />
+  <div>
+    <CardSwitch></CardSwitch>
+  </div>
 </template>
 
 <script>
