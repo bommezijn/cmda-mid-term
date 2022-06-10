@@ -35,7 +35,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    '@nuxtjs/prismic'
+    '@nuxtjs/prismic',
+    '@nuxtjs/google-fonts'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -59,5 +60,18 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: ['@prismicio/vue']
+  },
+
+  googleFonts: {
+    display: 'swap',
+    text: 'Hello World',
+    prefetch: true,
+    preconnect: true,
+    preload: true,
+    download: true,
+    overwriting:false,
+    families: {
+      'Open+Sans': true
+    }
   },
 }
