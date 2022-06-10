@@ -85,9 +85,13 @@ export default {}
 .card p {
   padding: 1rem;
   margin: 0;
-  border-radius: 1rem 1rem 0 0;
 }
 .card h4 {
   background-color: #fff021;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card p {
+  background-color: #fff;
 }
 </style>
