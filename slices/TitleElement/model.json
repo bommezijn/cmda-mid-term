@@ -1,15 +1,15 @@
 {
-  "id": "article_slice",
+  "id": "title_element",
   "type": "SharedSlice",
-  "name": "ArticleSlice",
-  "description": "ArticleSlice",
+  "name": "TitleElement",
+  "description": "TitleElement",
   "variations": [
     {
       "id": "default",
       "name": "Default",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "ArticleSlice",
+      "description": "TitleElement",
       "primary": {
         "title": {
           "type": "StructuredText",
@@ -25,14 +25,6 @@
             "single": "paragraph",
             "label": "Description",
             "placeholder": "A nice description of your product"
-          }
-        },
-        "image": {
-          "type": "Image",
-          "config": {
-            "label": "Image",
-            "constraint": {},
-            "thumbnails": []
           }
         }
       },

@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@nuxtjs/prismic": "^1.4.2",
+    "@nuxtjs/pwa": "^3.3.5",
     "@prismicio/slice-simulator-vue": "^0.2.1",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",

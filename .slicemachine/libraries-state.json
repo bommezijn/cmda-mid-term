@@ -1,23 +1,23 @@
 {
   "slices": {
     "components": {
-      "chapter_section": {
+      "title_element": {
         "library": "slices",
-        "id": "chapter_section",
-        "name": "ChapterSection",
-        "description": "ChapterSection",
+        "id": "title_element",
+        "name": "TitleElement",
+        "description": "TitleElement",
         "model": {
-          "id": "chapter_section",
+          "id": "title_element",
           "type": "SharedSlice",
-          "name": "ChapterSection",
-          "description": "ChapterSection",
+          "name": "TitleElement",
+          "description": "TitleElement",
           "variations": [
             {
               "id": "default",
               "name": "Default",
               "docURL": "...",
               "version": "sktwi1xtmkfgx8626",
-              "description": "ChapterSection",
+              "description": "TitleElement",
               "primary": {
                 "title": {
                   "type": "StructuredText",
@@ -25,208 +25,6 @@
                     "single": "heading1",
                     "label": "Title",
                     "placeholder": "This is where it all begins..."
-                  }
-                },
-                "description": {
-                  "type": "StructuredText",
-                  "config": {
-                    "single": "paragraph",
-                    "label": "Description",
-                    "placeholder": "A nice description of your product"
-                  }
-                },
-                "chapterimage": {
-                  "type": "Image",
-                  "config": {
-                    "label": "Chapter Image",
-                    "constraint": {},
-                    "thumbnails": []
-                  }
-                }
-              },
-              "items": {},
-              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-            },
-            {
-              "id": "imageLeft",
-              "name": "Image-left",
-              "docURL": "...",
-              "version": "sktwi1xtmkfgx8626",
-              "description": "ChapterSection",
-              "primary": {
-                "title": {
-                  "type": "StructuredText",
-                  "config": {
-                    "single": "heading1",
-                    "label": "Title",
-                    "placeholder": "This is where it all begins..."
-                  }
-                },
-                "description": {
-                  "type": "StructuredText",
-                  "config": {
-                    "single": "paragraph",
-                    "label": "Description",
-                    "placeholder": "A nice description of your product"
-                  }
-                },
-                "chapterimage": {
-                  "type": "Image",
-                  "config": {
-                    "label": "Chapter Image",
-                    "constraint": {},
-                    "thumbnails": []
-                  }
-                }
-              },
-              "items": {},
-              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-            }
-          ]
-        },
-        "mocks": {
-          "default": {
-            "variation": "default",
-            "name": "Default",
-            "slice_type": "chapter_section",
-            "items": [],
-            "primary": {
-              "title": [
-                {
-                  "type": "heading1",
-                  "text": "Expedite frictionless applications",
-                  "spans": []
-                }
-              ],
-              "description": [
-                {
-                  "type": "paragraph",
-                  "text": "Culpa non pariatur aute ad sit in laboris fugiat aute do proident eu incididunt. Eu qui reprehenderit sint deserunt. Mollit veniam nulla ipsum dolore magna et dolor sint cupidatat.",
-                  "spans": []
-                }
-              ],
-              "chapterimage": {
-                "dimensions": {
-                  "width": 900,
-                  "height": 500
-                },
-                "alt": "Placeholder image",
-                "copyright": null,
-                "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=900&h=500&fit=crop"
-              }
-            }
-          },
-          "imageLeft": {
-            "variation": "imageLeft",
-            "name": "Image-left",
-            "slice_type": "chapter_section",
-            "items": [],
-            "primary": {
-              "title": [
-                {
-                  "type": "heading1",
-                  "text": "Transition compelling ROI",
-                  "spans": []
-                }
-              ],
-              "description": [
-                {
-                  "type": "paragraph",
-                  "text": "Tempor ut proident veniam quis magna tempor deserunt ipsum deserunt irure enim et ad ad excepteur.",
-                  "spans": []
-                }
-              ],
-              "chapterimage": {
-                "dimensions": {
-                  "width": 900,
-                  "height": 500
-                },
-                "alt": "Placeholder image",
-                "copyright": null,
-                "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=900&h=500&fit=crop"
-              }
-            }
-          }
-        },
-        "meta": {
-          "fileName": "index",
-          "extension": "vue"
-        },
-        "screenshotPaths": {
-          "default": {
-            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/ChapterSection/default/preview.png",
-            "width": 800,
-            "height": 245
-          },
-          "imageLeft": {
-            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/ChapterSection/imageLeft/preview.png",
-            "width": 800,
-            "height": 245
-          }
-        }
-      },
-      "heading_element": {
-        "library": "slices",
-        "id": "heading_element",
-        "name": "HeadingElement",
-        "description": "HeadingElement",
-        "model": {
-          "id": "heading_element",
-          "type": "SharedSlice",
-          "name": "HeadingElement",
-          "description": "HeadingElement",
-          "variations": [
-            {
-              "id": "default",
-              "name": "Default",
-              "docURL": "...",
-              "version": "sktwi1xtmkfgx8626",
-              "description": "HeadingElement",
-              "primary": {
-                "title": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Title",
-                    "placeholder": "`What is this chapter about",
-                    "allowTargetBlank": true,
-                    "single": "heading1"
-                  }
-                },
-                "description": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Description",
-                    "placeholder": "A nice description of your product",
-                    "allowTargetBlank": true,
-                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-                  }
-                },
-                "background": {
-                  "type": "Image",
-                  "config": {
-                    "label": "Background",
-                    "constraint": {},
-                    "thumbnails": []
-                  }
-                }
-              },
-              "items": {},
-              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-            },
-            {
-              "id": "subheading",
-              "name": "subheading",
-              "docURL": "...",
-              "version": "sktwi1xtmkfgx8626",
-              "description": "HeadingElement",
-              "primary": {
-                "title": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Title sub",
-                    "placeholder": "Chapter name",
-                    "allowTargetBlank": true,
-                    "single": "heading2,heading3"
                   }
                 },
                 "description": {
@@ -247,51 +45,20 @@
           "default": {
             "variation": "default",
             "name": "Default",
-            "slice_type": "heading_element",
+            "slice_type": "title_element",
             "items": [],
             "primary": {
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Revolutionize innovative applications",
+                  "text": "Envisioneer synergistic e-markets",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Reprehenderit adipisicing cillum dolore. Excepteur irure tempor cupidatat esse est aliquip adipisicing ullamco cupidatat ullamco ullamco ex. Deserunt reprehenderit officia officia commodo esse pariatur cupidatat tempor aliquip laboris dolore pariatur eu ea.",
-                  "spans": []
-                }
-              ],
-              "background": {
-                "dimensions": {
-                  "width": 900,
-                  "height": 500
-                },
-                "alt": "Placeholder image",
-                "copyright": null,
-                "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=900&h=500&fit=crop"
-              }
-            }
-          },
-          "subheading": {
-            "variation": "subheading",
-            "name": "subheading",
-            "slice_type": "heading_element",
-            "items": [],
-            "primary": {
-              "title": [
-                {
-                  "type": "heading2",
-                  "text": "Iterate value-added initiatives",
-                  "spans": []
-                }
-              ],
-              "description": [
-                {
-                  "type": "paragraph",
-                  "text": "Cillum laboris anim enim dolor incididunt Lorem non velit commodo quis culpa exercitation. Enim in excepteur in dolore eiusmod sunt ad enim reprehenderit ipsum incididunt nisi eiusmod.",
+                  "text": "Reprehenderit exercitation ullamco magna laborum est do ut sit nulla occaecat. Proident nostrud ut cupidatat eu aliquip excepteur exercitation ullamco tempor id tempor voluptate.",
                   "spans": []
                 }
               ]
@@ -304,14 +71,9 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/HeadingElement/default/preview.png",
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/TitleElement/default/preview.png",
             "width": 800,
-            "height": 265
-          },
-          "subheading": {
-            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/HeadingElement/subheading/preview.png",
-            "width": 800,
-            "height": 184
+            "height": 259
           }
         }
       }

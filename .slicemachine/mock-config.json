@@ -1,46 +1,15 @@
 {
-  "slices": {
-    "FirstSlice": {},
-    "Heading": {},
-    "HeadingElement": {
-      "default": {
-        "primary": {
-          "title": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          },
-          "description": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          }
-        }
-      },
-      "subheading": {
-        "primary": {
-          "title": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          }
-        }
-      }
-    },
-    "ChapterSection": {
-      "default": {
-        "primary": {
-          "chapterimage": {
-            "content": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85"
-          }
+  "_cts": {
+    "page": {
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
         }
       }
     }
   },
-  "_cts": {
-    "test": {}
+  "slices": {
+    "TitleElement": {}
   }
 }
