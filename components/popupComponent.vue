@@ -46,6 +46,19 @@ export default {
 .content {
   margin-bottom: 3rem;
 }
+
+.content h3 {
+  border: 3px solid black;
+  background-color: var(--geel);
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.content h2 {
+  border: 3px solid black;
+  padding: 0.5rem;
+  width: max-content;
+}
 .popup {
   padding: 2rem;
   background: #f0ebf0;
