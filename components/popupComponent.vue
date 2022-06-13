@@ -61,7 +61,6 @@ export default {
 }
 .popup {
   padding: 2rem;
-  background: #f0ebf0;
 
   gap: 4rem;
   width: 100%;
