@@ -101,27 +101,4 @@ export default {
   width: 350px;
   position: absolute;
 }
-
-.card h4,
-.card p {
-  padding: 1rem;
-  margin: 0;
-}
-.card h4 {
-  background-color: #fff021;
-  border-radius: 1rem 1rem 0 0;
-}
-
-.card p {
-  background-color: #fff;
-  border-radius: 0 0 1rem 1rem;
-  padding: 1rem;
-  overflow: hidden;
-  transform-origin: top;
-  transition: all 0.5s ease-out;
-  min-height: 400px;
-}
-
-.card:hover p {
-}
 </style>
