@@ -16,12 +16,12 @@
         v-for="(subject, index) in subjects"
         :key="index"
         class="popup-item"
-        @click="showModal"
+        @click="toggleModal"
       >
         {{ subject }}
       </button>
     </div>
-    <generalModal :isVisible="visible">
+    <generalModal :isVisible="visible" @clicked="toggleModal">
       <p>{{ content }}</p>
     </generalModal>
   </section>
@@ -47,9 +47,10 @@ export default {
   },
   mounted() {},
   methods: {
-    showModal() {
+    toggleModal() {
       this.visible = !this.visible
       this.content = this.contents
+      console.log(this.visible)
     },
   },
 }

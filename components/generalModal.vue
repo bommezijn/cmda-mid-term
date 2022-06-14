@@ -1,7 +1,14 @@
 <template>
-  <div class="modal" :class="{ visible: isVisible }">
+  <div
+    @click.self="hideModal"
+    ref="modal"
+    class="modal"
+    :class="{ visible: isVisible }"
+  >
     <div class="content-wrapper" :class="{ visible: isVisible }">
-      <button>X</button>
+      <div class="heading">
+        <button @click.self="hideModal">X</button>
+      </div>
       <div class="content">
         <slot></slot>
       </div>
@@ -14,8 +21,17 @@ export default {
   props: {
     isVisible: Boolean,
   },
+  data() {
+    return {}
+  },
   mounted() {
-    console.log(this.visible)
+    console.log(this.isVisible)
+  },
+  methods: {
+    hideModal(e) {
+      console.log(e)
+      this.$emit('clicked')
+    },
   },
 }
 </script>
@@ -27,16 +43,16 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  display: none;
   opacity: 0;
   transition: 0.2s ease-out;
+  pointer-events: none;
 
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 .modal.visible {
-  display: block;
   opacity: 1;
+  pointer-events: all;
 }
 
 .content-wrapper {
