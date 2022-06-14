@@ -1,12 +1,23 @@
 :root {
-  --geel: #FFF021;
-  --pepermunt: #E0F5DF;
-  --papaya: #FAF0D7;
-  --lavendel: #F0EBF0;
+  --geel: #fff021;
+  --pepermunt: #e0f5df;
+  --papaya: #faf0d7;
+  --lavendel: #f0ebf0;
   --black: #000000;
-  --white: #FFFFFF;
+  --white: #ffffff;
+}
+
+.indexContainer {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 body {
+  font-size: 1.1em;
+  line-height: 1.5;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+p {
+  max-width: 65ch;
 }
