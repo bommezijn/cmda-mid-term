@@ -13,8 +13,13 @@
             formatief handelen – extra belangrijk. De studenten zullen nog steeds voornamelijk een product maken, maar
             ze zullen zich daarbij meer bewust moeten worden van hun eigen ontwerpproces en het bredere
             (maatschappelijke) belang ervan.</div>
-        <img src="https://images.prismic.io/cmd-midterm/407653ef-ca7e-4d2b-975b-5b1164f0d369_user.png?auto=compress,format"
-            class="sanne">
+        <svg width="36" height="30" viewBox="0 0 81 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M7.03553 4.5L55.96 53.4244L58.0526 23.6819L75.0547 4.5L7.03553 4.5ZM80 0.5H2L0.939339 4.06066L56.0937 59.215L59.6143 58.4788L61.9474 25.3181L80.9967 3.82661L80 0.5Z"
+                fill="black" />
+        </svg>
+        <p class="name-arrow-tag">Name</p>
+        </meta>
         <div class="semi-collom-down">"</div>
         <div class="BackBubble">
             Feedback speelt vanaf de start van de opleiding een belangrijke rol: feedback van docenten, peer-feedback
@@ -30,41 +35,37 @@
 <script>
 export default {
     name: 'CardSwitch',
-    data() {
-        return {
-            isChecked: false
-        }
-    },
-    methods: {
-        CardConColor() {
-            this.isChecked = !this.isChecked
-        },
-        Onwindow() {
-            window.addEventListener("load", Startup(), false);
-        },
+    // data() {
+    // },
+    // methods: {
+    //     Onwindow() {
+    //         window.addEventListener("load", Startup(), false);
+    //     },
 
-        Startup() {
-            // let colorWell;
-            const defaultColor = "#0000ff";
-            const colorWell = document.querySelector("#colorWell");
-            colorWell.value = defaultColor;
-            colorWell.addEventListener("input", UpdateFirst(), false);
-            colorWell.addEventListener("change", UpdateAll(), false);
-            colorWell.select();
-        },
-        UpdateFirst(event) {
-            const p = document.querySelector("p");
+    //     Startup() {
+    //         // let colorWell;
+    //         const defaultColor = "#0000ff";
+    //         const colorWell = document.querySelector("#colorWell");
+    //         colorWell.value = defaultColor;
+    //         colorWell.addEventListener("input", UpdateFirst(), false);
+    //         colorWell.addEventListener("change", UpdateAll(), false);
+    //         colorWell.select();
+    //     },
+    //     UpdateFirst(event) {
+    //         const p = document.querySelector("p");
 
-            if (p) {
-                p.style.color = event.target.value;
-            }
-        },
-        UpdateAll(event) {
-            document.querySelectorAll("p").forEach(function (p) {
-                p.style.color = event.target.value;
-            });
-        }
-    }
+    //         if (p) {
+    //             p.style.color = event.target.value;
+    //         }
+    //     },
+    //     UpdateAll(event) {
+    //         document.querySelectorAll("p").forEach(function (p) {
+    //             p.style.color = event.target.value;
+    //         });
+    //     }
+    // }, mounted() {
+    //     startup()
+    // }
 };
 </script>
 
@@ -164,13 +165,15 @@ export default {
     transform: scaleY(-1);
 }
 
-.sanne {
+svg {
     position: absolute;
     height: 7em;
     z-index: 13;
     left: 16em;
-    top: 22em;
+    top: 21em;
 }
+
+.name-arrow-tag
 
 .color-picker img {
     position: absolute;
