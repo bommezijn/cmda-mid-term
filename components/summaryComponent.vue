@@ -2,6 +2,7 @@
     <section>
         <div class="bubble">1,5</div>
         <div class="BackBubble">Ambities en dilemma&#39;s</div>
+        <h1> Hoi</h1>
     </section>
 </template>
 
