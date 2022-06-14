@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <CardSwitch /> -->
+    <CardSwitch />
     <QuoteComp />
   </div>
 </template>
