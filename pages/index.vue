@@ -1,5 +1,5 @@
 <template>
-  <Tutorial />
+  <summaryComponent />
 </template>
 
 <script>
