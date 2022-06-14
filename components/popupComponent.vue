@@ -16,10 +16,14 @@
         v-for="(subject, index) in subjects"
         :key="index"
         class="popup-item"
+        @click="showModal"
       >
         {{ subject }}
       </button>
     </div>
+    <generalModal :isVisible="visible">
+      <p>{{ content }}</p>
+    </generalModal>
   </section>
 </template>
 
@@ -27,6 +31,7 @@
 export default {
   data() {
     return {
+      visible: false,
       subjects: [
         'Projecten',
         'Stages',
@@ -35,10 +40,18 @@ export default {
         'PiE',
         'Gastcolleges',
       ],
+      content: '',
+      contents:
+        'Vanaf het tweede jaar wordt bij projecten vaak samengewerkt met externe projectpartners. In de meeste gevallen komen projectpartners uit het netwerk van de bij het vak betrokken docenten, maar het komt ook voor dat ze worden aangedragen door lectoraten, kenniscentra, bedrijven, en de coördinator externe samenwerking. Studenten komen naast projectopdrachten ook door twee stageperiodes in aanraking met het werkveld. Er is een korte oriënterende stage van 10 weken aan het eind van het fundament waarin de studenten de in het fundament verworven competenties in de praktijk toetsen. Studenten werken in principe aan alle competenties, maar de nadruk ligt op vier competenties. Eén competentie, multidisciplinair samenwerken, is verplicht, de andere drie kiest de student zelf. Voor de vier competenties formuleren studenten zelf de leerdoelen. Tijdens de lange stage werken studenten aan de beroepsidentiteit en het (door)ontwikkelen van CMD-competenties. Bij de lange stage zijn de competenties multidisciplinair samenwerken en één van de vakgebied competenties verplicht. In totaal werken studenten aan tenminste vijf competenties.',
     }
   },
   mounted() {},
-  methods: {},
+  methods: {
+    showModal() {
+      this.visible = !this.visible
+      this.content = this.contents
+    },
+  },
 }
 </script>
 
@@ -79,8 +92,7 @@ export default {
   background: var(--lavendel);
   border: 3px solid black;
   padding: 0.75rem 1rem;
-  min-width: 150px;
-  max-width: 80%;
+  min-width: min-content;
   font-size: 1rem;
   text-align: left;
 
