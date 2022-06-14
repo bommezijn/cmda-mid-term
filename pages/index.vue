@@ -1,5 +1,5 @@
 <template>
-  <Tutorial />
+  <section class="indexContainer"></section>
 </template>
 
 <script>
