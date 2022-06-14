@@ -38,6 +38,31 @@ export default {
     methods: {
         CardConColor() {
             this.isChecked = !this.isChecked
+        },
+        Onwindow() {
+            window.addEventListener("load", Startup(), false);
+        },
+
+        Startup() {
+            // let colorWell;
+            const defaultColor = "#0000ff";
+            const colorWell = document.querySelector("#colorWell");
+            colorWell.value = defaultColor;
+            colorWell.addEventListener("input", UpdateFirst(), false);
+            colorWell.addEventListener("change", UpdateAll(), false);
+            colorWell.select();
+        },
+        UpdateFirst(event) {
+            const p = document.querySelector("p");
+
+            if (p) {
+                p.style.color = event.target.value;
+            }
+        },
+        UpdateAll(event) {
+            document.querySelectorAll("p").forEach(function (p) {
+                p.style.color = event.target.value;
+            });
         }
     }
 };
