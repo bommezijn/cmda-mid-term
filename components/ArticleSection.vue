@@ -58,9 +58,6 @@ section {
 .alt > * {
   justify-self: start;
 }
-.multipleArticles {
-  background: var(--papaya);
-}
 
 @media screen and (min-width: 821px) {
   section {
