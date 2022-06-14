@@ -173,7 +173,9 @@ svg {
     top: 21em;
 }
 
-.name-arrow-tag
+.name-arrow-tag {
+    
+}
 
 .color-picker img {
     position: absolute;
