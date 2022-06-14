@@ -21,7 +21,7 @@
         {{ subject }}
       </button>
     </div>
-    <generalModal :isVisible="visible" @clicked="toggleModal">
+    <generalModal :isVisible="visible" @clicked="closeModal">
       <p>{{ content }}</p>
     </generalModal>
   </section>
@@ -50,7 +50,9 @@ export default {
     toggleModal() {
       this.visible = !this.visible
       this.content = this.contents
-      console.log(this.visible)
+    },
+    closeModal() {
+      this.visible = false
     },
   },
 }
