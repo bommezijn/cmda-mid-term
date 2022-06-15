@@ -84,8 +84,6 @@ export default {
   gap: 4rem;
   width: 100%;
   max-width: 1400px;
-
-  min-height: 100vh;
 }
 
 .popup-items {
