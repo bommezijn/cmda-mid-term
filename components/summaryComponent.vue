@@ -1,8 +1,7 @@
 <template>
     <section>
-        <div class="bubble">1,5</div>
-        <div class="BackBubble">Ambities en dilemma&#39;s</div>
-        <h1> Hoi</h1>
+        <div class="bubble">1.5</div>
+        <div class="backBubble">Ambities en dilemma&#39;s</div>
     </section>
 </template>
 
@@ -11,79 +10,112 @@ export default {}
 </script>
 
 <style>
+body{
+    margin: 0;
+}
+
+section{
+    height: 100vh;
+    margin: 0;
+    padding: 2rem 12.5rem;
+
+    background-color: var(--lavendel);
+}
+
 .bubble {
-    position: relative;
-    background: #f8f0d5;
-    color: #000000;
-    font-family: 'Open Sans';
-    font-size: 1em;
-    text-align: center;
-    width: 28em;
-    height: 18em;
-    border-radius: 10px;
-    padding: 5em;
-    border: #000000 solid 2px;
-    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+    z-index: 10;
+
+    width: fit-content;
+    padding: .5rem 2rem;
+
+    font-family: 'Open Sans';
+    font-size: 30pt;
+    font-weight: 600;
+    text-align: center;
+
+    background: var(--geel);
+    color: var(--black);
+    border: var(--black) solid .3rem;
+    border-radius: 5px;
 }
 
+/* Pijltje van textbubble */
 .bubble:after {
     content: '';
-    position: absolute;
     display: block;
-    width: 0;
+
+    position: absolute;
+    bottom: -30px;
+    left: 25%;
     z-index: 1;
-    border-style: solid;
-    border-color: #f8f0d5 transparent;
-    border-width: 66px 16px 0;
-    bottom: -61px;
-    left: 19%;
+
+    width: 0;
     margin-left: -16px;
+
+    border-style: solid;
+    border-color: var(--geel) transparent;
+    border-width: 31px 16px 0;
+    transform: skewX(-25deg);
 }
 
+/* Border om pijltje */
 .bubble:before {
     content: '';
+    display: block;
+
     position: absolute;
-    width: 0;
+    bottom: -38px;
+    left: 24.5%;
     z-index: 0;
-    border-style: solid;
-    border-color: #000000 transparent;
-    border-width: 64px 18px 0;
-    bottom: -64px;
-    left: 19%;
-    margin-left: -18px;
-    display: block;
-}
-
-.BackBubble {
-    position: relative;
-    background: #000000;
-    font-family: Arial;
-    font-size: 1em;
-    text-align: center;
-    width: 20em;
-    height: 16em;
-    border-radius: 10px;
-    padding: 5em;
-    top: -25em;
-    left: 11em;
-    transform: scaleX(-1);
-}
-
-.BackBubble:after {
-    content: '';
-    position: absolute;
-    display: block;
+    
     width: 0;
-    z-index: 1;
+    margin-left: -19px;
+
     border-style: solid;
     border-color: #000000 transparent;
-    border-width: 61px 16px 0;
-    bottom: -61px;
-    left: 19%;
+    border-width: 33px 18px 0;
+    transform: skewX(-25deg);
+}
+
+.backBubble {
+    position: relative;
+    top: -1.7rem;
+    left: 4rem;
+
+    width: fit-content;
+    padding: 1rem 2rem;
+
+    font-family: 'Open Sans';
+    font-size: 30pt;
+    font-weight: 600;
+    text-align: center;
+
+    background: var(--black);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.backBubble:after {
+    content: '';
+    display: block;
+    
+    position: absolute;
+    bottom: -30px;
+    left: 90%;
+    z-index: 1;
+
+    width: 0;
     margin-left: -16px;
+
+    border-style: solid;
+    border-color: var(--black) transparent;
+    border-width: 31px 16px 0;
+    transform: skewX(25deg);
 }
 
 </style>
