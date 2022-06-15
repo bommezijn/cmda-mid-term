@@ -7,7 +7,8 @@
   >
     <div class="content-wrapper" :class="{ visible: isVisible }">
       <div class="heading">
-        <button @click.self="hideModal">X</button>
+        <h2>{{ title }}</h2>
+        <button @click.self="hideModal">Sluiten</button>
       </div>
       <div class="content">
         <slot></slot>
@@ -20,6 +21,7 @@
 export default {
   props: {
     isVisible: Boolean,
+    title: String,
   },
   data() {
     return {}
@@ -60,20 +62,50 @@ export default {
   pointer-events: all;
 }
 
+.heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+button {
+  all: unset;
+  position: relative;
+  cursor: pointer;
+}
+
+button::before,
+button::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: black;
+
+  position: absolute;
+}
+
+button::before {
+  top: 45%;
+  left: -50%;
+  transform: rotate(45deg);
+}
+
+button::after {
+  top: 45%;
+  left: -50%;
+  transform: rotate(-45deg);
+}
 .content-wrapper {
   background-color: white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
 
-button {
-  margin: 2rem;
-  margin-bottom: 1rem;
+  padding: 2rem;
 }
 .content {
-  padding: 2rem;
   width: 80vw;
 }
 

@@ -16,12 +16,12 @@
         v-for="(subject, index) in subjects"
         :key="index"
         class="popup-item"
-        @click="toggleModal"
+        @click="toggleModal($event, index)"
       >
         {{ subject }}
       </button>
     </div>
-    <generalModal :isVisible="visible" @clicked="closeModal">
+    <generalModal :isVisible="visible" @clicked="closeModal" :title="title">
       <p>{{ content }}</p>
     </generalModal>
   </section>
@@ -41,15 +41,18 @@ export default {
         'Gastcolleges',
       ],
       content: '',
+      title: '',
       contents:
         'Vanaf het tweede jaar wordt bij projecten vaak samengewerkt met externe projectpartners. In de meeste gevallen komen projectpartners uit het netwerk van de bij het vak betrokken docenten, maar het komt ook voor dat ze worden aangedragen door lectoraten, kenniscentra, bedrijven, en de coördinator externe samenwerking. Studenten komen naast projectopdrachten ook door twee stageperiodes in aanraking met het werkveld. Er is een korte oriënterende stage van 10 weken aan het eind van het fundament waarin de studenten de in het fundament verworven competenties in de praktijk toetsen. Studenten werken in principe aan alle competenties, maar de nadruk ligt op vier competenties. Eén competentie, multidisciplinair samenwerken, is verplicht, de andere drie kiest de student zelf. Voor de vier competenties formuleren studenten zelf de leerdoelen. Tijdens de lange stage werken studenten aan de beroepsidentiteit en het (door)ontwikkelen van CMD-competenties. Bij de lange stage zijn de competenties multidisciplinair samenwerken en één van de vakgebied competenties verplicht. In totaal werken studenten aan tenminste vijf competenties.',
     }
   },
   mounted() {},
   methods: {
-    toggleModal() {
+    toggleModal(e, index) {
+      console.log(e, index)
       this.visible = !this.visible
       this.content = this.contents
+      this.title = this.subjects[index]
     },
     closeModal() {
       this.visible = false
@@ -96,6 +99,7 @@ export default {
   border: 3px solid black;
   padding: 0.75rem 1rem;
   min-width: min-content;
+  width: 80%;
   font-size: 1rem;
   text-align: left;
 
