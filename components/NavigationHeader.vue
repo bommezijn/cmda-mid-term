@@ -36,7 +36,6 @@ export default {
             { text: '1.2', url: '/SomethingX#1.2' },
             { text: '1.3', url: '/SomethingX#1.3' },
           ],
-          // might break because of subheading
         },
         {
           text: 'Onderwijsleeromgeving',
@@ -124,7 +123,6 @@ li:hover {
   background: var(--black);
   color: var(--white);
   cursor: pointer;
-  /* transition-duration: 400ms; */
 }
 
 ul li ul {
@@ -133,7 +131,6 @@ ul li ul {
   opacity: 0;
   min-width: 100%;
   position: absolute;
-  /* transition: all 0.5s ease; */
   left: 0;
   display: none;
 }
@@ -173,25 +170,4 @@ ul li ul li {
     font-size: 0.8em;
   }
 }
-
-/* @media screen and (max-width: 1024px) { */
-/* @media screen and (max-width: 1100px) {
-  .navbar {
-    background-color: green;
-    display: flex;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: column;
-  }
-} */
 </style>
-
-<!-- https://www.w3.org/WAI/tutorials/menus/flyout/ -->
-
-<!-- 
-  accessibility, waar laat ik de verschillende modi zien?
-  en tekst aanpassing
-  wanneer het scherm kleiner is, dan wil ik een icoon voor linkjes ipv tekst. en dan openen
- -->
