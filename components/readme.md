@@ -81,7 +81,7 @@
 ```
     <ArticleSection
       pos="imgLeft"
-      :content="`dfg`"
+      content="`dfg`"
     />
 ```
 
@@ -90,7 +90,7 @@
 ```
     <ArticleSection
       pos="imgRight"
-      :content="`abc`"
+      content="`abc`"
     />
 ```
 
