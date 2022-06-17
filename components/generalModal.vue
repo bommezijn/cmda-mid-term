@@ -53,7 +53,7 @@ export default {
   opacity: 0;
   transition: 0.2s ease-out;
   pointer-events: none;
-
+  z-index: 20;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
