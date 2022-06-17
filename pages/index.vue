@@ -2,6 +2,7 @@
   <div>
     <CardSwitch />
     <QuoteComp />
+    <TimeLineComp></TimeLineComp>
   </div>
 </template>
 

@@ -3,15 +3,15 @@
 - Content uit json halen  -->
 <template>
   <section class="CardSwitch">
-    <h1>1.2 Competenties</h1>
+    <h2>1.2 Competenties</h2>
     <div class="CardCon" :class="[isChecked ? 'bgBlack' : 'bgYellow']">
       <div>
-        <h4 style="margin-bottom:0;">Beroeps specifieke kerncompetentie</h4>
+        <h5 style="margin-bottom:0; font-size: 1.2em;">Beroeps specifieke kerncompetentie</h5>
         <p>Hebben betrekking op inhoudelijke geschiktheid in de beroepspraktijk en de situaties die zich daar voordoen
         </p>
-        <h2>Principes</h2>
-        <h3 v-if="isChecked">Nieuw</h3>
-        <h3 v-else>Oud</h3>
+        <h3>Principes</h3>
+        <h4 v-if="isChecked">Nieuw</h4>
+        <h4 v-else>Oud</h4>
         <ul v-if="isChecked">
           <li>Multidisciplinair samenwerken </li>
           <li>Manifesteren en presenteren </li>
@@ -54,7 +54,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 
 .CardCon {
@@ -66,7 +66,7 @@ export default {
   margin-top: 3em;
 }
 
-.CardSwitch h1 {
+.CardSwitch h2 {
   margin-left: 1em;
   font-family: 'Open Sans';
   font-weight: 700;
@@ -108,21 +108,23 @@ export default {
   padding: 1em;
 }
 
-.CardCon h3 {
+.CardCon h4 {
   font-weight: 700;
   font-size: 2rem;
   margin: 0.2em 0 0.2em 0;
 }
 
-.Cardcon div h4 {
+.Cardcon div h5 {
   font-size: 1rem;
   font-weight: 700;
+  font-size: 1em;
 }
 
-.CardCon h2 {
+.CardCon h3 {
   font-weight: 400;
   margin: 0;
   margin-top: 0.5em;
+  font-size: 1em;
 }
 
 .CardCon ul {

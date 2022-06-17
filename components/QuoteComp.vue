@@ -1,7 +1,7 @@
 <template>
     <section id="speech">
         <div id="content">
-            <h1>1.2 Competenties</h1>
+            <h2>1.2 Competenties</h2>
             <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus hendrerit
                 erat,
                 non tempor quam.
@@ -142,7 +142,7 @@ template {
     width: 40em;
 }
 
-h1 {
+h2 {
     margin-top: 5em;
     margin-left: 1em;
     font-family: 'Open Sans';
@@ -160,6 +160,7 @@ h1 {
 .speech-bubble {
     margin: 0 auto;
     margin-top: 16em;
+    margin-bottom: -10em;
 }
 
 .bubble {
