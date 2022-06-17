@@ -6,52 +6,59 @@
     <h2>1.2 Competenties</h2>
     <div class="CardCon" :class="[isChecked ? 'bgBlack' : 'bgYellow']">
       <div>
-        <h5 style="margin-bottom:0; font-size: 1.2em;">Beroeps specifieke kerncompetentie</h5>
-        <p>Hebben betrekking op inhoudelijke geschiktheid in de beroepspraktijk en de situaties die zich daar voordoen
+        <h5 style="margin-bottom: 0; font-size: 1.2em">
+          Beroeps specifieke kerncompetentie
+        </h5>
+        <p>
+          Hebben betrekking op inhoudelijke geschiktheid in de beroepspraktijk
+          en de situaties die zich daar voordoen
         </p>
         <h3>Principes</h3>
         <h4 v-if="isChecked">Nieuw</h4>
         <h4 v-else>Oud</h4>
         <ul v-if="isChecked">
-          <li>Multidisciplinair samenwerken </li>
-          <li>Manifesteren en presenteren </li>
+          <li>Multidisciplinair samenwerken</li>
+          <li>Manifesteren en presenteren</li>
           <li>Initiëren organiseren en regisseren</li>
           <li>Ontwikkelen en reflecteren</li>
           <li>Onderzoeken</li>
         </ul>
         <ul v-else>
-          <li>Multidisciplinair samenwerken </li>
-          <li>Manifesteren en presenteren </li>
+          <li>Multidisciplinair samenwerken</li>
+          <li>Manifesteren en presenteren</li>
           <li>Initiëren organiseren en regisseren</li>
           <li>Ontwikkelen en reflecteren</li>
           <li>Onderzoeken</li>
         </ul>
         <label class="switch">
-          <input type="checkbox" @click="CardConColor">
-          <span class="slider" :class="[isChecked ? 'CBlack' : 'Cwhite']"></span>
+          <input type="checkbox" @click="CardConColor" />
+          <span
+            class="slider"
+            :class="[isChecked ? 'CBlack' : 'Cwhite']"
+          ></span>
         </label>
       </div>
       <img
         src="https://images.prismic.io/cmd-midterm/663bf539-c574-417c-97e6-7b35177b4144_CardCon-Border.png?auto=compress,format"
-        class="cardBorder" />
+        class="cardBorder"
+      />
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'CardSwitch',
   data() {
     return {
-      isChecked: false
+      isChecked: false,
     }
   },
   methods: {
     CardConColor() {
       this.isChecked = !this.isChecked
-    }
-  }
-};
+    },
+  },
+}
 </script>
 
 <style scoped>
@@ -81,18 +88,18 @@ export default {
 }
 
 .bgYellow {
-  background-color: #FFF021;
+  background-color: #fff021;
   border: 2px solid #000000;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .bgBlack {
   background-color: #000000;
   color: #ffffff;
   border: 2px solid #000000;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .CBlack {
@@ -138,7 +145,7 @@ export default {
 }
 
 .CardCon ul li:before {
-  content: "";
+  content: '';
   float: left;
   width: 0;
   height: 0;
@@ -147,8 +154,8 @@ export default {
   border-left-color: black;
 }
 
-.CBlack~.CardCon ul li:before {
-  border-left-color: #FFF021;
+.CBlack ~ .CardCon ul li:before {
+  border-left-color: #fff021;
 }
 
 .switch {
@@ -172,14 +179,14 @@ export default {
   right: 0;
   bottom: 0;
   background-color: rgb(0, 0, 0);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   border-radius: 3px;
 }
 
 .slider:before {
   position: absolute;
-  content: "Nieuw";
+  content: 'Nieuw';
   font-size: 0.8em;
   text-align: center;
   display: flex;
@@ -188,25 +195,25 @@ export default {
   height: 100%;
   width: 60%;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   border-radius: 2.5px;
 }
 
-input:checked+.slider {
+input:checked + .slider {
   background-color: #ffffff;
 }
 
-input:checked+.slider:before {
-  background-color: #FFF021;
+input:checked + .slider:before {
+  background-color: #fff021;
 }
 
-input:checked+.CardCon {
+input:checked + .CardCon {
   background-color: #000000;
 }
 
-input:checked+.slider:before {
-  content: "Oud";
+input:checked + .slider:before {
+  content: 'Oud';
   -webkit-transform: translateX(68%);
   -ms-transform: translateX(68%);
   transform: translateX(68%);
