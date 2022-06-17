@@ -8,6 +8,8 @@
 }
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding: 5em;
 }
 body {
   font-size: 1.1em;
