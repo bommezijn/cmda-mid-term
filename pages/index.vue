@@ -1,15 +1,13 @@
 <template>
   <div>
-    <CardSwitch />
-    <QuoteComp />
-    <TimeLineComp></TimeLineComp>
+    <IndexComp></IndexComp>
   </div>
 </template>
 
 <script>
-import QuoteComp from '~/components/QuoteComp.vue';
+import IndexComp from '~/components/indexComp.vue';
 export default {
   name: "IndexPage",
-  components: { QuoteComp }
+  components: { IndexComp }
 }
 </script>
