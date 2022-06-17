@@ -31,6 +31,10 @@ p {
   max-width: 65ch;
 }
 
+.indexContainer {
+  margin-top: 75px;
+}
+
 /* Do we want a single container max width? or also large screen */
 /* .indexContainer {
   max-width: 1200px;
