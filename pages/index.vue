@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <PopupComponent />
-  </div>
+  <summaryComponent />
 </template>
 
 <script>
