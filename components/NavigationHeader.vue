@@ -1,15 +1,25 @@
 <template>
-  <nav class="navbar">
+  <nav class="navbar" aria-label="main">
     <nuxt-link to="/" class="logo">
       <span>CMD Mid-Term</span>
     </nuxt-link>
     <ul class="navLinks">
       <li v-for="(link, index) in links" :key="index" class="navItem">
-        <nuxt-link :to="link.url">
+        <nuxt-link :to="link.url" aria-expanded="false">
           {{ link.text }}
         </nuxt-link>
+        <ul>
+          <li
+            v-for="(sublink, subindex) in link.subheading"
+            :key="subindex"
+            class="hasSubmenu"
+          >
+            <a :href="sublink.url">{{ sublink.text }}</a>
+          </li>
+        </ul>
       </li>
     </ul>
+    {{ cl }}
   </nav>
 </template>
 
@@ -18,11 +28,45 @@ export default {
   data() {
     return {
       links: [
-        { text: 'Beoogde leerresultaten', url: '/SomethingX' },
-        { text: 'Onderwijsleeromgeving', url: '/somethingu' },
-        { text: 'Toetsing', url: '/somethingh' },
-        { text: 'Gerealiseerde toetsresultaten', url: '/somethingh' },
+        {
+          text: 'Beoogde leerresultaten',
+          url: '/SomethingX',
+          subheading: [
+            { text: '1.1', url: '/SomethingX#1.1' },
+            { text: '1.2', url: '/SomethingX#1.2' },
+            { text: '1.3', url: '/SomethingX#1.3' },
+          ],
+          // might break because of subheading
+        },
+        {
+          text: 'Onderwijsleeromgeving',
+          url: '/somethingu',
+          subheading: [
+            { text: '1.1', url: '#1.1' },
+            { text: '1.2', url: '#1.2' },
+            { text: '1.3', url: '#1.3' },
+          ],
+        },
+        {
+          text: 'Toetsing',
+          url: '/somethingh',
+          subheading: [
+            { text: '1.1', url: '#1.1' },
+            { text: '1.2', url: '#1.2' },
+            { text: '1.3', url: '#1.3' },
+          ],
+        },
+        {
+          text: 'Gerealiseerde toetsresultaten',
+          url: '/somethingh',
+          subheading: [
+            { text: '1.1', url: '#1.1' },
+            { text: '1.2', url: '#1.2' },
+            { text: '1.3', url: '#1.3' },
+          ],
+        },
       ],
+      cl: console.log(this),
     }
   },
 }
@@ -31,55 +75,124 @@ export default {
 <style scoped>
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   flex-grow: 1;
   padding: 1.5em 2em;
 
   background-color: #fff021;
   background-color: var(--geel);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 .logo {
   font-weight: bold;
   text-decoration: none;
+  color: #000000;
   color: var(--black);
 }
 .navLinks {
   display: flex;
   justify-content: space-between;
-  margin: 0;
   list-style-type: none;
+  margin: 0;
 }
 
 .navLinks > li {
   padding: 0 1em;
-}
-
-.navItem {
-  border: 1px solid transparent;
 }
 .navItem a {
   color: inherit;
   text-decoration: none;
 }
 
-.navItem:hover,
-.navItem:active {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.1em;
+li {
+  display: block;
+  float: left;
+  padding: 0.8rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 200ms;
+}
+
+li a {
+  color: var(--white);
+}
+
+li:hover {
+  background: var(--black);
+  color: var(--white);
+  cursor: pointer;
+  /* transition-duration: 400ms; */
+}
+
+ul li ul {
+  background: var(--black);
+  visibility: hidden;
+  opacity: 0;
+  min-width: 100%;
+  position: absolute;
+  /* transition: all 0.5s ease; */
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+.hasSubmenu a {
+  display: inline-block;
+  width: 100%;
+}
+.hasSubmenu:hover {
+  background-color: var(--geel);
+  color: var(--black);
 }
 
 .nuxt-link-active {
-  /* text-shadow: 0 0.015em #101010, 0 -0.015em #101010, 0.01em 0 #101010,
-    -0.01em 0 #101010; */
   font-weight: bold;
 }
+
+@media screen and (max-width: 820px) {
+  a {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .navbar > * {
+    font-size: 0.8em;
+  }
+}
+
+/* @media screen and (max-width: 1024px) { */
+/* @media screen and (max-width: 1100px) {
+  .navbar {
+    background-color: green;
+    display: flex;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+} */
 </style>
+
+<!-- https://www.w3.org/WAI/tutorials/menus/flyout/ -->
 
 <!-- 
   accessibility, waar laat ik de verschillende modi zien?
   en tekst aanpassing
   wanneer het scherm kleiner is, dan wil ik een icoon voor linkjes ipv tekst. en dan openen
-
  -->
