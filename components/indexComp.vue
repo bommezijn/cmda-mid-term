@@ -165,7 +165,14 @@ h2 {
 .yellow-container img {
     height: 20em;
     width: 20em;
-    margin-left: 10em;
+    margin-left: 15em;
+}
+
+
+@media only screen and (max-device-width: 1100px) {
+    .yellow-container img {
+        margin-left: 5em;
+    }
 }
 
 .links {
