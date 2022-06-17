@@ -66,7 +66,6 @@ export default {
           ],
         },
       ],
-      cl: console.log(this),
     }
   },
 }
