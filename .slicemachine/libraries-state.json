@@ -1,6 +1,82 @@
 {
   "slices": {
     "components": {
+      "article_slice": {
+        "library": "slices",
+        "id": "article_slice",
+        "name": "ArticleSlice",
+        "description": "ArticleSlice",
+        "model": {
+          "id": "article_slice",
+          "type": "SharedSlice",
+          "name": "ArticleSlice",
+          "description": "ArticleSlice",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ArticleSlice",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your product"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "article_slice",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Facilitate holistic relationships",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Sunt Lorem consectetur officia ut amet ut esse et occaecat voluptate Lorem enim nisi pariatur.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/ArticleSlice/default/preview.png",
+            "width": 800,
+            "height": 271
+          }
+        }
+      },
       "title_element": {
         "library": "slices",
         "id": "title_element",

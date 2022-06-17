@@ -1,0 +1,24 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "article_slice",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Facilitate holistic relationships",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Sunt Lorem consectetur officia ut amet ut esse et occaecat voluptate Lorem enim nisi pariatur.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]
