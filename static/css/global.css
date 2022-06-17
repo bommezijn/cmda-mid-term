@@ -12,6 +12,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  /* Specifically for the navbar and scrolling */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding: 5em;
 }
 
 body {
@@ -20,3 +25,14 @@ body {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   margin: 0;
 }
+
+/* Max width for paragraph */
+p {
+  max-width: 65ch;
+}
+
+/* Do we want a single container max width? or also large screen */
+/* .indexContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+} */
