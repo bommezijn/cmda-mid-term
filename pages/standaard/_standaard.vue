@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="indexContainer">
     <PrismicRichText :field="document.data.title" />
     <slice-zone :components="components" :slices="document.data.slices" />
   </section>

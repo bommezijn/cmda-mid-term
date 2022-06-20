@@ -31,17 +31,18 @@ p {
 }
 
 .indexContainer {
-  margin-top: 75px;
+  /* margin-top: 75px; */
   max-width: 1200px;
-  margin: auto 0;
+  margin: 0 auto;
+  margin-top: 200px;
 }
 
 @media only screen and (max-device-width: 820px) {
+  .indexContainer {
+    margin-top: 200px;
+  }
 }
 
-.indexContainer {
-  margin-top: 200px;
-}
 /* Do we want a single container max width? or also large screen */
 /* .indexContainer {
   max-width: 1200px;
