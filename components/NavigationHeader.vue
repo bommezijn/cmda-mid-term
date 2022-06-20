@@ -9,7 +9,11 @@
           {{ link.text }}
         </nuxt-link>
         <ul>
-          <li v-for="(sublink, subindex) in link.subheading" :key="subindex" class="hasSubmenu">
+          <li
+            v-for="(sublink, subindex) in link.subheading"
+            :key="subindex"
+            class="hasSubmenu"
+          >
             <a :href="sublink.url">{{ sublink.text }}</a>
           </li>
         </ul>
@@ -26,38 +30,18 @@ export default {
         {
           text: 'Beoogde leerresultaten',
           url: '/SomethingX',
-          subheading: [
-            { text: '1.1', url: '/SomethingX#1.1' },
-            { text: '1.2', url: '/SomethingX#1.2' },
-            { text: '1.3', url: '/SomethingX#1.3' },
-          ],
         },
         {
           text: 'Onderwijsleeromgeving',
           url: '/somethingu',
-          subheading: [
-            { text: '1.1', url: '#1.1' },
-            { text: '1.2', url: '#1.2' },
-            { text: '1.3', url: '#1.3' },
-          ],
         },
         {
           text: 'Toetsing',
           url: '/somethingh',
-          subheading: [
-            { text: '1.1', url: '#1.1' },
-            { text: '1.2', url: '#1.2' },
-            { text: '1.3', url: '#1.3' },
-          ],
         },
         {
           text: 'Gerealiseerde toetsresultaten',
           url: '/somethingh',
-          subheading: [
-            { text: '1.1', url: '#1.1' },
-            { text: '1.2', url: '#1.2' },
-            { text: '1.3', url: '#1.3' },
-          ],
         },
       ],
     }
@@ -97,7 +81,7 @@ export default {
   width: 60vw;
 }
 
-.navLinks>li {
+.navLinks > li {
   padding: 0 1em;
 }
 
@@ -125,7 +109,8 @@ li:hover {
   cursor: pointer;
 }
 
-ul li ul {
+/* submenu */
+/* ul li ul {
   background: var(--black);
   visibility: hidden;
   opacity: 0;
@@ -155,7 +140,8 @@ ul li ul li {
 .hasSubmenu:hover {
   background-color: var(--geel);
   color: var(--black);
-}
+} */
+/* end submenu */
 
 .nuxt-link-active {
   font-weight: bold;
@@ -168,7 +154,7 @@ ul li ul li {
 }
 
 @media screen and (max-width: 1100px) {
-  .navbar>* {
+  .navbar > * {
     font-size: 0.8em;
   }
 }
@@ -188,7 +174,7 @@ ul li ul li {
     width: 100vw;
   }
 
-  .navLinks>li {
+  .navLinks > li {
     padding: 0em;
   }
 }
