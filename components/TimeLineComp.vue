@@ -72,7 +72,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap'); */
 
 @media only screen and (max-device-width: 820px) {
   section {
@@ -87,7 +87,7 @@ export default {
 
 .main-time-line-block {
   font-size: 1em;
-  font-family: 'Open Sans';
+  /* font-family: 'Open Sans'; */
   padding: 1em;
   background-color: #fff021;
   border: solid black 3px;
