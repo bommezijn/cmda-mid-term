@@ -178,10 +178,10 @@ h2 {
   /* font-family: 'Open Sans'; */
   font-size: 1em;
   text-align: center;
-  width: 28em;
-  height: 18em;
+  /* width: 28em; */
+  /* height: 18em; */
   border-radius: 10px;
-  padding: 5em;
+  padding: 6em;
   border: #000000 solid 2px;
   z-index: 10;
   display: flex;
@@ -282,7 +282,7 @@ svg {
   position: absolute;
   z-index: 13;
   right: 14em;
-  bottom: 0.2em;
+  bottom: 2.3em;
 }
 
 .color-picker img {
