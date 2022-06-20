@@ -8,7 +8,7 @@
         <nuxt-link :to="link.url" aria-expanded="false">
           {{ link.text }}
         </nuxt-link>
-        <ul>
+        <!-- <ul>
           <li
             v-for="(sublink, subindex) in link.subheading"
             :key="subindex"
@@ -16,7 +16,7 @@
           >
             <a :href="sublink.url">{{ sublink.text }}</a>
           </li>
-        </ul>
+        </ul> -->
       </li>
     </ul>
   </nav>
@@ -30,38 +30,38 @@ export default {
         {
           text: 'Beoogde leerresultaten',
           url: '/SomethingX',
-          subheading: [
-            { text: '1.1', url: '/SomethingX#1.1' },
-            { text: '1.2', url: '/SomethingX#1.2' },
-            { text: '1.3', url: '/SomethingX#1.3' },
-          ],
+          // subheading: [
+          //   { text: '1.1', url: '/SomethingX#1.1' },
+          //   { text: '1.2', url: '/SomethingX#1.2' },
+          //   { text: '1.3', url: '/SomethingX#1.3' },
+          // ],
         },
         {
           text: 'Onderwijsleeromgeving',
           url: '/somethingu',
-          subheading: [
-            { text: '1.1', url: '#1.1' },
-            { text: '1.2', url: '#1.2' },
-            { text: '1.3', url: '#1.3' },
-          ],
+          // subheading: [
+          //   { text: '1.1', url: '#1.1' },
+          //   { text: '1.2', url: '#1.2' },
+          //   { text: '1.3', url: '#1.3' },
+          // ],
         },
         {
           text: 'Toetsing',
           url: '/somethingh',
-          subheading: [
-            { text: '1.1', url: '#1.1' },
-            { text: '1.2', url: '#1.2' },
-            { text: '1.3', url: '#1.3' },
-          ],
+          // subheading: [
+          //   { text: '1.1', url: '#1.1' },
+          //   { text: '1.2', url: '#1.2' },
+          //   { text: '1.3', url: '#1.3' },
+          // ],
         },
         {
           text: 'Gerealiseerde toetsresultaten',
           url: '/somethingh',
-          subheading: [
-            { text: '1.1', url: '#1.1' },
-            { text: '1.2', url: '#1.2' },
-            { text: '1.3', url: '#1.3' },
-          ],
+          // subheading: [
+          //   { text: '1.1', url: '#1.1' },
+          //   { text: '1.2', url: '#1.2' },
+          //   { text: '1.3', url: '#1.3' },
+          // ],
         },
       ],
     }
@@ -124,7 +124,8 @@ li:hover {
   cursor: pointer;
 }
 
-ul li ul {
+/* Submenu */
+/* ul li ul {
   background: var(--black);
   visibility: hidden;
   opacity: 0;
@@ -153,7 +154,8 @@ ul li ul li {
 .hasSubmenu:hover {
   background-color: var(--geel);
   color: var(--black);
-}
+} */
+/* end submenu */
 
 .nuxt-link-active {
   font-weight: bold;
