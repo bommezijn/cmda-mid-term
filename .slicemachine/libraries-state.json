@@ -71,36 +71,44 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/ArticleSlice/default/preview.png",
+            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/ArticleSlice/default/preview.png",
             "width": 800,
             "height": 271
           }
         }
       },
-      "title_element": {
+      "competencies_card": {
         "library": "slices",
-        "id": "title_element",
-        "name": "TitleElement",
-        "description": "TitleElement",
+        "id": "competencies_card",
+        "name": "CompetenciesCard",
+        "description": "CompetenciesCard",
         "model": {
-          "id": "title_element",
+          "id": "competencies_card",
           "type": "SharedSlice",
-          "name": "TitleElement",
-          "description": "TitleElement",
+          "name": "CompetenciesCard",
+          "description": "CompetenciesCard",
           "variations": [
             {
               "id": "default",
               "name": "Default",
               "docURL": "...",
               "version": "sktwi1xtmkfgx8626",
-              "description": "TitleElement",
+              "description": "CompetenciesCard",
               "primary": {
+                "componentIndex": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Component Index",
+                    "placeholder": ""
+                  }
+                },
                 "title": {
                   "type": "StructuredText",
                   "config": {
-                    "single": "heading1",
                     "label": "Title",
-                    "placeholder": "This is where it all begins..."
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
                   }
                 },
                 "description": {
@@ -110,9 +118,42 @@
                     "label": "Description",
                     "placeholder": "A nice description of your product"
                   }
+                },
+                "compTitle": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Comp Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "compDescription": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Comp Description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
                 }
               },
-              "items": {},
+              "items": {
+                "compOld": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Comp Old",
+                    "placeholder": ""
+                  }
+                },
+                "compNew": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Comp New",
+                    "placeholder": ""
+                  }
+                }
+              },
               "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
           ]
@@ -121,20 +162,56 @@
           "default": {
             "variation": "default",
             "name": "Default",
-            "slice_type": "title_element",
-            "items": [],
+            "slice_type": "competencies_card",
+            "items": [
+              {
+                "compOld": "repurpose granular channels",
+                "compNew": "brand viral communities"
+              },
+              {
+                "compOld": "aggregate one-to-one communities",
+                "compNew": "syndicate efficient markets"
+              },
+              {
+                "compOld": "enhance end-to-end architectures",
+                "compNew": "seize 24/365 channels"
+              },
+              {
+                "compOld": "whiteboard cross-platform markets",
+                "compNew": "grow back-end applications"
+              },
+              {
+                "compOld": "matrix rich e-services",
+                "compNew": "envisioneer cutting-edge channels"
+              }
+            ],
             "primary": {
+              "componentIndex": "implement sexy synergies",
               "title": [
                 {
-                  "type": "heading1",
-                  "text": "Envisioneer synergistic e-markets",
+                  "type": "heading2",
+                  "text": "Maximize scalable technologies",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Reprehenderit exercitation ullamco magna laborum est do ut sit nulla occaecat. Proident nostrud ut cupidatat eu aliquip excepteur exercitation ullamco tempor id tempor voluptate.",
+                  "text": "Commodo nostrud in consequat cillum aute minim aute est ad deserunt laboris.",
+                  "spans": []
+                }
+              ],
+              "compTitle": [
+                {
+                  "type": "paragraph",
+                  "text": "Cillum pariatur dolore labore deserunt. Qui esse pariatur velit ut excepteur tempor officia.",
+                  "spans": []
+                }
+              ],
+              "compDescription": [
+                {
+                  "type": "paragraph",
+                  "text": "Ex officia dolor incididunt deserunt pariatur dolor cupidatat exercitation velit labore do cupidatat duis.",
                   "spans": []
                 }
               ]
@@ -145,13 +222,7 @@
           "fileName": "index",
           "extension": "vue"
         },
-        "screenshotPaths": {
-          "default": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/TitleElement/default/preview.png",
-            "width": 800,
-            "height": 259
-          }
-        }
+        "screenshotPaths": {}
       },
       "popup_component": {
         "library": "slices",
@@ -302,6 +373,82 @@
             "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/PopupComponent/default/preview.png",
             "width": 800,
             "height": 214
+          }
+        }
+      },
+      "title_element": {
+        "library": "slices",
+        "id": "title_element",
+        "name": "TitleElement",
+        "description": "TitleElement",
+        "model": {
+          "id": "title_element",
+          "type": "SharedSlice",
+          "name": "TitleElement",
+          "description": "TitleElement",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "TitleElement",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your product"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "title_element",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Envisioneer synergistic e-markets",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Reprehenderit exercitation ullamco magna laborum est do ut sit nulla occaecat. Proident nostrud ut cupidatat eu aliquip excepteur exercitation ullamco tempor id tempor voluptate.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/TitleElement/default/preview.png",
+            "width": 800,
+            "height": 259
           }
         }
       }

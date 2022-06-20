@@ -12,6 +12,19 @@
   "slices": {
     "TitleElement": {},
     "ArticleSlice": {},
-    "PopupComponent": {}
+    "PopupComponent": {},
+    "CompetenciesCard": {
+      "default": {
+        "items": {},
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
   }
 }
