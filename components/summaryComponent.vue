@@ -88,7 +88,7 @@ section {
   width: fit-content;
   padding: 0.5rem 2rem;
 
-  font-family: 'Open Sans';
+  /* font-family: 'Open Sans'; */
   font-size: 30pt;
   font-weight: 600;
   text-align: center;
@@ -145,7 +145,7 @@ section {
   width: fit-content;
   padding: 1rem 2rem;
 
-  font-family: 'Open Sans';
+  /* font-family: 'Open Sans'; */
   font-size: 30pt;
   font-weight: 600;
   text-align: center;
