@@ -1,6 +1,158 @@
 {
   "slices": {
     "components": {
+      "popup_component": {
+        "library": "slices",
+        "id": "popup_component",
+        "name": "PopupComponent",
+        "description": "PopupComponent",
+        "model": {
+          "id": "popup_component",
+          "type": "SharedSlice",
+          "name": "PopupComponent",
+          "description": "PopupComponent",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "PopupComponent",
+              "primary": {
+                "componentIndex": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Component Index",
+                    "placeholder": ""
+                  }
+                },
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your product"
+                  }
+                }
+              },
+              "items": {
+                "popupTitle": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Popup Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "popupContent": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Popup Content",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "popup_component",
+            "items": [
+              {
+                "popupTitle": [
+                  {
+                    "type": "paragraph",
+                    "text": "Tempor sint in pariatur et nulla ea. Ullamco quis excepteur do ipsum veniam nostrud enim cupidatat eiusmod fugiat ipsum sunt pariatur eu.",
+                    "spans": []
+                  }
+                ],
+                "popupContent": [
+                  {
+                    "type": "paragraph",
+                    "text": "Eiusmod aliqua est laboris cupidatat quis ad nostrud officia sunt velit velit exercitation duis.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "popupTitle": [
+                  {
+                    "type": "paragraph",
+                    "text": "Laboris nulla cupidatat eiusmod amet cupidatat cillum enim.",
+                    "spans": []
+                  }
+                ],
+                "popupContent": [
+                  {
+                    "type": "paragraph",
+                    "text": "Esse eiusmod minim sit Lorem aute reprehenderit mollit mollit. Proident magna eu Lorem labore mollit.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "popupTitle": [
+                  {
+                    "type": "paragraph",
+                    "text": "Id deserunt labore sunt sint.",
+                    "spans": []
+                  }
+                ],
+                "popupContent": [
+                  {
+                    "type": "paragraph",
+                    "text": "Do ut labore duis eiusmod. Tempor cupidatat ea eiusmod anim commodo cillum eu cupidatat officia pariatur nostrud pariatur. Incididunt ad aute sint cillum aute tempor esse quis voluptate laborum.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {
+              "componentIndex": "optimize impactful e-business",
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Synergize clicks-and-mortar networks",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Et id officia in dolor.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/PopupComponent/default/preview.png",
+            "width": 800,
+            "height": 214
+          }
+        }
+      },
       "title_element": {
         "library": "slices",
         "id": "title_element",
@@ -71,7 +223,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/TitleElement/default/preview.png",
+            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/TitleElement/default/preview.png",
             "width": 800,
             "height": 259
           }
