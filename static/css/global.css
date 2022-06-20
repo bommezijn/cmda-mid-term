@@ -15,5 +15,8 @@
 }
 
 body {
+  font-size: 1.1em;
+  line-height: 1.5;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  margin: 0;
 }

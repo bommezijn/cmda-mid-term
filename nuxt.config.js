@@ -36,13 +36,15 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     '@nuxtjs/prismic',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    '@nuxt/image'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxt/image',
     ["@nuxtjs/prismic", {endpoint: smConfig.apiEndpoint || ""}]
   ],
 
@@ -56,7 +58,6 @@ export default {
     endpoint: apiEndpoint,
     modern: true,
   },
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: ['@prismicio/vue']
