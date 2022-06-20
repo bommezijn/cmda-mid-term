@@ -36,9 +36,9 @@
         </div>
         <div class="speech-bubble">
             <div class="bubble">
-                <div class="color-picker">
-                    <input type="color" id="colorWell" value="#e66465" v-model="colorCode" @input="changeColor" />
-                    <label for="colorWell"><img
+                <div class=" color-picker">
+                    <input type="color" id="colorWeel" value="#f8f0d5" v-model="colorCode" @input="changeColor" />
+                    <label for="colorWeel"><img
                             src="https://images.prismic.io/cmd-midterm/5aa4c117-b663-4f09-9144-1c33b6798026_colorpicker.png?auto=compress,format" /></label>
                 </div>
                 <div class="semi-collom-up">"</div>
@@ -91,7 +91,7 @@ export default {
         changeColor() {
             const bubble = document.querySelector('.bubble')
             bubble.style.backgroundColor = this.colorCode;
-            bubble.style.setProperty("--border-color", this.changeColor)
+            bubble.style.setProperty("--border-color", this.colorCode);
         }
     },
 }
