@@ -29,7 +29,7 @@ export default {
       links: [
         {
           text: 'Beoogde leerresultaten',
-          url: '/SomethingX',
+          url: '/standaard/standaard-1',
         },
         {
           text: 'Onderwijsleeromgeving',
