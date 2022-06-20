@@ -74,7 +74,7 @@
         <div class="semi-collom-down">"</div>
       </div>
       <div class="BackBubble">
-        Feedback speelt vanaf de start van de opleiding een belangrijke rol:
+        <!-- Feedback speelt vanaf de start van de opleiding een belangrijke rol:
         feedback van docenten, peer-feedback als werkvorm (al dan niet via DLO)
         en CMD student-assistenten die studenten ondersteunen en feedback geven.
         Het geven van effectieve feedback is niet eenvoudig. Dit is een
@@ -83,7 +83,7 @@
         handelen – extra belangrijk. De studenten zullen nog steeds voornamelijk
         een product maken, maar ze zullen zich daarbij meer bewust moeten worden
         van hun eigen ontwerpproces en het bredere (maatschappelijke) belang
-        ervan.
+        ervan. -->
       </div>
     </div>
   </section>
@@ -130,7 +130,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap'); */
 
 :root {
   --border-color: #f8f0d5;
@@ -153,7 +153,7 @@ template {
 h2 {
   margin-top: 5em;
   margin-left: 1em;
-  font-family: 'Open Sans';
+  /* font-family: 'Open Sans'; */
   font-weight: 700;
   font-size: 1.7em;
 }
@@ -175,7 +175,7 @@ h2 {
   position: relative;
   background: #f8f0d5;
   color: #000000;
-  font-family: 'Open Sans';
+  /* font-family: 'Open Sans'; */
   font-size: 1em;
   text-align: center;
   width: 28em;

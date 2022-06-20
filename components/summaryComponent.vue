@@ -4,6 +4,7 @@
     <div class="backBubble">Ambities en dilemma&#39;s</div>
     <ul>
       <li>
+        <img src="https://picsum.photos/200" alt="Éen" />
         <p>
           Een ambitie bij CMD Amsterdam is al enkele jaren om de zelfstandigheid
           van studenten te vergroten. Studenten hebben vaak de ambitie om aan te
@@ -15,6 +16,7 @@
         </p>
       </li>
       <li>
+        <img src="https://picsum.photos/200" alt="Twee" />
         <p>
           De Studieloopbaan Begeleiding (SLB) in het eerste jaar heeft in
           2021/2022 een grondige update gehad. Dit programma is erop gericht om
@@ -25,6 +27,7 @@
         </p>
       </li>
       <li>
+        <img src="https://picsum.photos/200" alt="Drie" />
         <p>
           Een goede inventarisatie van de BoKS(A) ontbreekt: hier zijn wel
           pogingen toe gedaan, maar de balans tussen volledigheid en
@@ -34,6 +37,7 @@
         </p>
       </li>
       <li>
+        <img src="https://picsum.photos/200" alt="Vier" />
         <p>
           In de visie hebben we de human centred designer veranderd naar
           Humanity-centred designer. In het nieuwe competentieprofiel hebben we
@@ -45,6 +49,7 @@
         </p>
       </li>
       <li>
+        <img src="https://picsum.photos/200" alt="Vijf" />
         <p>
           We merken dat niet alleen wij ons curriculum verbreden en veranderen.
           Wij moeten ons verhouden tot andere opleidingen zowel binnen onze
@@ -55,6 +60,9 @@
           afstudeeropdrachten) maar ook naar studiekiezers. Hierover zouden we
           graag in gesprek gaan met het panel.
         </p>
+      </li>
+      <li>
+        <img src="https://picsum.photos/300" alt="Ondersteunende afbeelding" />
       </li>
     </ul>
   </section>
@@ -70,29 +78,51 @@ body {
 }
 
 section {
-  height: 100vh;
   margin: 0;
   padding: 2rem 12.5rem;
 
   background-color: var(--lavendel);
 }
 
+section ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 2rem;
+}
+section ul li {
+  display: flex;
+  list-style-type: none;
+}
+section ul li:last-of-type {
+  grid-area: 1 / 2 / 2 / 3;
+}
+section ul li:last-of-type img {
+  /* Height en width veranderen als de goede afbeelding  */
+  width: 31.5rem;
+  height: 13rem;
+}
+section ul li p {
+  margin: 0;
+}
+section ul li img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+
 .bubble {
   display: flex;
   justify-content: center;
   align-items: center;
-
   position: relative;
   z-index: 10;
-
   width: fit-content;
   padding: 0.5rem 2rem;
-
   font-family: 'Open Sans';
   font-size: 30pt;
   font-weight: 600;
   text-align: center;
-
   background: var(--geel);
   color: var(--black);
   border: var(--black) solid 0.3rem;
@@ -103,15 +133,12 @@ section {
 .bubble:after {
   content: '';
   display: block;
-
   position: absolute;
   bottom: -30px;
   left: 25%;
   z-index: 1;
-
   width: 0;
   margin-left: -16px;
-
   border-style: solid;
   border-color: var(--geel) transparent;
   border-width: 31px 16px 0;
@@ -122,15 +149,12 @@ section {
 .bubble:before {
   content: '';
   display: block;
-
   position: absolute;
   bottom: -38px;
   left: 24.5%;
   z-index: 0;
-
   width: 0;
   margin-left: -19px;
-
   border-style: solid;
   border-color: #000000 transparent;
   border-width: 33px 18px 0;
@@ -141,15 +165,12 @@ section {
   position: relative;
   top: -1.7rem;
   left: 4rem;
-
   width: fit-content;
   padding: 1rem 2rem;
-
-  font-family: 'Open Sans';
+  /* font-family: 'Open Sans'; */
   font-size: 30pt;
   font-weight: 600;
   text-align: center;
-
   background: var(--black);
   color: var(--white);
   border-radius: 5px;
@@ -158,15 +179,12 @@ section {
 .backBubble:after {
   content: '';
   display: block;
-
   position: absolute;
   bottom: -30px;
   left: 90%;
   z-index: 1;
-
   width: 0;
   margin-left: -16px;
-
   border-style: solid;
   border-color: var(--black) transparent;
   border-width: 31px 16px 0;

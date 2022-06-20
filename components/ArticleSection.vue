@@ -1,19 +1,19 @@
 <template>
   <section v-if="pos == 'single' && content.length == 1">
-    <p>
-      {{ content }}
+    <p v-for="(elem, index) in content" :key="index">
+      {{ elem }}
     </p>
   </section>
   <section v-else-if="pos == 'imgLeft'">
-    <p>
-      {{ content }}
+    <p v-for="(elem, index) in content" :key="index">
+      {{ elem }}
     </p>
     <nuxt-img :src="img" sizes="sm100vw md:50vw lg:400px" class="img" />
   </section>
   <section v-else-if="pos == 'imgRight'" class="alt">
     <nuxt-img :src="img" sizes="sm100vw md:50vw lg:400px" class="img" />
-    <p>
-      {{ content }}
+    <p v-for="(elem, index) in content" :key="index">
+      {{ elem }}
     </p>
   </section>
   <section v-else class="multipleArticles">
@@ -56,7 +56,7 @@ section {
 }
 
 .alt > * {
-  justify-self: start;
+  justify-self: end;
 }
 
 @media screen and (min-width: 821px) {
@@ -65,7 +65,7 @@ section {
   }
 
   .alt > * {
-    justify-self: end;
+    justify-self: start;
   }
 }
 </style>
