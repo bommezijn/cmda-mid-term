@@ -9,11 +9,7 @@
           {{ link.text }}
         </nuxt-link>
         <ul>
-          <li
-            v-for="(sublink, subindex) in link.subheading"
-            :key="subindex"
-            class="hasSubmenu"
-          >
+          <li v-for="(sublink, subindex) in link.subheading" :key="subindex" class="hasSubmenu">
             <a :href="sublink.url">{{ sublink.text }}</a>
           </li>
         </ul>
@@ -79,27 +75,32 @@ export default {
 
   background-color: #fff021;
   background-color: var(--geel);
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
+  z-index: 100;
 }
+
 .logo {
   font-weight: bold;
   text-decoration: none;
   color: #000000;
   color: var(--black);
 }
+
 .navLinks {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   margin: 0;
+  width: 60vw;
 }
 
-.navLinks > li {
+.navLinks>li {
   padding: 0 1em;
 }
+
 .navItem a {
   color: inherit;
   text-decoration: none;
@@ -134,7 +135,7 @@ ul li ul {
   display: none;
 }
 
-ul li:hover > ul,
+ul li:hover>ul,
 ul li ul:hover {
   visibility: visible;
   opacity: 1;
@@ -150,6 +151,7 @@ ul li ul li {
   display: inline-block;
   width: 100%;
 }
+
 .hasSubmenu:hover {
   background-color: var(--geel);
   color: var(--black);
@@ -164,9 +166,30 @@ ul li ul li {
     font-size: 1em;
   }
 }
+
 @media screen and (max-width: 1100px) {
-  .navbar > * {
+  .navbar>* {
     font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-device-width: 820px) {
+  .navbar {
+    flex-wrap: wrap;
+    margin-bottom: 20em;
+  }
+
+  .navItem {
+    margin-top: 1em;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .navLinks>li {
+    padding: 0em;
   }
 }
 </style>

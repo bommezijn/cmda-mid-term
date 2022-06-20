@@ -2,11 +2,7 @@
   <div class="indexContainer">
     <ArticleSection pos="" :content="singleText" />
     <ArticleSection pos="imgLeft" img="/TestImage.jpeg" :content="singleText" />
-    <ArticleSection
-      pos="imgRight"
-      img="/TestImage.jpeg"
-      :content="singleText"
-    />
+    <ArticleSection pos="imgRight" img="/TestImage.jpeg" :content="singleText" />
     <ArticleSection pos="" img="/TestImage.jpeg" :content="test" />
     <QuoteComp />
     <CardSwitch />
@@ -17,22 +13,9 @@
 </template>
 
 <script>
-import CardSwitch from '~/components/CardSwitch.vue'
-import PopupComponent from '~/components/popupComponent.vue'
-import TimeLineComp from '~/components/TimeLineComp.vue'
-import SummaryComponent from '~/components/summaryComponent.vue'
-import QuoteComp from '~/components/QuoteComp.vue'
-import ArticleSection from '~/components/ArticleSection.vue'
+
 export default {
   name: 'IndexPage',
-  components: {
-    CardSwitch,
-    PopupComponent,
-    TimeLineComp,
-    SummaryComponent,
-    QuoteComp,
-    ArticleSection,
-  },
   data() {
     return {
       test: [
