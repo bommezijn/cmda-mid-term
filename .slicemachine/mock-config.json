@@ -11,7 +11,25 @@
   },
   "slices": {
     "TitleElement": {},
-    "ArticleSlice": {},
+    "ArticleSlice": {
+      "default": {
+        "primary": {},
+        "items": {
+          "content": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      },
+      "single": {
+        "items": {}
+      },
+      "imgLeft": {
+        "items": {}
+      }
+    },
     "PopupComponent": {}
   }
 }
