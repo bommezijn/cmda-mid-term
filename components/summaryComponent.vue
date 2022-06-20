@@ -70,7 +70,7 @@ body {
 }
 
 section {
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0;
   padding: 2rem 12.5rem;
 
