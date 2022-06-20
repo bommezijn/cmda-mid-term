@@ -30,38 +30,18 @@ export default {
         {
           text: 'Beoogde leerresultaten',
           url: '/SomethingX',
-          subheading: [
-            { text: '1.1', url: '/SomethingX#1.1' },
-            { text: '1.2', url: '/SomethingX#1.2' },
-            { text: '1.3', url: '/SomethingX#1.3' },
-          ],
         },
         {
           text: 'Onderwijsleeromgeving',
           url: '/somethingu',
-          subheading: [
-            { text: '1.1', url: '#1.1' },
-            { text: '1.2', url: '#1.2' },
-            { text: '1.3', url: '#1.3' },
-          ],
         },
         {
           text: 'Toetsing',
           url: '/somethingh',
-          subheading: [
-            { text: '1.1', url: '#1.1' },
-            { text: '1.2', url: '#1.2' },
-            { text: '1.3', url: '#1.3' },
-          ],
         },
         {
           text: 'Gerealiseerde toetsresultaten',
           url: '/somethingh',
-          subheading: [
-            { text: '1.1', url: '#1.1' },
-            { text: '1.2', url: '#1.2' },
-            { text: '1.3', url: '#1.3' },
-          ],
         },
       ],
     }
@@ -79,27 +59,32 @@ export default {
 
   background-color: #fff021;
   background-color: var(--geel);
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
+  z-index: 100;
 }
+
 .logo {
   font-weight: bold;
   text-decoration: none;
   color: #000000;
   color: var(--black);
 }
+
 .navLinks {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   margin: 0;
+  width: 60vw;
 }
 
 .navLinks > li {
   padding: 0 1em;
 }
+
 .navItem a {
   color: inherit;
   text-decoration: none;
@@ -124,7 +109,8 @@ li:hover {
   cursor: pointer;
 }
 
-ul li ul {
+/* submenu */
+/* ul li ul {
   background: var(--black);
   visibility: hidden;
   opacity: 0;
@@ -134,7 +120,7 @@ ul li ul {
   display: none;
 }
 
-ul li:hover > ul,
+ul li:hover>ul,
 ul li ul:hover {
   visibility: visible;
   opacity: 1;
@@ -150,10 +136,12 @@ ul li ul li {
   display: inline-block;
   width: 100%;
 }
+
 .hasSubmenu:hover {
   background-color: var(--geel);
   color: var(--black);
-}
+} */
+/* end submenu */
 
 .nuxt-link-active {
   font-weight: bold;
@@ -164,9 +152,30 @@ ul li ul li {
     font-size: 1em;
   }
 }
+
 @media screen and (max-width: 1100px) {
   .navbar > * {
     font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-device-width: 820px) {
+  .navbar {
+    flex-wrap: wrap;
+    margin-bottom: 20em;
+  }
+
+  .navItem {
+    margin-top: 1em;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .navLinks > li {
+    padding: 0em;
   }
 }
 </style>
