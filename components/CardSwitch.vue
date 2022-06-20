@@ -62,10 +62,10 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap'); */
 
 .CardCon {
-  font-family: 'Open Sans';
+  /* font-family: 'Open Sans'; */
   font-weight: 500;
   height: 35em;
   width: 30em;
@@ -75,7 +75,7 @@ export default {
 
 .CardSwitch h2 {
   margin-left: 1em;
-  font-family: 'Open Sans';
+  /* font-family: 'Open Sans'; */
   font-weight: 700;
   font-size: 1.7em;
 }
