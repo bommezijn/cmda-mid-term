@@ -941,14 +941,6 @@
                     "label": "Title",
                     "placeholder": "This is where it all begins..."
                   }
-                },
-                "description": {
-                  "type": "StructuredText",
-                  "config": {
-                    "single": "paragraph",
-                    "label": "Description",
-                    "placeholder": "A nice description of your product"
-                  }
                 }
               },
               "items": {},
@@ -967,14 +959,7 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Integrate web-enabled niches",
-                  "spans": []
-                }
-              ],
-              "description": [
-                {
-                  "type": "paragraph",
-                  "text": "Ut irure in nulla eu anim dolor deserunt deserunt. In anim aliqua duis veniam commodo sint magna.",
+                  "text": "Engineer front-end vortals",
                   "spans": []
                 }
               ]
@@ -985,13 +970,7 @@
           "fileName": "index",
           "extension": "vue"
         },
-        "screenshotPaths": {
-          "default": {
-            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/TitleElement/default/preview.png",
-            "width": 800,
-            "height": 167
-          }
-        }
+        "screenshotPaths": {}
       }
     }
   }

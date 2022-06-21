@@ -18,7 +18,7 @@ export const _Default = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default","name":"Default","slice_type":"title_element","items":[],"primary":{"componentIndex":"1.2","title":[{"type":"heading1","text":"Integrate web-enabled niches","spans":[]}],"description":[{"type":"paragraph","text":"Ut irure in nulla eu anim dolor deserunt deserunt. In anim aliqua duis veniam commodo sint magna.","spans":[]}]},"id":"_Default"}
+      mock: {"variation":"default","name":"Default","slice_type":"title_element","items":[],"primary":{"componentIndex":"1.2","title":[{"type":"heading1","text":"Engineer front-end vortals","spans":[]}]},"id":"_Default"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
