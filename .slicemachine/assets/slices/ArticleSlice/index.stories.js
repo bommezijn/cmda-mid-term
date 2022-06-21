@@ -18,7 +18,7 @@ export const _Default = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default","name":"Default","slice_type":"article_slice","items":[{"content":[{"type":"paragraph","text":"Fugiat anim consectetur duis ullamco cillum irure occaecat adipisicing et veniam ex aliqua id quis magna. Do excepteur esse quis enim consequat ut non incididunt cupidatat et est. Labore laborum nulla ea consectetur non ea sint.","spans":[]}]},{"content":[{"type":"paragraph","text":"Nulla duis in ex laboris commodo adipisicing officia aute fugiat non eu nisi nulla consectetur culpa. Adipisicing anim exercitation adipisicing labore quis consequat ex labore eiusmod ea minim sint ad.","spans":[]}]}],"primary":{},"id":"_Default"}
+      mock: {"variation":"default","name":"Default","slice_type":"article_slice","items":[{"content":[{"type":"paragraph","text":"Cupidatat eu culpa nulla ut aliquip non dolor sunt enim.","spans":[]}]},{"content":[{"type":"paragraph","text":"Nisi cillum aute est mollit dolor excepteur est. Non incididunt sunt Lorem mollit pariatur pariatur veniam eu aute laboris. Duis nisi laboris eiusmod ipsum id incididunt consectetur ullamco.","spans":[]}]},{"content":[{"type":"paragraph","text":"Elit minim aute sunt fugiat nisi et cillum incididunt ullamco ad nisi proident in qui. Deserunt minim consequat eu reprehenderit esse tempor. Proident dolore commodo veniam ullamco voluptate ea dolor nostrud.","spans":[]}]}],"primary":{},"id":"_Default"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -37,7 +37,7 @@ export const _Single = () => ({
   },
   data() {
     return {
-      mock: {"variation":"single","name":"single","slice_type":"article_slice","items":[],"primary":{"content":[{"type":"paragraph","text":"Duis irure est adipisicing amet sunt anim amet est laboris labore aliqua occaecat nulla. Ipsum minim ullamco fugiat esse eiusmod.","spans":[]}]},"id":"_Single"}
+      mock: {"variation":"single","name":"single","slice_type":"article_slice","items":[],"primary":{"content":[{"type":"paragraph","text":"Sunt exercitation anim tempor aliquip amet occaecat id aliquip duis nostrud sit nisi est. Sunt veniam aliquip quis ullamco magna. Eu deserunt irure irure.","spans":[]}]},"id":"_Single"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -56,7 +56,7 @@ export const _ImgLeft = () => ({
   },
   data() {
     return {
-      mock: {"variation":"imgLeft","name":"imgLeft","slice_type":"article_slice","items":[],"primary":{"img":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=900&h=500&fit=crop"},"content":[{"type":"paragraph","text":"Aliquip elit officia ad culpa eu veniam. Magna excepteur consectetur veniam eiusmod laboris mollit do et irure.","spans":[]}]},"id":"_ImgLeft"}
+      mock: {"variation":"imgLeft","name":"imgLeft","slice_type":"article_slice","items":[],"primary":{"img":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=900&h=500&fit=crop"},"content":[{"type":"paragraph","text":"Officia ullamco adipisicing qui laborum.","spans":[]}]},"id":"_ImgLeft"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -75,7 +75,7 @@ export const _ImgRight = () => ({
   },
   data() {
     return {
-      mock: {"variation":"imgRight","name":"imgRight","slice_type":"article_slice","items":[],"primary":{"img":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=900&h=500&fit=crop"},"content":[{"type":"paragraph","text":"Magna non cillum sit voluptate nostrud ea Lorem cillum eu. Qui veniam irure deserunt tempor sint qui magna. Tempor excepteur incididunt do dolore nulla ad do id in ullamco.","spans":[]}]},"id":"_ImgRight"}
+      mock: {"variation":"imgRight","name":"imgRight","slice_type":"article_slice","items":[],"primary":{"img":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=900&h=500&fit=crop"},"content":[{"type":"paragraph","text":"Et aute veniam deserunt aute. Ex culpa enim cillum tempor dolore cillum ex in eiusmod labore consequat qui. Proident consectetur pariatur nisi.","spans":[]}]},"id":"_ImgRight"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
