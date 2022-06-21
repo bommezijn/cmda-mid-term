@@ -43,9 +43,9 @@ section {
   background-size: 100%;
   background-color: #ffcc00;
   width: 100%;
-  position: absolute;
+  /* position: absolute;
   top: 1em;
-  left: 0;
+  left: 0; */
 }
 
 .header-content {
