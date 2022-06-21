@@ -9,11 +9,7 @@
           {{ link.text }}
         </nuxt-link>
         <ul>
-          <li
-            v-for="(sublink, subindex) in link.subheading"
-            :key="subindex"
-            class="hasSubmenu"
-          >
+          <li v-for="(sublink, subindex) in link.subheading" :key="subindex" class="hasSubmenu">
             <a :href="sublink.url">{{ sublink.text }}</a>
           </li>
         </ul>
@@ -33,15 +29,15 @@ export default {
         },
         {
           text: 'Onderwijsleeromgeving',
-          url: '/somethingu',
+          url: '/standaard/standaard-2',
         },
         {
           text: 'Toetsing',
-          url: '/somethingh',
+          url: '/standaard/standaard-3',
         },
         {
           text: 'Gerealiseerde toetsresultaten',
-          url: '/somethingh',
+          url: '/standaard/standaard-4',
         },
       ],
     }
@@ -81,7 +77,7 @@ export default {
   width: 60vw;
 }
 
-.navLinks > li {
+.navLinks>li {
   padding: 0 1em;
 }
 
@@ -154,7 +150,7 @@ ul li ul li {
 }
 
 @media screen and (max-width: 1100px) {
-  .navbar > * {
+  .navbar>* {
     font-size: 0.8em;
   }
 }
@@ -174,7 +170,7 @@ ul li ul li {
     width: 100vw;
   }
 
-  .navLinks > li {
+  .navLinks>li {
     padding: 0em;
   }
 }
