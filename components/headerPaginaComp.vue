@@ -38,9 +38,11 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    position: relative;
     background-color: #ffcc00;
     width: 100%;
+    position: absolute;
+    top: 1em;
+    left: 0;
 }
 
 .header-content {
