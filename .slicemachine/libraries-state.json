@@ -225,22 +225,22 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/ArticleSlice/default/preview.png",
+            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/ArticleSlice/default/preview.png",
             "width": 800,
             "height": 440
           },
           "single": {
-            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/ArticleSlice/single/preview.png",
+            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/ArticleSlice/single/preview.png",
             "width": 800,
             "height": 115
           },
           "imgLeft": {
-            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/ArticleSlice/imgLeft/preview.png",
+            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/ArticleSlice/imgLeft/preview.png",
             "width": 800,
             "height": 474
           },
           "imgRight": {
-            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/ArticleSlice/imgRight/preview.png",
+            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/ArticleSlice/imgRight/preview.png",
             "width": 800,
             "height": 527
           }
