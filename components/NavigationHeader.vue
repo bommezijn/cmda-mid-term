@@ -8,15 +8,6 @@
         <nuxt-link :to="link.url" aria-expanded="false">
           {{ link.text }}
         </nuxt-link>
-        <!-- <ul>
-          <li
-            v-for="(sublink, subindex) in link.subheading"
-            :key="subindex"
-            class="hasSubmenu"
-          >
-            <a :href="sublink.url">{{ sublink.text }}</a>
-          </li>
-        </ul> -->
       </li>
     </ul>
   </nav>
