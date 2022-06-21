@@ -110,10 +110,6 @@ button::after {
 
   padding: 2rem;
 }
-.content {
-  /* width: 80vw; */
-  width: calc();
-}
 
 .content-wrapper.visible {
   animation: slide 0.6s ease-out forwards;
