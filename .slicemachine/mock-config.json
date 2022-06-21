@@ -29,7 +29,7 @@
     "QuoteComponent": {
       "default": {
         "primary": {
-          "description": {
+          "quote": {
             "config": {
               "patternType": "PARAGRAPH",
               "blocks": 1

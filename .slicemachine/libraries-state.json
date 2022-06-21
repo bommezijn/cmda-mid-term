@@ -409,21 +409,13 @@
                     "placeholder": "This is where it all begins..."
                   }
                 },
-                "description": {
+                "quote": {
                   "type": "StructuredText",
                   "config": {
-                    "label": "Main content",
+                    "label": "Quote",
                     "placeholder": "A nice description of your product",
                     "allowTargetBlank": true,
                     "single": "paragraph"
-                  }
-                },
-                "media": {
-                  "type": "Link",
-                  "config": {
-                    "label": "Media",
-                    "placeholder": "",
-                    "select": "media"
                   }
                 },
                 "quoteName": {
@@ -446,26 +438,22 @@
             "slice_type": "quote_component",
             "items": [],
             "primary": {
-              "componentIndex": "evolve clicks-and-mortar content",
+              "componentIndex": "brand killer deliverables",
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Visualize virtual web services",
+                  "text": "Revolutionize wireless infrastructures",
                   "spans": []
                 }
               ],
-              "description": [
+              "quote": [
                 {
                   "type": "paragraph",
-                  "text": "Magna enim velit id aute irure consectetur ipsum cupidatat proident magna. Dolore ad ullamco ex deserunt nulla reprehenderit aliqua aliqua nisi esse in. Ad amet elit pariatur velit amet magna ad occaecat aliquip proident et velit veniam.",
+                  "text": "Duis sunt occaecat voluptate enim exercitation ipsum adipisicing et voluptate ad in irure dolore.",
                   "spans": []
                 }
               ],
-              "media": {
-                "link_type": "media",
-                "url": "https://source.unsplash.com/daily"
-              },
-              "quoteName": "morph cross-media applications"
+              "quoteName": "generate vertical paradigms"
             }
           }
         },
@@ -473,13 +461,7 @@
           "fileName": "index",
           "extension": "vue"
         },
-        "screenshotPaths": {
-          "default": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/QuoteComponent/default/preview.png",
-            "width": 800,
-            "height": 1404
-          }
-        }
+        "screenshotPaths": {}
       },
       "title_element": {
         "library": "slices",

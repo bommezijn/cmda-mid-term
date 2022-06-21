@@ -26,21 +26,13 @@
             "placeholder": "This is where it all begins..."
           }
         },
-        "description": {
+        "quote": {
           "type": "StructuredText",
           "config": {
-            "label": "Main content",
+            "label": "Quote",
             "placeholder": "A nice description of your product",
             "allowTargetBlank": true,
             "single": "paragraph"
-          }
-        },
-        "media": {
-          "type": "Link",
-          "config": {
-            "label": "Media",
-            "placeholder": "",
-            "select": "media"
           }
         },
         "quoteName": {

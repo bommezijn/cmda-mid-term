@@ -73,18 +73,7 @@
         <p class="name-arrow-tag">Name</p>
         <div class="semi-collom-down">"</div>
       </div>
-      <div class="BackBubble">
-        <!-- Feedback speelt vanaf de start van de opleiding een belangrijke rol:
-        feedback van docenten, peer-feedback als werkvorm (al dan niet via DLO)
-        en CMD student-assistenten die studenten ondersteunen en feedback geven.
-        Het geven van effectieve feedback is niet eenvoudig. Dit is een
-        belangrijke reden om te experimenteren met programmatisch toetsen. Door
-        programmatisch toetsen wordt de rol van feedback – het formatief
-        handelen – extra belangrijk. De studenten zullen nog steeds voornamelijk
-        een product maken, maar ze zullen zich daarbij meer bewust moeten worden
-        van hun eigen ontwerpproces en het bredere (maatschappelijke) belang
-        ervan. -->
-      </div>
+      <div class="BackBubble"></div>
     </div>
   </section>
 </template>

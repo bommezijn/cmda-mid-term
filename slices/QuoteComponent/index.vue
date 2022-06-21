@@ -14,7 +14,7 @@
           /></label>
         </div>
         <div class="semi-collom-up">"</div>
-        <PrismicRichText :field="slice.primary.description" />
+        <PrismicRichText :field="slice.primary.quote" />
         <svg
           width="36"
           height="30"
