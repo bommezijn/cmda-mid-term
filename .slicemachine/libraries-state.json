@@ -473,7 +473,13 @@
           "fileName": "index",
           "extension": "vue"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/HeroComponent/default/preview.png",
+            "width": 800,
+            "height": 295
+          }
+        }
       },
       "popup_component": {
         "library": "slices",
