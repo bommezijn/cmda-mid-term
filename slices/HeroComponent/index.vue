@@ -4,9 +4,12 @@
     <PrismicRichText :field="slice.primary.description" />
   </section> -->
   <section
-    :style="{ backgroundImage: `url(${slice.primary.backgroundImage})` }"
+    :style="{
+      backgroundImage: 'url(' + slice.primary.backgroundImage.url + ')',
+    }"
   >
     <div class="header-content">
+      <!-- {{ slice.primary.backgroundImage.url }} -->
       <!-- <h1>2.0 Onderwijsleeromgeving</h1> -->
       <PrismicRichText :field="slice.primary.title" class="title" />
       <!-- <p id="header-block-h1">
@@ -46,7 +49,7 @@ section {
 
 section {
   height: 25vw;
-  background-image: url('https://images.prismic.io/midtermacc/630fba58-4e9f-4156-acd9-a9b81ad90a74_cmd_daantjebons_0032-960x640.jpg?auto=compress,format');
+  /* background-image: url('https://images.prismic.io/midtermacc/630fba58-4e9f-4156-acd9-a9b81ad90a74_cmd_daantjebons_0032-960x640.jpg?auto=compress,format'); */
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
   background-repeat: no-repeat;
   background-position: center;
