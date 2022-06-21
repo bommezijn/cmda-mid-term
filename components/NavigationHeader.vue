@@ -33,15 +33,15 @@ export default {
         },
         {
           text: 'Onderwijsleeromgeving',
-          url: '/somethingu',
+          url: '/standaard/standaard-2',
         },
         {
           text: 'Toetsing',
-          url: '/somethingh',
+          url: '/standaard/standaard-3',
         },
         {
           text: 'Gerealiseerde toetsresultaten',
-          url: '/somethingh',
+          url: '/standaard/standaard-4',
         },
       ],
     }
