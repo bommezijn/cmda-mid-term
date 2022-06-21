@@ -7,11 +7,6 @@
 <script>
 import { components } from '~/slices'
 export default {
-  data() {
-    return {
-      components,
-    }
-  },
   async asyncData({ $prismic, params, error }) {
     const document = await $prismic.api.getByUID('standaard', params.standaard)
 
@@ -20,6 +15,11 @@ export default {
       return { document }
     } else {
       error({ statusCode: 404, message: 'Page not found' })
+    }
+  },
+  data() {
+    return {
+      components,
     }
   },
 }
