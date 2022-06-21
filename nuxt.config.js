@@ -16,14 +16,15 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'}
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap',
+      },
     ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '../static/css/global.css'
-  ],
+  css: ['../static/css/global.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -37,7 +38,7 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/prismic',
     '@nuxtjs/google-fonts',
-    '@nuxt/image'
+    '@nuxt/image',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -45,13 +46,30 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     '@nuxt/image',
-    ["@nuxtjs/prismic", {endpoint: smConfig.apiEndpoint || ""}]
+    ['@nuxtjs/prismic', { endpoint: smConfig.apiEndpoint || '' }],
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
+    meta: {
+      appleStatusBarStyle: 'black-translucent',
+      favicon: true,
+      name: 'CMD Mid Term',
+      description: 'CMD Mid term accreditatie website',
+      theme_color: '#ffcc21',
+      lang: 'nl',
+      ogType: 'website',
+      ogSiteName: 'CMD Mid Term',
+      ogTitle: 'CMD Mid Term',
+      ogDescription: 'CMD Mid term accreditatie website',
+      nativeUI: 'true',
+    },
     manifest: {
+      name: 'CMD Mid Term',
+      short_name: 'CMD-MD',
       lang: 'en',
+      background_color: '#ffcc21',
+      theme_color: '#ffcc21',
     },
   },
   prismic: {
@@ -60,7 +78,7 @@ export default {
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: ['@prismicio/vue']
+    transpile: ['@prismicio/vue'],
   },
 
   googleFonts: {
@@ -70,9 +88,9 @@ export default {
     preconnect: true,
     preload: true,
     download: true,
-    overwriting:false,
+    overwriting: false,
     families: {
-      'Open+Sans': true
-    }
+      'Open+Sans': true,
+    },
   },
 }
