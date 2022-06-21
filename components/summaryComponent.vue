@@ -222,4 +222,24 @@ section ul li img {
   border-width: 31px 16px 0;
   transform: skewX(25deg);
 }
+
+@media only screen and (max-device-width: 820px) {
+  .summary-container {
+    flex-wrap: wrap;
+  }
+
+  .summary-list-right {
+    margin-top: 5em;
+  }
+
+  .section {
+    padding: 0rem 0rem;
+  }
+}
+
+@media only screen and (max-device-width: 350px) {
+  li {
+    width: 100%;
+  }
+}
 </style>
