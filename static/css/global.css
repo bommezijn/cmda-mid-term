@@ -37,13 +37,8 @@ p {
   margin-top: 200px;
 }
 
-.indexContainer section {
-  position: relative;
-}
-
-.indexContainer .content {
+.indexContainer:nth-child(2) {
   margin-top: calc(25vw + 3em);
-  margin-bottom: 10em;
 }
 
 @media only screen and (max-device-width: 820px) {
