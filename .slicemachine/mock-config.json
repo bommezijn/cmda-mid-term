@@ -27,7 +27,25 @@
         "items": {}
       },
       "imgLeft": {
-        "items": {}
+        "items": {},
+        "primary": {
+          "content": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      },
+      "imgRight": {
+        "primary": {
+          "content": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
       }
     },
     "PopupComponent": {}

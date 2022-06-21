@@ -18,7 +18,7 @@ export const _Default = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default","name":"Default","slice_type":"article_slice","items":[{"content":[{"type":"paragraph","text":"Cupidatat eu culpa nulla ut aliquip non dolor sunt enim.","spans":[]}]},{"content":[{"type":"paragraph","text":"Nisi cillum aute est mollit dolor excepteur est. Non incididunt sunt Lorem mollit pariatur pariatur veniam eu aute laboris. Duis nisi laboris eiusmod ipsum id incididunt consectetur ullamco.","spans":[]}]},{"content":[{"type":"paragraph","text":"Elit minim aute sunt fugiat nisi et cillum incididunt ullamco ad nisi proident in qui. Deserunt minim consequat eu reprehenderit esse tempor. Proident dolore commodo veniam ullamco voluptate ea dolor nostrud.","spans":[]}]}],"primary":{},"id":"_Default"}
+      mock: {"variation":"default","name":"Default","slice_type":"article_slice","items":[{"content":[{"type":"paragraph","text":"Esse eu aute nisi elit duis cupidatat deserunt consequat veniam laboris incididunt do.","spans":[]}]},{"content":[{"type":"paragraph","text":"Magna sit reprehenderit officia qui nostrud commodo mollit dolore laboris duis consectetur dolore.","spans":[]}]},{"content":[{"type":"paragraph","text":"Ad adipisicing id amet cupidatat fugiat eu est enim in nulla nostrud incididunt laborum velit. Sit laborum excepteur incididunt deserunt ipsum ex exercitation veniam eu. Proident ea fugiat sit irure officia officia magna irure aute ad veniam velit.","spans":[]}]},{"content":[{"type":"paragraph","text":"Pariatur fugiat incididunt reprehenderit nostrud nisi cupidatat in nisi minim sint.","spans":[]}]}],"primary":{},"id":"_Default"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -37,7 +37,7 @@ export const _Single = () => ({
   },
   data() {
     return {
-      mock: {"variation":"single","name":"single","slice_type":"article_slice","items":[],"primary":{"content":[{"type":"paragraph","text":"Sunt exercitation anim tempor aliquip amet occaecat id aliquip duis nostrud sit nisi est. Sunt veniam aliquip quis ullamco magna. Eu deserunt irure irure.","spans":[]}]},"id":"_Single"}
+      mock: {"variation":"single","name":"single","slice_type":"article_slice","items":[],"primary":{"content":[{"type":"paragraph","text":"Elit sit fugiat tempor laborum reprehenderit Lorem ea officia nostrud. Ut cupidatat do enim proident reprehenderit amet excepteur dolor ipsum minim aliquip.","spans":[]}]},"id":"_Single"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -56,7 +56,7 @@ export const _ImgLeft = () => ({
   },
   data() {
     return {
-      mock: {"variation":"imgLeft","name":"imgLeft","slice_type":"article_slice","items":[],"primary":{"img":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=900&h=500&fit=crop"},"content":[{"type":"paragraph","text":"Officia ullamco adipisicing qui laborum.","spans":[]}]},"id":"_ImgLeft"}
+      mock: {"variation":"imgLeft","name":"imgLeft","slice_type":"article_slice","items":[],"primary":{"img":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"},"content":[{"type":"paragraph","text":"Commodo fugiat dolore nisi. Exercitation id sit deserunt. Velit qui ullamco duis exercitation adipisicing ipsum officia in aliqua dolor veniam laborum.","spans":[]}]},"id":"_ImgLeft"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -75,7 +75,7 @@ export const _ImgRight = () => ({
   },
   data() {
     return {
-      mock: {"variation":"imgRight","name":"imgRight","slice_type":"article_slice","items":[],"primary":{"img":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=900&h=500&fit=crop"},"content":[{"type":"paragraph","text":"Et aute veniam deserunt aute. Ex culpa enim cillum tempor dolore cillum ex in eiusmod labore consequat qui. Proident consectetur pariatur nisi.","spans":[]}]},"id":"_ImgRight"}
+      mock: {"variation":"imgRight","name":"imgRight","slice_type":"article_slice","items":[],"primary":{"img":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"},"content":[{"type":"paragraph","text":"Ut aute elit sit deserunt sunt fugiat anim amet excepteur proident anim velit adipisicing. Voluptate anim sit amet ullamco commodo fugiat fugiat magna fugiat pariatur qui sit qui. Nulla minim magna ad voluptate proident cupidatat consequat proident excepteur eu.","spans":[]}]},"id":"_ImgRight"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
