@@ -71,6 +71,11 @@ export default {
       background_color: '#ffcc21',
       theme_color: '#ffcc21',
     },
+    workbox: {
+      preCaching: [],
+      offlineStrategy: 'NetworkFirst',
+      offlineAssets: ['/*.png'],
+    },
   },
   prismic: {
     endpoint: apiEndpoint,
