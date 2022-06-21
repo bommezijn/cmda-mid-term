@@ -8,15 +8,6 @@
         <nuxt-link :to="link.url" aria-expanded="false">
           {{ link.text }}
         </nuxt-link>
-        <!-- <ul>
-          <li
-            v-for="(sublink, subindex) in link.subheading"
-            :key="subindex"
-            class="hasSubmenu"
-          >
-            <a :href="sublink.url">{{ sublink.text }}</a>
-          </li>
-        </ul> -->
       </li>
     </ul>
   </nav>
@@ -33,15 +24,15 @@ export default {
         },
         {
           text: 'Onderwijsleeromgeving',
-          url: '/somethingu',
+          url: '/standaard/standaard-2',
         },
         {
           text: 'Toetsing',
-          url: '/somethingh',
+          url: '/standaard/standaard-3',
         },
         {
           text: 'Gerealiseerde toetsresultaten',
-          url: '/somethingh',
+          url: '/standaard/standaard-4',
         },
       ],
     }
