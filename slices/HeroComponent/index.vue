@@ -7,8 +7,8 @@
     <div class="header-content">
       <PrismicRichText :field="slice.primary.title" class="title" />
       <PrismicRichText
-        :field="slice.primary.description"
         id="header-block-h1"
+        :field="slice.primary.description"
       />
     </div>
   </section>
