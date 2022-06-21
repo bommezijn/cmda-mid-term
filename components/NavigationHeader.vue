@@ -54,7 +54,7 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 19;
 }
 
 .logo {
@@ -72,7 +72,7 @@ export default {
   width: 60vw;
 }
 
-.navLinks>li {
+.navLinks > li {
   padding: 0 1em;
 }
 
@@ -145,7 +145,7 @@ ul li ul li {
 }
 
 @media screen and (max-width: 1100px) {
-  .navbar>* {
+  .navbar > * {
     font-size: 0.8em;
   }
 }
@@ -165,7 +165,7 @@ ul li ul li {
     width: 100vw;
   }
 
-  .navLinks>li {
+  .navLinks > li {
     padding: 0em;
   }
 }

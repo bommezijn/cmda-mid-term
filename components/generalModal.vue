@@ -65,7 +65,12 @@ export default {
 .heading {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 2rem;
+}
+
+.heading >>> h2 {
+  max-width: 75%;
 }
 
 button {
@@ -104,9 +109,6 @@ button::after {
   transform: translate(-50%, -50%);
 
   padding: 2rem;
-}
-.content {
-  width: 80vw;
 }
 
 .content-wrapper.visible {
