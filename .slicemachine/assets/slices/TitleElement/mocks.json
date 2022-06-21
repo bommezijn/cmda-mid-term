@@ -9,7 +9,14 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Engineer front-end vortals",
+          "text": "Generate strategic ROI",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Laboris aliqua eu laboris. Nisi reprehenderit deserunt amet excepteur ad in nisi.",
           "spans": []
         }
       ]
