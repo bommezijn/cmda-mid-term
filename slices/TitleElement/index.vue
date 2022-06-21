@@ -2,7 +2,7 @@
   <section class="content">
     <h3>{{ slice.primary.componentIndex }}</h3>
     <PrismicRichText :field="slice.primary.title" class="title" />
-    <PrismicRichText :field="slice.primary.description" />
+    <PrismicRichText :field="slice.primary.description" class="description" />
   </section>
 </template>
 
@@ -34,6 +34,9 @@ export default {
   width: max-content;
 }
 
+.description {
+  margin-top: 0.5em;
+}
 /* .section {
   background: #f7f7f7;
   color: #111;
