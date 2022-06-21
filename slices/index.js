@@ -2,6 +2,7 @@
 
 import ArticleSlice from './ArticleSlice';
 import CompetenciesCard from './CompetenciesCard';
+import HeroComponent from './HeroComponent';
 import PopupComponent from './PopupComponent';
 import QuoteComponent from './QuoteComponent';
 import SummaryComponent from './SummaryComponent';
@@ -11,6 +12,7 @@ import TitleElement from './TitleElement';
 export {
 	ArticleSlice,
 	CompetenciesCard,
+	HeroComponent,
 	PopupComponent,
 	QuoteComponent,
 	SummaryComponent,
@@ -21,6 +23,7 @@ export {
 export const components = {
 	article_slice: ArticleSlice,
 	competencies_card: CompetenciesCard,
+	hero_component: HeroComponent,
 	popup_component: PopupComponent,
 	quote_component: QuoteComponent,
 	summary_component: SummaryComponent,

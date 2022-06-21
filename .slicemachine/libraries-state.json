@@ -393,6 +393,88 @@
         },
         "screenshotPaths": {}
       },
+      "hero_component": {
+        "library": "slices",
+        "id": "hero_component",
+        "name": "HeroComponent",
+        "description": "HeroComponent",
+        "model": {
+          "id": "hero_component",
+          "type": "SharedSlice",
+          "name": "HeroComponent",
+          "description": "HeroComponent",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "HeroComponent",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your product"
+                  }
+                },
+                "backgroundImage": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Background Image",
+                    "placeholder": "",
+                    "select": "media"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "hero_component",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Architect plug-and-play niches",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Reprehenderit culpa velit enim mollit nostrud pariatur incididunt sunt enim eu duis non eiusmod labore occaecat. Anim excepteur tempor quis velit qui eiusmod.",
+                  "spans": []
+                }
+              ],
+              "backgroundImage": {
+                "link_type": "media",
+                "url": "https://source.unsplash.com/daily"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {}
+      },
       "popup_component": {
         "library": "slices",
         "id": "popup_component",
@@ -970,7 +1052,13 @@
           "fileName": "index",
           "extension": "vue"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/TitleElement/default/preview.png",
+            "width": 800,
+            "height": 111
+          }
+        }
       }
     }
   }
