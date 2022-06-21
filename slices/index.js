@@ -3,12 +3,14 @@
 import ArticleSlice from './ArticleSlice';
 import CompetenciesCard from './CompetenciesCard';
 import PopupComponent from './PopupComponent';
+import QuoteComponent from './QuoteComponent';
 import TitleElement from './TitleElement';
 
 export {
 	ArticleSlice,
 	CompetenciesCard,
 	PopupComponent,
+	QuoteComponent,
 	TitleElement,
 };
 
@@ -16,5 +18,6 @@ export const components = {
 	article_slice: ArticleSlice,
 	competencies_card: CompetenciesCard,
 	popup_component: PopupComponent,
+	quote_component: QuoteComponent,
 	title_element: TitleElement,
 };

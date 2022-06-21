@@ -376,6 +376,111 @@
           }
         }
       },
+      "quote_component": {
+        "library": "slices",
+        "id": "quote_component",
+        "name": "QuoteComponent",
+        "description": "QuoteComponent",
+        "model": {
+          "id": "quote_component",
+          "type": "SharedSlice",
+          "name": "QuoteComponent",
+          "description": "QuoteComponent",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "QuoteComponent",
+              "primary": {
+                "componentIndex": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Component Index",
+                    "placeholder": ""
+                  }
+                },
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Main content",
+                    "placeholder": "A nice description of your product",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                },
+                "media": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Media",
+                    "placeholder": "",
+                    "select": "media"
+                  }
+                },
+                "quoteName": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Quote Name",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "quote_component",
+            "items": [],
+            "primary": {
+              "componentIndex": "evolve clicks-and-mortar content",
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Visualize virtual web services",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Magna enim velit id aute irure consectetur ipsum cupidatat proident magna. Dolore ad ullamco ex deserunt nulla reprehenderit aliqua aliqua nisi esse in. Ad amet elit pariatur velit amet magna ad occaecat aliquip proident et velit veniam.",
+                  "spans": []
+                }
+              ],
+              "media": {
+                "link_type": "media",
+                "url": "https://source.unsplash.com/daily"
+              },
+              "quoteName": "morph cross-media applications"
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/QuoteComponent/default/preview.png",
+            "width": 800,
+            "height": 1404
+          }
+        }
+      },
       "title_element": {
         "library": "slices",
         "id": "title_element",
