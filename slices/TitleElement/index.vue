@@ -22,6 +22,7 @@ export default {
 }
 .content >>> h3 {
   border: 3px solid black;
+  border-bottom: 0;
   background-color: var(--geel);
   display: inline-block;
   padding: 0.5rem;
