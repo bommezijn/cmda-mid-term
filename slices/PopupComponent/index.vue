@@ -36,7 +36,7 @@ export default {
     }
   },
   mounted() {
-    console.log(this.slice.data)
+    // console.log(this.slice.data)
   },
   methods: {
     toggleModal(e, index, item) {

@@ -27,7 +27,7 @@ export default {
     return {}
   },
   mounted() {
-    console.log(this.isVisible)
+    // console.log(this.isVisible)
     window.addEventListener('keyup', (e) => {
       if (e.code === 'Escape') {
         this.hideModal()

@@ -1,6 +1,5 @@
 <template>
   <section class="indexContainer">
-    <PrismicRichText :field="document.data.title" />
     <slice-zone :components="components" :slices="document.data.slices" />
   </section>
 </template>
@@ -17,7 +16,7 @@ export default {
     const document = await $prismic.api.getByUID('standaard', params.standaard)
 
     if (document) {
-      console.log(document.data.slices)
+      // console.log(document.data.slices)
       return { document }
     } else {
       error({ statusCode: 404, message: 'Page not found' })
