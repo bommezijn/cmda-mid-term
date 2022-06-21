@@ -2,69 +2,70 @@
   <section>
     <div class="bubble">1.5</div>
     <div class="backBubble">Ambities en dilemma&#39;s</div>
-    <ul>
-      <li>
-        <img src="https://picsum.photos/200" alt="Éen" />
-        <p>
-          Een ambitie bij CMD Amsterdam is al enkele jaren om de zelfstandigheid
-          van studenten te vergroten. Studenten hebben vaak de ambitie om aan te
-          sluiten op de wensen van de docent en dit leidt vaak tot veilige
-          keuzes. Wij zijn op zoek naar manieren om dit te veranderen en ze te
-          stimuleren buiten de lijntjes te kleuren en minder “af te vinken”.
-          Meer eigen invulling hoe te werken aan competenties en programmatisch
-          toetsen (zie ook standaard 3) zijn hier voorbeelden van.
-        </p>
-      </li>
-      <li>
-        <img src="https://picsum.photos/200" alt="Twee" />
-        <p>
-          De Studieloopbaan Begeleiding (SLB) in het eerste jaar heeft in
-          2021/2022 een grondige update gehad. Dit programma is erop gericht om
-          zowel praktische schoolzaken te bespreken als ook zelfregulatie bij de
-          student te ontwikkelen. Dit SLB programma zal ook doorgetrokken worden
-          naar jaar 2 en 3 met name om de student inzicht te geven in zijn/haar
-          unieke rol als ontwerper.
-        </p>
-      </li>
-      <li>
-        <img src="https://picsum.photos/200" alt="Drie" />
-        <p>
-          Een goede inventarisatie van de BoKS(A) ontbreekt: hier zijn wel
-          pogingen toe gedaan, maar de balans tussen volledigheid en
-          werkbaarheid is een uitdaging. Voor de accreditatie in 2025 zijn we
-          van plan hier een monitor voor te gebruiken om inzichtelijk te krijgen
-          wat we waar doen en of belangrijke thema&#39;s aan bod komen.
-        </p>
-      </li>
-      <li>
-        <img src="https://picsum.photos/200" alt="Vier" />
-        <p>
-          In de visie hebben we de human centred designer veranderd naar
-          Humanity-centred designer. In het nieuwe competentieprofiel hebben we
-          meer aandacht voor de maatschappelijke impact. Daarnaast organiseren
-          we studie-ochtenden waar docenten werkvormen m.b.t. meta-thema's
-          uitwisselen en presentaties zien en geven over diversiteit en
-          inclusie. Op deze manier hebben we een eerste stap in de "humanity
-          centredness" van onze studenten en medewerkers gezet.
-        </p>
-      </li>
-      <li>
-        <img src="https://picsum.photos/200" alt="Vijf" />
-        <p>
-          We merken dat niet alleen wij ons curriculum verbreden en veranderen.
-          Wij moeten ons verhouden tot andere opleidingen zowel binnen onze
-          faculteit (CO/CB, ICT, AD-frontend, master digital design) als
-          landelijk (CMD-opleidingen, product designopleidingen). De laatste
-          jaren is het lastiger om de verschillen tussen de opleidingen goed
-          duidelijk te maken naar onze werkveldpartners (voor stages en
-          afstudeeropdrachten) maar ook naar studiekiezers. Hierover zouden we
-          graag in gesprek gaan met het panel.
-        </p>
-      </li>
-      <li>
+    <div class="summary-container">
+      <div class="summary-list-left">
+        <ul>
+          <li>
+            <p>
+              Een ambitie bij CMD Amsterdam is al enkele jaren om de zelfstandigheid
+              van studenten te vergroten. Studenten hebben vaak de ambitie om aan te
+              sluiten op de wensen van de docent en dit leidt vaak tot veilige
+              keuzes. Wij zijn op zoek naar manieren om dit te veranderen en ze te
+              stimuleren buiten de lijntjes te kleuren en minder “af te vinken”.
+              Meer eigen invulling hoe te werken aan competenties en programmatisch
+              toetsen (zie ook standaard 3) zijn hier voorbeelden van.
+            </p>
+          </li>
+          <li>
+            <p>
+              De Studieloopbaan Begeleiding (SLB) in het eerste jaar heeft in
+              2021/2022 een grondige update gehad. Dit programma is erop gericht om
+              zowel praktische schoolzaken te bespreken als ook zelfregulatie bij de
+              student te ontwikkelen. Dit SLB programma zal ook doorgetrokken worden
+              naar jaar 2 en 3 met name om de student inzicht te geven in zijn/haar
+              unieke rol als ontwerper.
+            </p>
+          </li>
+          <li>
+            <p>
+              We merken dat niet alleen wij ons curriculum verbreden en veranderen.
+              Wij moeten ons verhouden tot andere opleidingen zowel binnen onze
+              faculteit (CO/CB, ICT, AD-frontend, master digital design) als
+              landelijk (CMD-opleidingen, product designopleidingen). De laatste
+              jaren is het lastiger om de verschillen tussen de opleidingen goed
+              duidelijk te maken naar onze werkveldpartners (voor stages en
+              afstudeeropdrachten) maar ook naar studiekiezers. Hierover zouden we
+              graag in gesprek gaan met het panel.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="summary-list-right">
         <img src="https://picsum.photos/300" alt="Ondersteunende afbeelding" />
-      </li>
-    </ul>
+        <ul>
+          <li>
+            <p>
+              In de visie hebben we de human centred designer veranderd naar
+              Humanity-centred designer. In het nieuwe competentieprofiel hebben we
+              meer aandacht voor de maatschappelijke impact. Daarnaast organiseren
+              we studie-ochtenden waar docenten werkvormen m.b.t. meta-thema's
+              uitwisselen en presentaties zien en geven over diversiteit en
+              inclusie. Op deze manier hebben we een eerste stap in de "humanity
+              centredness" van onze studenten en medewerkers gezet.
+            </p>
+          </li>
+          <li>
+            <p>
+              Een goede inventarisatie van de BoKS(A) ontbreekt: hier zijn wel
+              pogingen toe gedaan, maar de balans tussen volledigheid en
+              werkbaarheid is een uitdaging. Voor de accreditatie in 2025 zijn we
+              van plan hier een monitor voor te gebruiken om inzichtelijk te krijgen
+              wat we waar doen en of belangrijke thema&#39;s aan bod komen.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -84,27 +85,58 @@ section {
   background-color: var(--lavendel);
 }
 
-section ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, auto);
-  grid-gap: 2rem;
-}
-section ul li {
+.summary-container {
   display: flex;
-  list-style-type: none;
+  margin-top: 3em;
 }
-section ul li:last-of-type {
-  grid-area: 1 / 2 / 2 / 3;
+
+.summary-list-left {
+  display: flex;
+  flex-direction: column;
 }
-section ul li:last-of-type img {
+
+ul {
+  list-style: none;
+}
+
+li {
+  width: 23em;
+  margin-bottom: 3em;
+}
+
+p {
+  overflow: hidden;
+}
+
+li:before {
+  content: '';
+  display: block;
+  background-image: url('https://picsum.photos/200');
+  float: left;
+  height: 3em;
+  width: 3em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 1em;
+}
+
+.summary-list-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3em;
+}
+
+img {
   /* Height en width veranderen als de goede afbeelding  */
-  width: 31.5rem;
+  width: 100%;
   height: 13rem;
+  margin-bottom: 7.5em;
 }
+
 section ul li p {
   margin: 0;
 }
+
 section ul li img {
   width: 3rem;
   height: 3rem;

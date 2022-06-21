@@ -2,22 +2,34 @@
     <div class="bullet-points-container">
         <div class="bullet-point-list-left">
             <ul>
-                <p>1</p>
-                <li>Iedereen in onze community leert en leren staat centraal</li>
-                <p>1</p>
-                <li>De inhoud definieert onze aanpak en zorgt voor cohesie</li>
-                <p>1</p>
-                <li>We zijn praktijkgericht en gebruiken theorie om praktijk en reflectie te ondersteunen</li>
+                <p class="number">1</p>
+                <li>
+                    <p>Iedereen in onze community leert en leren staat centraal</p>
+                </li>
+                <p class="number">1</p>
+                <li>
+                    <p>De inhoud definieert onze aanpak en zorgt voor cohesie</p>
+                </li>
+                <p class="number">1</p>
+                <li>
+                    <p>We zijn praktijkgericht en gebruiken theorie om praktijk en reflectie te ondersteunen</p>
+                </li>
             </ul>
         </div>
         <div class="bullet-point-list-right">
             <ul>
-                <p>1</p>
-                <li>We zorgen voor een veilige en stimulerende learning community</li>
-                <p>1</p>
-                <li>Beoordelingen moeten holistisch zijn en gebaseerd op reflectie</li>
-                <p>1</p>
-                <li>Experimenten en onderzoek vormen de basis van de dialoog die ons vooruit brengt</li>
+                <p class="number">1</p>
+                <li>
+                    <p>We zorgen voor een veilige en stimulerende learning community</p>
+                </li>
+                <p class="number">1</p>
+                <li>
+                    <p>Beoordelingen moeten holistisch zijn en gebaseerd op reflectie</p>
+                </li>
+                <p class="number">1</p>
+                <li>
+                    <p>Experimenten en onderzoek vormen de basis van de dialoog die ons vooruit brengt</p>
+                </li>
             </ul>
         </div>
     </div>
@@ -59,6 +71,10 @@ li {
     font-size: 2.2vh;
 }
 
+li p {
+    overflow: hidden;
+}
+
 li:before {
     content: '';
     display: block;
@@ -71,7 +87,7 @@ li:before {
     margin-right: 1em;
 }
 
-p {
+.number {
     position: absolute;
     z-index: 10;
     font-size: 2.5em;
