@@ -1,37 +1,51 @@
 <template>
   <section>
     <div class="main-time-line">
-      <div class="main-time-line-block">
-        <p>Week -3</p>
+      <div class="main-time-line-container">
+        <div class="main-time-line-block">
+          <p>Week -3</p>
+        </div>
+        <div class="popup-items">
+          <button class="popup-item" @click="toggleModal($event, index)">
+            Afstuurdeervaardigheden
+          </button>
+        </div>
       </div>
-      <div class="main-time-line-block">
-        <p>Week -2</p>
+      <div class="main-time-line-container">
+        <div class="main-time-line-block">
+          <p>Week -2</p>
+        </div>
+        <div class="popup-items">
+          <button class="popup-item" @click="toggleModal($event, index)">
+            Projectvoorstel
+          </button>
+        </div>
       </div>
-      <div class="main-time-line-block">
-        <p>Week -1</p>
+      <div class="main-time-line-container">
+        <div class="main-time-line-block">
+          <p>Week -1</p>
+        </div>
       </div>
-      <div class="main-time-line-block">
-        <p>Week 0</p>
+      <div class="main-time-line-container">
+        <div class="main-time-line-block">
+          <p>Week 0</p>
+        </div>
       </div>
-      <div class="main-time-line-block">
-        <p>Week 1</p>
+      <div class="main-time-line-container">
+        <div class="main-time-line-block">
+          <p>Week 1</p>
+        </div>
       </div>
-      <div class="main-time-line-block">
-        <p>Week 2</p>
+      <div class="main-time-line-container">
+        <div class="main-time-line-block">
+          <p>Week 2</p>
+        </div>
       </div>
-      <div class="main-time-line-block">
-        <p>Week 3</p>
+      <div class="main-time-line-container">
+        <div class="main-time-line-block">
+          <p>Week 3</p>
+        </div>
       </div>
-    </div>
-    <div class="popup-items">
-      <button
-        v-for="(subject, index) in subjects"
-        :key="index"
-        class="popup-item"
-        @click="toggleModal($event, index)"
-      >
-        {{ subject }}
-      </button>
     </div>
     <generalModal :isVisible="visible" @clicked="closeModal" :title="title">
       <p>{{ content }}</p>
@@ -56,7 +70,7 @@ export default {
       contents: 'Leuke text :)',
     }
   },
-  mounted() {},
+  mounted() { },
   methods: {
     toggleModal(e, index) {
       console.log(e, index)
@@ -74,15 +88,27 @@ export default {
 <style scoped>
 /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap'); */
 
-@media only screen and (max-device-width: 820px) {
+@media only screen and (max-device-width: 1200px) {
   section {
     overflow-x: scroll;
   }
 }
 
+section {
+  margin-top: 10em;
+  margin-bottom: 10em;
+}
+
 .main-time-line {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+}
+
+.main-time-line-container {
+  display: flex;
+  margin-left: 2em;
+  align-items: center;
+  position: relative;
 }
 
 .main-time-line-block {
@@ -91,15 +117,13 @@ export default {
   padding: 1em;
   background-color: #fff021;
   border: solid black 3px;
-  width: 5em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 9em;
+  text-align: center;
 }
 
 /* To overlap lines  */
-.main-time-line-block:not(:first-child) {
-  margin-left: -0.1em;
+.main-time-line-container:not(:first-child) {
+  margin-left: -0.2em;
 }
 
 .popup {
@@ -110,7 +134,19 @@ export default {
 }
 
 .popup-items {
-  display: flex;
+  z-index: 12;
+  margin-left: -10.5em;
+}
+
+.main-time-line-container:nth-of-type(odd) .popup-item {
+  position: absolute;
+  bottom: 6em;
+}
+
+.main-time-line-container:nth-of-type(even) .popup-item {
+  position: absolute;
+  bottom: -6em;
+  margin-left: 12em;
 }
 
 .popup-item {
@@ -118,16 +154,12 @@ export default {
   color: white;
   padding: 0.75rem 1rem;
   min-width: min-content;
-  width: 18%;
+  width: 100git%;
   font-size: 1rem;
   text-align: left;
   position: relative;
   cursor: pointer;
 }
-
-/* .popup-item:nth-of-type(2n-1) {
-    
-} */
 
 .popup-item::after {
   content: 'i';

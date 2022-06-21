@@ -24,24 +24,20 @@
           <li>Onderzoeken</li>
         </ul>
         <ul v-else>
-          <li>Multidisciplinair samenwerken</li>
+          <li> Multidisciplinair samenwerken</li>
           <li>Manifesteren en presenteren</li>
           <li>Initiëren organiseren en regisseren</li>
           <li>Ontwikkelen en reflecteren</li>
           <li>Onderzoeken</li>
         </ul>
-        <label class="switch">
+        <label class=" switch">
           <input type="checkbox" @click="CardConColor" />
-          <span
-            class="slider"
-            :class="[isChecked ? 'CBlack' : 'Cwhite']"
-          ></span>
+          <span class="slider" :class="[isChecked ? 'CBlack' : 'Cwhite']"></span>
         </label>
       </div>
       <img
         src="https://images.prismic.io/cmd-midterm/663bf539-c574-417c-97e6-7b35177b4144_CardCon-Border.png?auto=compress,format"
-        class="cardBorder"
-      />
+        class="cardBorder" />
     </div>
   </section>
 </template>
@@ -84,7 +80,7 @@ export default {
   height: 36em;
   width: 31.5em;
   margin-left: -0.6em;
-  margin-top: -33.2em;
+  margin-top: -29em;
 }
 
 .bgYellow {
@@ -151,11 +147,7 @@ export default {
   height: 0;
   display: inline-block;
   border: 9px solid transparent;
-  border-left-color: black;
-}
-
-.CBlack ~ .CardCon ul li:before {
-  border-left-color: #fff021;
+  border-left-color: rgb(255, 255, 255);
 }
 
 .switch {
@@ -200,19 +192,19 @@ export default {
   border-radius: 2.5px;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #ffffff;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   background-color: #fff021;
 }
 
-input:checked + .CardCon {
+input:checked+.CardCon {
   background-color: #000000;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   content: 'Oud';
   -webkit-transform: translateX(68%);
   -ms-transform: translateX(68%);
