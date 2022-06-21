@@ -246,6 +246,153 @@
           }
         }
       },
+      "competencies_card": {
+        "library": "slices",
+        "id": "competencies_card",
+        "name": "CompetenciesCard",
+        "description": "CompetenciesCard",
+        "model": {
+          "id": "competencies_card",
+          "type": "SharedSlice",
+          "name": "CompetenciesCard",
+          "description": "CompetenciesCard",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "CompetenciesCard",
+              "primary": {
+                "componentIndex": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Component Index",
+                    "placeholder": ""
+                  }
+                },
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your product"
+                  }
+                },
+                "compTitle": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Comp Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "compDescription": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Comp Description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "items": {
+                "compOld": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Comp Old",
+                    "placeholder": ""
+                  }
+                },
+                "compNew": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Comp New",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "competencies_card",
+            "items": [
+              {
+                "compOld": "repurpose granular channels",
+                "compNew": "brand viral communities"
+              },
+              {
+                "compOld": "aggregate one-to-one communities",
+                "compNew": "syndicate efficient markets"
+              },
+              {
+                "compOld": "enhance end-to-end architectures",
+                "compNew": "seize 24/365 channels"
+              },
+              {
+                "compOld": "whiteboard cross-platform markets",
+                "compNew": "grow back-end applications"
+              },
+              {
+                "compOld": "matrix rich e-services",
+                "compNew": "envisioneer cutting-edge channels"
+              }
+            ],
+            "primary": {
+              "componentIndex": "implement sexy synergies",
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Maximize scalable technologies",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Commodo nostrud in consequat cillum aute minim aute est ad deserunt laboris.",
+                  "spans": []
+                }
+              ],
+              "compTitle": [
+                {
+                  "type": "paragraph",
+                  "text": "Cillum pariatur dolore labore deserunt. Qui esse pariatur velit ut excepteur tempor officia.",
+                  "spans": []
+                }
+              ],
+              "compDescription": [
+                {
+                  "type": "paragraph",
+                  "text": "Ex officia dolor incididunt deserunt pariatur dolor cupidatat exercitation velit labore do cupidatat duis.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {}
+      },
       "popup_component": {
         "library": "slices",
         "id": "popup_component",
@@ -392,11 +539,98 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/PopupComponent/default/preview.png",
+            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/PopupComponent/default/preview.png",
             "width": 800,
             "height": 214
           }
         }
+      },
+      "quote_component": {
+        "library": "slices",
+        "id": "quote_component",
+        "name": "QuoteComponent",
+        "description": "QuoteComponent",
+        "model": {
+          "id": "quote_component",
+          "type": "SharedSlice",
+          "name": "QuoteComponent",
+          "description": "QuoteComponent",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "QuoteComponent",
+              "primary": {
+                "componentIndex": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Component Index",
+                    "placeholder": ""
+                  }
+                },
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "quote": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Quote",
+                    "placeholder": "A nice description of your product",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                },
+                "quoteName": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Quote Name",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "quote_component",
+            "items": [],
+            "primary": {
+              "componentIndex": "brand killer deliverables",
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Revolutionize wireless infrastructures",
+                  "spans": []
+                }
+              ],
+              "quote": [
+                {
+                  "type": "paragraph",
+                  "text": "Duis sunt occaecat voluptate enim exercitation ipsum adipisicing et voluptate ad in irure dolore.",
+                  "spans": []
+                }
+              ],
+              "quoteName": "generate vertical paradigms"
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {}
       },
       "title_element": {
         "library": "slices",
@@ -468,7 +702,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/TitleElement/default/preview.png",
+            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/TitleElement/default/preview.png",
             "width": 800,
             "height": 259
           }
