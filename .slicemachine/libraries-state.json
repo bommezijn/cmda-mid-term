@@ -473,7 +473,13 @@
           "fileName": "index",
           "extension": "vue"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/HeroComponent/default/preview.png",
+            "width": 800,
+            "height": 295
+          }
+        }
       },
       "popup_component": {
         "library": "slices",
@@ -1023,6 +1029,15 @@
                     "label": "Title",
                     "placeholder": "This is where it all begins..."
                   }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
                 }
               },
               "items": {},
@@ -1041,7 +1056,14 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Engineer front-end vortals",
+                  "text": "Generate strategic ROI",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Laboris aliqua eu laboris. Nisi reprehenderit deserunt amet excepteur ad in nisi.",
                   "spans": []
                 }
               ]
@@ -1052,13 +1074,7 @@
           "fileName": "index",
           "extension": "vue"
         },
-        "screenshotPaths": {
-          "default": {
-            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/TitleElement/default/preview.png",
-            "width": 800,
-            "height": 111
-          }
-        }
+        "screenshotPaths": {}
       }
     }
   }

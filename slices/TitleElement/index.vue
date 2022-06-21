@@ -2,6 +2,7 @@
   <section class="content">
     <h3>{{ slice.primary.componentIndex }}</h3>
     <PrismicRichText :field="slice.primary.title" class="title" />
+    <PrismicRichText :field="slice.primary.description" />
   </section>
 </template>
 
