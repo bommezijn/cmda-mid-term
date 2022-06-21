@@ -70,10 +70,10 @@ export default {
       contents: 'Leuke text :)',
     }
   },
-  mounted() { },
+  mounted() {},
   methods: {
     toggleModal(e, index) {
-      console.log(e, index)
+      // console.log(e, index)
       this.visible = !this.visible
       this.content = this.contents
       this.title = this.subjects[index]
