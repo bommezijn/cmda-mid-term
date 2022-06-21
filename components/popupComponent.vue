@@ -21,7 +21,7 @@
         {{ subject }}
       </button>
     </div>
-    <generalModal :isVisible="visible" @clicked="closeModal" :title="title">
+    <generalModal :is-visible="visible" :title="title" @clicked="closeModal">
       <p>{{ content }}</p>
     </generalModal>
   </section>
