@@ -48,6 +48,12 @@
         }
       }
     },
-    "PopupComponent": {}
+    "PopupComponent": {},
+    "TimelineComponent": {},
+    "SummaryComponent": {
+      "default": {
+        "primary": {}
+      }
+    }
   }
 }

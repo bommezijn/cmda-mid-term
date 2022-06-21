@@ -1,10 +1,10 @@
 <template>
   <section class="CardSwitch">
     <PrismicRichText :field="slice.primary.title" />
-    <div class="CardCon" :class="[isChecked ? 'bgBlack' : 'bgYellow']">
-      <div>
+    <div class="cardConWrapper">
+      <div class="CardCon" :class="[isChecked ? 'bgBlack' : 'bgYellow']">
         <PrismicRichText :field="slice.primary.compTitle" />
-        <PrismicRichText :field="slice.primary.compDescription" />
+        <PrismicRichText :field="slice.primary.compDescription" class="desc" />
         <!-- <h3>Principes</h3> -->
         <h4 v-if="isChecked">Nieuw</h4>
         <h4 v-else>Oud</h4>
@@ -52,20 +52,20 @@ export default {
 
 <style scoped>
 /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap'); */
-
 .CardCon {
   /* font-family: 'Open Sans'; */
   font-weight: 500;
   height: 35em;
   width: 30em;
-  margin-left: 2em;
-  margin-top: 3em;
+  margin: auto;
+
+  padding: 2rem;
 
   /* border image */
-  border-image: url('~/static/img/corner.svg');
-  border-image-slice: 10;
-  border-width: 10px;
-  border-image-repeat: round;
+  border: 3px solid;
+  border-image: url('~/static/img/corner.png') 40% round;
+  border-image-outset: 10px;
+  border-image-width: 20px;
 }
 
 .CardSwitch h2 {
@@ -73,6 +73,10 @@ export default {
   /* font-family: 'Open Sans'; */
   font-weight: 700;
   font-size: 1.7em;
+}
+
+.desc {
+  margin-bottom: 2rem;
 }
 
 .cardBorder {
@@ -104,8 +108,6 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-left: 1em;
-  padding: 1em;
 }
 
 .CardCon h4 {
@@ -139,15 +141,14 @@ export default {
 
 .CardCon ul li:before {
   content: '';
-  float: left;
   width: 0;
   height: 0;
   display: inline-block;
-  border: 9px solid transparent;
+  border: 8px solid transparent;
   border-left-color: black;
+  transform: translateY(2px);
 }
-
-.CBlack ~ .CardCon ul li:before {
+.CardCon.bgBlack ul li:before {
   border-left-color: #fff021;
 }
 
