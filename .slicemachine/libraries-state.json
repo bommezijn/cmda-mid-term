@@ -632,6 +632,283 @@
         },
         "screenshotPaths": {}
       },
+      "summary_component": {
+        "library": "slices",
+        "id": "summary_component",
+        "name": "SummaryComponent",
+        "description": "SummaryComponent",
+        "model": {
+          "id": "summary_component",
+          "type": "SharedSlice",
+          "name": "SummaryComponent",
+          "description": "SummaryComponent",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "SummaryComponent",
+              "primary": {
+                "componentIndex": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Component Index",
+                    "placeholder": ""
+                  }
+                },
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                }
+              },
+              "items": {
+                "summary": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Summary",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "summary_component",
+            "items": [
+              {
+                "summary": [
+                  {
+                    "type": "paragraph",
+                    "text": "Magna tempor dolore qui ullamco do elit sit aliqua esse ad laboris esse enim. Dolor eiusmod aliqua ea duis sint dolore dolor eu anim.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "summary": [
+                  {
+                    "type": "paragraph",
+                    "text": "Aliquip laborum ad cillum proident laboris sunt aute voluptate do dolor duis et amet proident cupidatat.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "summary": [
+                  {
+                    "type": "paragraph",
+                    "text": "Cupidatat occaecat velit amet occaecat veniam fugiat ea minim deserunt ad.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "summary": [
+                  {
+                    "type": "paragraph",
+                    "text": "Minim sunt ad cupidatat dolore consectetur sint voluptate veniam. Ut ad laboris culpa ex sunt quis incididunt nisi enim culpa duis dolor dolor. Reprehenderit magna et elit Lorem non labore minim adipisicing proident.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "summary": [
+                  {
+                    "type": "paragraph",
+                    "text": "Esse minim nostrud ullamco qui exercitation dolor Lorem pariatur pariatur dolore sint excepteur sit.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {
+              "componentIndex": "unleash vertical systems",
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Engage sexy bandwidth",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/SummaryComponent/default/preview.png",
+            "width": 800,
+            "height": 216
+          }
+        }
+      },
+      "timeline_component": {
+        "library": "slices",
+        "id": "timeline_component",
+        "name": "TimelineComponent",
+        "description": "TimelineComponent",
+        "model": {
+          "id": "timeline_component",
+          "type": "SharedSlice",
+          "name": "TimelineComponent",
+          "description": "TimelineComponent",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "TimelineComponent",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your product"
+                  }
+                },
+                "weekAmount": {
+                  "type": "Number",
+                  "config": {
+                    "label": "Week Amount",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {
+                "weekTitle": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Week Title",
+                    "placeholder": ""
+                  }
+                },
+                "weekContent": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Week Content",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "timeline_component",
+            "items": [
+              {
+                "weekTitle": "aggregate mission-critical schemas",
+                "weekContent": [
+                  {
+                    "type": "paragraph",
+                    "text": "Labore do et dolor in occaecat mollit ad enim officia elit labore in fugiat. Veniam proident nostrud sit id est sint sint.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "weekTitle": "grow granular systems",
+                "weekContent": [
+                  {
+                    "type": "paragraph",
+                    "text": "Lorem fugiat non occaecat veniam sint ad voluptate proident velit esse amet pariatur nostrud. Sit cillum qui quis mollit laboris nostrud adipisicing. Tempor culpa ex elit in tempor eu velit ex labore.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "weekTitle": "empower ubiquitous models",
+                "weekContent": [
+                  {
+                    "type": "paragraph",
+                    "text": "Aute velit consectetur deserunt in cillum nulla occaecat cupidatat ipsum in. Est quis quis ea do reprehenderit do eu non do ut.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "weekTitle": "maximize frictionless supply-chains",
+                "weekContent": [
+                  {
+                    "type": "paragraph",
+                    "text": "Proident deserunt cillum eu velit et pariatur aliquip amet. Consequat laboris cupidatat adipisicing in eiusmod dolore laboris id ex esse do laboris eu non. Magna ullamco elit nisi consequat reprehenderit commodo nisi adipisicing consequat proident minim exercitation.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "weekTitle": "facilitate turn-key schemas",
+                "weekContent": [
+                  {
+                    "type": "paragraph",
+                    "text": "Laborum deserunt nostrud duis eu culpa qui laborum commodo in. Sint ullamco sunt qui cupidatat incididunt adipisicing commodo nulla nostrud excepteur consequat. Consectetur exercitation dolore cillum ullamco occaecat ex incididunt adipisicing ex et mollit consectetur reprehenderit.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Morph sexy e-business",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Ut aute aliquip nostrud sint non magna fugiat esse ut.",
+                  "spans": []
+                }
+              ],
+              "weekAmount": 9692
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/TimelineComponent/default/preview.png",
+            "width": 800,
+            "height": 242
+          }
+        }
+      },
       "title_element": {
         "library": "slices",
         "id": "title_element",

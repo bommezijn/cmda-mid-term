@@ -4,6 +4,8 @@ import ArticleSlice from './ArticleSlice';
 import CompetenciesCard from './CompetenciesCard';
 import PopupComponent from './PopupComponent';
 import QuoteComponent from './QuoteComponent';
+import SummaryComponent from './SummaryComponent';
+import TimelineComponent from './TimelineComponent';
 import TitleElement from './TitleElement';
 
 export {
@@ -11,6 +13,8 @@ export {
 	CompetenciesCard,
 	PopupComponent,
 	QuoteComponent,
+	SummaryComponent,
+	TimelineComponent,
 	TitleElement,
 };
 
@@ -19,5 +23,7 @@ export const components = {
 	competencies_card: CompetenciesCard,
 	popup_component: PopupComponent,
 	quote_component: QuoteComponent,
+	summary_component: SummaryComponent,
+	timeline_component: TimelineComponent,
 	title_element: TitleElement,
 };
