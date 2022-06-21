@@ -11,6 +11,43 @@
   },
   "slices": {
     "TitleElement": {},
-    "ArticleSlice": {}
+    "ArticleSlice": {
+      "default": {
+        "primary": {},
+        "items": {
+          "content": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      },
+      "single": {
+        "items": {}
+      },
+      "imgLeft": {
+        "items": {},
+        "primary": {
+          "content": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      },
+      "imgRight": {
+        "primary": {
+          "content": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "PopupComponent": {}
   }
 }

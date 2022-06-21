@@ -37,8 +37,14 @@
     <div class="speech-bubble">
       <div class="bubble">
         <div class="color-picker">
-          <input type="color" id="colorWell" value="#e66465" />
-          <label for="colorWell"
+          <input
+            type="color"
+            id="colorWeel"
+            value="#f8f0d5"
+            v-model="colorCode"
+            @input="changeColor"
+          />
+          <label for="colorWeel"
             ><img
               src="https://images.prismic.io/cmd-midterm/5aa4c117-b663-4f09-9144-1c33b6798026_colorpicker.png?auto=compress,format"
           /></label>
@@ -73,57 +79,24 @@
         <p class="name-arrow-tag">Name</p>
         <div class="semi-collom-down">"</div>
       </div>
-      <div class="BackBubble">
-        <!-- Feedback speelt vanaf de start van de opleiding een belangrijke rol:
-        feedback van docenten, peer-feedback als werkvorm (al dan niet via DLO)
-        en CMD student-assistenten die studenten ondersteunen en feedback geven.
-        Het geven van effectieve feedback is niet eenvoudig. Dit is een
-        belangrijke reden om te experimenteren met programmatisch toetsen. Door
-        programmatisch toetsen wordt de rol van feedback – het formatief
-        handelen – extra belangrijk. De studenten zullen nog steeds voornamelijk
-        een product maken, maar ze zullen zich daarbij meer bewust moeten worden
-        van hun eigen ontwerpproces en het bredere (maatschappelijke) belang
-        ervan. -->
-      </div>
+      <div class="BackBubble"></div>
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'CardSwitch',
+  name: 'QuoteComp',
   data() {
-    return {}
-  },
-  mounted() {
-    this.startup()
+    return {
+      colorCode: '',
+    }
   },
   methods: {
-    onwindow() {
-      window.addEventListener('load', this.startup, false)
-    },
-    startup() {
-      // let colorWell;
-      const defaultColor = '#0000ff'
-      const colorWell = document.querySelector('#colorWell')
-      colorWell.value = defaultColor
-      colorWell.addEventListener('input', this.updateFirst, false)
-      colorWell.addEventListener('change', this.updateAll, false)
-      colorWell.select()
-    },
-    updateFirst(event) {
+    changeColor() {
       const bubble = document.querySelector('.bubble')
-
-      if (bubble) {
-        bubble.style.backgroundColor = event.target.value
-        bubble.style.setProperty('--border-color', event.target.value)
-      }
-    },
-    updateAll(event) {
-      document.querySelectorAll('.bubble').forEach(function (bubble) {
-        bubble.style.backgroundColor = event.target.value
-        bubble.style.setProperty('--border-color', event.target.value)
-      })
+      bubble.style.backgroundColor = this.colorCode
+      bubble.style.setProperty('--border-color', this.colorCode)
     },
   },
 }
@@ -131,14 +104,6 @@ export default {
 
 <style scoped>
 /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap'); */
-
-:root {
-  --border-color: #f8f0d5;
-}
-
-template {
-  background-color: #efefec;
-}
 
 #speech {
   display: flex;
@@ -172,6 +137,7 @@ h2 {
 }
 
 .bubble {
+  --border-color: #f8f0d5;
   position: relative;
   background: #f8f0d5;
   color: #000000;

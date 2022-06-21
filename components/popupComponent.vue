@@ -73,8 +73,9 @@ export default {
   padding: 0.5rem;
 }
 
-.content h2 {
+.content h1 {
   border: 3px solid black;
+  background-color: blue;
   padding: 0.5rem;
   width: max-content;
 }

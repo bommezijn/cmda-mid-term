@@ -8,7 +8,7 @@
                 <h1>Communicatie &
                     Multi media design</h1>
                 <p id="header-block-h1">Mid-terms</p>
-                <p id="header-block-last">Carriculum 2022-2024</p>
+                <p id="header-block-last">Curriculum 2022-2024</p>
             </div>
         </header>
 
@@ -70,114 +70,109 @@
 
 <script>
 export default {
-    name: 'IndexComp',
-    layout: 'default',
-    data() {
-
-    },
-    methods: {
-
-    }
-};
+  name: 'IndexComp',
+  layout: 'default',
+  data() {},
+  methods: {},
+}
 </script>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    height: 50vw;
-    background: url(https://images.prismic.io/cmd-midterm/c619d173-a2f3-4150-aafa-a773364cd720_hva-cmd-idex-header.jpeg?auto=compress,format);
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    position: relative;
+  height: 50vw;
+  background: url(https://images.prismic.io/cmd-midterm/c619d173-a2f3-4150-aafa-a773364cd720_hva-cmd-idex-header.jpeg?auto=compress,format);
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: relative;
 }
 
 .header-content {
-    margin-left: 5em;
+  margin-left: 5em;
 }
 
 h1 {
-    position: absolute;
-    font-family: 'Open Sans';
-    font-size: 4vw;
-    color: white;
-    width: 40%;
-    margin-top: 2em;
+  position: absolute;
+  font-family: 'Open Sans';
+  font-size: 4vw;
+  color: white;
+  width: 40%;
+  margin-top: 2em;
 }
 
 #header-block-h1 {
-    position: absolute;
-    font-family: 'Open Sans';
-    font-size: 1.5vw;
-    color: white;
-    width: 40%;
-    margin-top: 16em;
-    background-color: rgba(0, 0, 0, 0.553);
-    padding: 1em;
-    width: 10%;
-    text-align: center;
+  position: absolute;
+  font-family: 'Open Sans';
+  font-size: 1.5vw;
+  color: white;
+  width: 40%;
+  margin-top: 16em;
+  background-color: rgba(0, 0, 0, 0.553);
+  padding: 1em;
+  width: 10%;
+  text-align: center;
 }
 
 #header-block-last {
-    position: absolute;
-    font-family: 'Open Sans';
-    font-size: 1.5vw;
-    color: white;
-    width: 40%;
-    margin-top: 23em;
-    background-color: rgb(0, 0, 0);
-    padding: 1em;
-    width: 20%;
-    text-align: center;
+  position: absolute;
+  font-family: 'Open Sans';
+  font-size: 1.5vw;
+  color: white;
+  width: 40%;
+  margin-top: 23em;
+  background-color: rgb(0, 0, 0);
+  padding: 1em;
+  width: 20%;
+  text-align: center;
 }
 
 .yellow-container {
-    background-color: #FFF021;
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
+  background-color: #fff021;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
 }
 
 h2 {
-    margin: 0;
-    font-family: 'Open Sans';
-    font-size: 3rem;
-    width: 40%;
-    margin-top: 1em;
+  margin: 0;
+  font-family: 'Open Sans';
+  font-size: 3rem;
+  width: 40%;
+  margin-top: 1em;
 }
 
 .text {
-    margin: 0;
-    font-family: 'Open Sans';
-    font-size: 1rem;
-    width: 40%;
-    margin-left: 5em;
-    margin-top: 2em;
+  margin: 0;
+  font-family: 'Open Sans';
+  font-size: 1rem;
+  width: 40%;
+  margin-left: 5em;
+  margin-top: 2em;
 }
 
 .yellow-container img {
-    height: 20em;
-    width: 20em;
-    margin-left: 15em;
+  height: 20em;
+  width: 20em;
+  margin-left: 15em;
 }
 
-
 @media only screen and (max-device-width: 1100px) {
-    .yellow-container img {
-        margin-left: 5em;
-    }
+  .yellow-container img {
+    margin-left: 5em;
+  }
 }
 
 .links {
-    display: flex;
-    margin-bottom: 10em;
+  display: flex;
+  margin-bottom: 10em;
 }
 
 /* .link-container:nth-of-type(1) {
@@ -185,64 +180,64 @@ h2 {
 } */
 
 .link-container {
-    margin-top: 5em;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .heading {
-    margin: 0;
-    font-family: 'Open Sans';
-    font-size: 1.5rem;
-    font-weight: 700;
-    width: 40%;
-    margin-top: 2em;
+  margin: 0;
+  font-family: 'Open Sans';
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 40%;
+  margin-top: 2em;
 }
 
 hr {
-    width: 10em;
-    /* margin-left: 0; */
-    border-top: 5px solid #FFF021;
-    border-radius: 5px;
-    border-bottom: none;
+  width: 10em;
+  /* margin-left: 0; */
+  border-top: 5px solid #fff021;
+  border-radius: 5px;
+  border-bottom: none;
 }
 
 .heading-1 {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    font-family: 'Open Sans';
-    font-weight: 200;
-    width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: 'Open Sans';
+  font-weight: 200;
+  width: 40%;
 }
 
 a {
-    margin-top: 1em;
-    font-size: 1em;
+  margin-top: 1em;
+  font-size: 1em;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 @media only screen and (max-device-width: 720px) {
-    .yellow-container img {
-        margin-left: 2em;
-    }
+  .yellow-container img {
+    margin-left: 2em;
+  }
 
-    .links {
-        flex-wrap: wrap;
-    }
+  .links {
+    flex-wrap: wrap;
+  }
 
-    hr {
-        margin-left: 30%;
-    }
+  hr {
+    margin-left: 30%;
+  }
 
-    .yellow-container {
-        flex-direction: column;
-    }
+  .yellow-container {
+    flex-direction: column;
+  }
 }
 </style>
