@@ -225,22 +225,22 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/ArticleSlice/default/preview.png",
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/ArticleSlice/default/preview.png",
             "width": 800,
             "height": 440
           },
           "single": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/ArticleSlice/single/preview.png",
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/ArticleSlice/single/preview.png",
             "width": 800,
             "height": 115
           },
           "imgLeft": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/ArticleSlice/imgLeft/preview.png",
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/ArticleSlice/imgLeft/preview.png",
             "width": 800,
             "height": 474
           },
           "imgRight": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/ArticleSlice/imgRight/preview.png",
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/ArticleSlice/imgRight/preview.png",
             "width": 800,
             "height": 527
           }
@@ -539,7 +539,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/PopupComponent/default/preview.png",
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/PopupComponent/default/preview.png",
             "width": 800,
             "height": 214
           }
@@ -751,7 +751,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/SummaryComponent/default/preview.png",
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/SummaryComponent/default/preview.png",
             "width": 800,
             "height": 216
           }
@@ -903,7 +903,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/TimelineComponent/default/preview.png",
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/TimelineComponent/default/preview.png",
             "width": 800,
             "height": 242
           }
@@ -927,6 +927,13 @@
               "version": "sktwi1xtmkfgx8626",
               "description": "TitleElement",
               "primary": {
+                "componentIndex": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Component Index",
+                    "placeholder": "1.2"
+                  }
+                },
                 "title": {
                   "type": "StructuredText",
                   "config": {
@@ -956,17 +963,18 @@
             "slice_type": "title_element",
             "items": [],
             "primary": {
+              "componentIndex": "1.2",
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Envisioneer synergistic e-markets",
+                  "text": "Integrate web-enabled niches",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Reprehenderit exercitation ullamco magna laborum est do ut sit nulla occaecat. Proident nostrud ut cupidatat eu aliquip excepteur exercitation ullamco tempor id tempor voluptate.",
+                  "text": "Ut irure in nulla eu anim dolor deserunt deserunt. In anim aliqua duis veniam commodo sint magna.",
                   "spans": []
                 }
               ]
@@ -979,9 +987,9 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/TitleElement/default/preview.png",
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/TitleElement/default/preview.png",
             "width": 800,
-            "height": 259
+            "height": 167
           }
         }
       }

@@ -11,6 +11,13 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "TitleElement",
       "primary": {
+        "componentIndex": {
+          "type": "Text",
+          "config": {
+            "label": "Component Index",
+            "placeholder": "1.2"
+          }
+        },
         "title": {
           "type": "StructuredText",
           "config": {
