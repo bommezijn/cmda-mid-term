@@ -1,9 +1,9 @@
 <template>
   <div
-    @click.self="hideModal"
     ref="modal"
     class="modal"
     :class="{ visible: isVisible }"
+    @click.self="hideModal"
   >
     <div class="content-wrapper" :class="{ visible: isVisible }">
       <div class="heading">
@@ -21,7 +21,7 @@
 export default {
   props: {
     isVisible: Boolean,
-    title: String,
+    title: { type: String, default: 'Modal Title' },
   },
   data() {
     return {}
@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     hideModal(e) {
-      console.log(e)
+      // console.log(e)
       this.$emit('clicked')
     },
   },
