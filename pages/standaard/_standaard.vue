@@ -14,7 +14,7 @@ export default {
     }
   },
   async asyncData({ $prismic, params, error }) {
-    const document = await $prismic.api.getByUID('standaard', 'standaard-1')
+    const document = await $prismic.api.getByUID('standaard', params.standaard)
 
     if (document) {
       console.log(document.data.slices)
