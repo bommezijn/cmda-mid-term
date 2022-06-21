@@ -46,7 +46,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   flex-grow: 1;
-  padding: 1.5em 2em;
+  padding: 0 2em;
 
   background-color: #fff021;
   background-color: var(--geel);
@@ -73,12 +73,17 @@ export default {
 }
 
 .navLinks > li {
-  padding: 0 1em;
+  padding: 0;
+  /* padding: 0 1em; */
 }
 
 .navItem a {
+  display: block;
   color: inherit;
   text-decoration: none;
+  height: 100%;
+  margin: 0.5em 1em;
+  padding: 0.5em 0;
 }
 
 li {
@@ -99,40 +104,6 @@ li:hover {
   color: var(--white);
   cursor: pointer;
 }
-
-/* submenu */
-/* ul li ul {
-  background: var(--black);
-  visibility: hidden;
-  opacity: 0;
-  min-width: 100%;
-  position: absolute;
-  left: 0;
-  display: none;
-}
-
-ul li:hover>ul,
-ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-ul li ul li {
-  clear: both;
-  width: 100%;
-}
-
-.hasSubmenu a {
-  display: inline-block;
-  width: 100%;
-}
-
-.hasSubmenu:hover {
-  background-color: var(--geel);
-  color: var(--black);
-} */
-/* end submenu */
 
 .nuxt-link-active {
   font-weight: bold;
