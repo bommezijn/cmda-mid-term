@@ -1,9 +1,9 @@
 <template>
   <div
-    @click.self="hideModal"
     ref="modal"
     class="modal"
     :class="{ visible: isVisible }"
+    @click.self="hideModal"
   >
     <div class="content-wrapper" :class="{ visible: isVisible }">
       <div class="heading">
@@ -21,13 +21,13 @@
 export default {
   props: {
     isVisible: Boolean,
-    title: String,
+    title: { type: String, default: 'Modal Title' },
   },
   data() {
     return {}
   },
   mounted() {
-    console.log(this.isVisible)
+    // console.log(this.isVisible)
     window.addEventListener('keyup', (e) => {
       if (e.code === 'Escape') {
         this.hideModal()
@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     hideModal(e) {
-      console.log(e)
+      // console.log(e)
       this.$emit('clicked')
     },
   },
@@ -65,7 +65,12 @@ export default {
 .heading {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 2rem;
+}
+
+.heading >>> h2 {
+  max-width: 75%;
 }
 
 button {
@@ -104,9 +109,6 @@ button::after {
   transform: translate(-50%, -50%);
 
   padding: 2rem;
-}
-.content {
-  width: 80vw;
 }
 
 .content-wrapper.visible {

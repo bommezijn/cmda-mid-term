@@ -1,6 +1,6 @@
 <template>
   <section class="popup">
-    <div class="content">
+    <div v-if="slice.primary.componentIndex" class="content">
       <h3>{{ slice.primary.componentIndex }}</h3>
       <PrismicRichText :field="slice.primary.title" class="title" />
       <PrismicRichText :field="slice.primary.description" />
@@ -15,7 +15,7 @@
         <PrismicRichText :field="item.popupTitle" />
       </button>
     </div>
-    <generalModal :isVisible="visible" @clicked="closeModal" :title="title">
+    <generalModal :is-visible="visible" :title="title" @clicked="closeModal">
       <p>{{ content }}</p>
     </generalModal>
   </section>
@@ -36,7 +36,7 @@ export default {
     }
   },
   mounted() {
-    console.log(this.slice.data)
+    // console.log(this.slice.data)
   },
   methods: {
     toggleModal(e, index, item) {

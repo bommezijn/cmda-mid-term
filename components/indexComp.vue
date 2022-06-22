@@ -2,70 +2,69 @@
 - footer 
 -->
 <template>
-    <main>
-        <header>
-            <div class="header-content">
-                <h1>Communicatie &
-                    Multi media design</h1>
-                <p id="header-block-h1">Mid-terms</p>
-                <p id="header-block-last">Curriculum 2022-2024</p>
-            </div>
-        </header>
+  <main>
+    <header>
+      <div class="header-content">
+        <h1>Communicatie & Multimedia design</h1>
+        <p id="header-block-h1">Mid-terms</p>
+        <p id="header-block-last">Curriculum 2022-2024</p>
+      </div>
+    </header>
 
-        <body>
-            <div class="yellow-container">
-                <div class="text">
-                    <h2>Index </h2>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
-                </div>
-                <img
-                    src="https://images.prismic.io/cmd-midterm/131455d4-d639-44b2-afc4-019646b25f60_laptop.png?auto=compress,format" />
-            </div>
-            <div class="links">
-                <div class="link-container">
-                    <a class="heading">1.0 title</a>
-                    <hr>
-                    </hr>
-                    <div class="heading-1">
-                        <a>1.1 wow</a>
-                        <a>1.2 geweldig</a>
-                        <a>1.3 meen je niet?</a>
-                    </div>
-                </div>
-                <div class="link-container">
-                    <a class="heading">1.0 title</a>
-                    <hr>
-                    </hr>
-                    <div class="heading-1">
-                        <a>1.1 wow</a>
-                        <a>1.2 geweldig</a>
-                        <a>1.3 meen je niet?</a>
-                    </div>
-                </div>
-                <div class="link-container">
-                    <a class="heading">1.0 title</a>
-                    <hr>
-                    </hr>
-                    <div class="heading-1">
-                        <a>1.1 wow</a>
-                        <a>1.2 geweldig</a>
-                        <a>1.3 meen je niet?</a>
-                    </div>
-                </div>
-                <div class="link-container">
-                    <a class="heading">1.0 title</a>
-                    <hr>
-                    </hr>
-                    <div class="heading-1">
-                        <a>1.1 wow</a>
-                        <a>1.2 geweldig</a>
-                        <a>1.3 meen je niet?</a>
-                    </div>
-                </div>
-            </div>
-        </body>
-    </main>
+    <body>
+      <div class="yellow-container">
+        <div class="text">
+          <h2>Index</h2>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis.
+          </p>
+        </div>
+        <img
+          src="https://images.prismic.io/cmd-midterm/131455d4-d639-44b2-afc4-019646b25f60_laptop.png?auto=compress,format"
+        />
+      </div>
+      <div class="links">
+        <div class="link-container">
+          <a class="heading">1.0 title</a>
+          <hr />
+          <div class="heading-1">
+            <a>1.1 wow</a>
+            <a>1.2 geweldig</a>
+            <a>1.3 meen je niet?</a>
+          </div>
+        </div>
+        <div class="link-container">
+          <a class="heading">1.0 title</a>
+          <hr />
+          <div class="heading-1">
+            <a>1.1 wow</a>
+            <a>1.2 geweldig</a>
+            <a>1.3 meen je niet?</a>
+          </div>
+        </div>
+        <div class="link-container">
+          <a class="heading">1.0 title</a>
+          <hr />
+          <div class="heading-1">
+            <a>1.1 wow</a>
+            <a>1.2 geweldig</a>
+            <a>1.3 meen je niet?</a>
+          </div>
+        </div>
+        <div class="link-container">
+          <a class="heading">1.0 title</a>
+          <hr />
+          <div class="heading-1">
+            <a>1.1 wow</a>
+            <a>1.2 geweldig</a>
+            <a>1.3 meen je niet?</a>
+          </div>
+        </div>
+      </div>
+    </body>
+  </main>
 </template>
 
 <script>
@@ -78,8 +77,6 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
-
 body {
   margin: 0;
   padding: 0;
@@ -101,7 +98,6 @@ header {
 
 h1 {
   position: absolute;
-  font-family: 'Open Sans';
   font-size: 4vw;
   color: white;
   width: 40%;
@@ -110,7 +106,6 @@ h1 {
 
 #header-block-h1 {
   position: absolute;
-  font-family: 'Open Sans';
   font-size: 1.5vw;
   color: white;
   width: 40%;
@@ -123,7 +118,6 @@ h1 {
 
 #header-block-last {
   position: absolute;
-  font-family: 'Open Sans';
   font-size: 1.5vw;
   color: white;
   width: 40%;
@@ -143,7 +137,6 @@ h1 {
 
 h2 {
   margin: 0;
-  font-family: 'Open Sans';
   font-size: 3rem;
   width: 40%;
   margin-top: 1em;
@@ -151,7 +144,6 @@ h2 {
 
 .text {
   margin: 0;
-  font-family: 'Open Sans';
   font-size: 1rem;
   width: 40%;
   margin-left: 5em;
@@ -175,10 +167,6 @@ h2 {
   margin-bottom: 10em;
 }
 
-/* .link-container:nth-of-type(1) {
-    margin-left: 5em;
-} */
-
 .link-container {
   margin-top: 5em;
   display: flex;
@@ -190,7 +178,6 @@ h2 {
 
 .heading {
   margin: 0;
-  font-family: 'Open Sans';
   font-size: 1.5rem;
   font-weight: 700;
   width: 40%;
@@ -199,7 +186,6 @@ h2 {
 
 hr {
   width: 10em;
-  /* margin-left: 0; */
   border-top: 5px solid #fff021;
   border-radius: 5px;
   border-bottom: none;
@@ -209,7 +195,6 @@ hr {
   display: flex;
   flex-direction: column;
   margin: 0;
-  font-family: 'Open Sans';
   font-weight: 200;
   width: 40%;
 }

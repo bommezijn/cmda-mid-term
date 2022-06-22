@@ -10,7 +10,15 @@
     }
   },
   "slices": {
-    "TitleElement": {},
+    "TitleElement": {
+      "default": {
+        "primary": {
+          "componentIndex": {
+            "content": "1.2"
+          }
+        }
+      }
+    },
     "ArticleSlice": {
       "default": {
         "primary": {},
@@ -54,6 +62,7 @@
       "default": {
         "primary": {}
       }
-    }
+    },
+    "HeroComponent": {}
   }
 }

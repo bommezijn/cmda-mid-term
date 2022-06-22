@@ -1,23 +1,16 @@
 {
-  "id": "title_element",
+  "id": "hero_component",
   "type": "SharedSlice",
-  "name": "TitleElement",
-  "description": "TitleElement",
+  "name": "HeroComponent",
+  "description": "HeroComponent",
   "variations": [
     {
       "id": "default",
       "name": "Default",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "TitleElement",
+      "description": "HeroComponent",
       "primary": {
-        "componentIndex": {
-          "type": "Text",
-          "config": {
-            "label": "Component Index",
-            "placeholder": "1.2"
-          }
-        },
         "title": {
           "type": "StructuredText",
           "config": {
@@ -29,10 +22,17 @@
         "description": {
           "type": "StructuredText",
           "config": {
+            "single": "paragraph",
             "label": "Description",
+            "placeholder": "A nice description of your product"
+          }
+        },
+        "backgroundImage": {
+          "type": "Link",
+          "config": {
+            "label": "Background Image",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+            "select": "media"
           }
         }
       },

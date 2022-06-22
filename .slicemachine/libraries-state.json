@@ -225,22 +225,22 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/ArticleSlice/default/preview.png",
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/ArticleSlice/default/preview.png",
             "width": 800,
             "height": 440
           },
           "single": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/ArticleSlice/single/preview.png",
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/ArticleSlice/single/preview.png",
             "width": 800,
             "height": 115
           },
           "imgLeft": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/ArticleSlice/imgLeft/preview.png",
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/ArticleSlice/imgLeft/preview.png",
             "width": 800,
             "height": 474
           },
           "imgRight": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/ArticleSlice/imgRight/preview.png",
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/ArticleSlice/imgRight/preview.png",
             "width": 800,
             "height": 527
           }
@@ -393,6 +393,94 @@
         },
         "screenshotPaths": {}
       },
+      "hero_component": {
+        "library": "slices",
+        "id": "hero_component",
+        "name": "HeroComponent",
+        "description": "HeroComponent",
+        "model": {
+          "id": "hero_component",
+          "type": "SharedSlice",
+          "name": "HeroComponent",
+          "description": "HeroComponent",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "HeroComponent",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your product"
+                  }
+                },
+                "backgroundImage": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Background Image",
+                    "placeholder": "",
+                    "select": "media"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "hero_component",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Architect plug-and-play niches",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Reprehenderit culpa velit enim mollit nostrud pariatur incididunt sunt enim eu duis non eiusmod labore occaecat. Anim excepteur tempor quis velit qui eiusmod.",
+                  "spans": []
+                }
+              ],
+              "backgroundImage": {
+                "link_type": "media",
+                "url": "https://source.unsplash.com/daily"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/HeroComponent/default/preview.png",
+            "width": 800,
+            "height": 295
+          }
+        }
+      },
       "popup_component": {
         "library": "slices",
         "id": "popup_component",
@@ -539,7 +627,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/PopupComponent/default/preview.png",
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/PopupComponent/default/preview.png",
             "width": 800,
             "height": 214
           }
@@ -751,7 +839,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/SummaryComponent/default/preview.png",
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/SummaryComponent/default/preview.png",
             "width": 800,
             "height": 216
           }
@@ -903,7 +991,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/TimelineComponent/default/preview.png",
+            "path": "/Users/nbmp/repos/cmda-mid-term/.slicemachine/assets/slices/TimelineComponent/default/preview.png",
             "width": 800,
             "height": 242
           }
@@ -927,6 +1015,13 @@
               "version": "sktwi1xtmkfgx8626",
               "description": "TitleElement",
               "primary": {
+                "componentIndex": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Component Index",
+                    "placeholder": "1.2"
+                  }
+                },
                 "title": {
                   "type": "StructuredText",
                   "config": {
@@ -938,9 +1033,10 @@
                 "description": {
                   "type": "StructuredText",
                   "config": {
-                    "single": "paragraph",
                     "label": "Description",
-                    "placeholder": "A nice description of your product"
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
                   }
                 }
               },
@@ -956,17 +1052,18 @@
             "slice_type": "title_element",
             "items": [],
             "primary": {
+              "componentIndex": "1.2",
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Envisioneer synergistic e-markets",
+                  "text": "Generate strategic ROI",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Reprehenderit exercitation ullamco magna laborum est do ut sit nulla occaecat. Proident nostrud ut cupidatat eu aliquip excepteur exercitation ullamco tempor id tempor voluptate.",
+                  "text": "Laboris aliqua eu laboris. Nisi reprehenderit deserunt amet excepteur ad in nisi.",
                   "spans": []
                 }
               ]
@@ -977,13 +1074,7 @@
           "fileName": "index",
           "extension": "vue"
         },
-        "screenshotPaths": {
-          "default": {
-            "path": "/Users/kaivanwezel/Documents/CMD/cmda-midterm/.slicemachine/assets/slices/TitleElement/default/preview.png",
-            "width": 800,
-            "height": 259
-          }
-        }
+        "screenshotPaths": {}
       }
     }
   }

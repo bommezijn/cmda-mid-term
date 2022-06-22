@@ -24,8 +24,17 @@ body {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   margin: 0;
 }
-/* Max width for paragraph */
 
+*:focus,
+*:focus-visible {
+  /* border: 5px solid var(--geel); */
+  /* box-shadow: 0 0 0.2em 0.2em var(--black); */
+  outline: 0.3em solid #2154ff;
+  outline-offset: 0.2em;
+  transition: 200ms;
+}
+
+/* Max width for paragraph */
 p {
   max-width: 65ch;
 }
@@ -37,14 +46,12 @@ p {
   margin-top: 200px;
 }
 
+.indexContainer:nth-child(2) {
+  margin-top: calc(25vw + 3em);
+}
+
 @media only screen and (max-device-width: 820px) {
   .indexContainer {
     margin-top: 200px;
   }
 }
-
-/* Do we want a single container max width? or also large screen */
-/* .indexContainer {
-  max-width: 1200px;
-  margin: 0 auto;
-} */

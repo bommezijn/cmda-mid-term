@@ -1,22 +1,43 @@
 <template>
-  <section class="section">
+  <section class="content">
+    <h3>{{ slice.primary.componentIndex }}</h3>
     <PrismicRichText :field="slice.primary.title" class="title" />
-    <PrismicRichText :field="slice.primary.description" />
+    <PrismicRichText :field="slice.primary.description" class="description" />
   </section>
 </template>
 
 <script>
-import { getSliceComponentProps } from "@prismicio/vue/components";
+import { getSliceComponentProps } from '@prismicio/vue/components'
 
 export default {
-  name: "TitleElement",
+  name: 'TitleElement',
   // The array passed to `getSliceComponentProps` is purely optional and acts as a visual hint for you
-  props: getSliceComponentProps(["slice", "index", "slices", "context"]),
+  props: getSliceComponentProps(['slice', 'index', 'slices', 'context']),
 }
 </script>
 
 <style scoped>
-.section {
+.content {
+  margin-bottom: 3rem;
+}
+.content >>> h3 {
+  border: 3px solid black;
+  border-bottom: 0;
+  background-color: var(--geel);
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.content >>> h1 {
+  border: 3px solid black;
+  padding: 0.5rem;
+  width: max-content;
+}
+
+.description {
+  margin-top: 0.5em;
+}
+/* .section {
   background: #f7f7f7;
   color: #111;
   padding: 4em;
@@ -24,5 +45,5 @@ export default {
 }
 .title {
   margin-bottom: 2em;
-}
+} */
 </style>

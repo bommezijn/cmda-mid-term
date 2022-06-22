@@ -1,5 +1,6 @@
 <template>
   <div class="indexContainer">
+    <HeaderPaginaComp />
     <ArticleSection pos="" :content="singleText" />
     <ArticleSection pos="imgLeft" img="/TestImage.jpeg" :content="singleText" />
     <ArticleSection
@@ -18,7 +19,7 @@
 
 <script>
 export default {
-  name: 'testPage',
+  name: 'TestPage',
   data() {
     return {
       test: [
