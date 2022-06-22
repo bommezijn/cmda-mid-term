@@ -71,8 +71,6 @@
 export default {
   name: 'IndexComp',
   layout: 'default',
-  data() {},
-  methods: {},
 }
 </script>
 
