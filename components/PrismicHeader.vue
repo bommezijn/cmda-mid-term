@@ -1,46 +1,32 @@
 <template>
-  <nav class="navbar" aria-label="main">
-    <nuxt-link to="/" class="logo">
-      <span>CMD Mid-Term</span>
-    </nuxt-link>
-    <ul class="navLinks">
-      <li v-for="(link, index) in links" :key="index" class="navItem">
-        <nuxt-link :to="link.url" aria-expanded="false">
-          {{ link.text }}
-        </nuxt-link>
-      </li>
-    </ul>
-  </nav>
+  <header class="navbar">
+    <p v-if="$store.state.menu === 'please create a menu document'"></p>
+    <nuxt-link to="/" class="logo">{{
+      $prismic.asText($store.state.menu.title)
+    }}</nuxt-link>
+    <nav>
+      <ul class="navLinks">
+        <li
+          v-for="menuLink in $store.state.menu.menuLinks"
+          :key="menuLink.id"
+          class="navItem"
+        >
+          <nuxt-link :to="`standaard/${menuLink.link.uid}`">{{
+            $prismic.asText(menuLink.label)
+          }}</nuxt-link>
+        </li>
+      </ul>
+    </nav>
+  </header>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      links: [
-        {
-          text: 'Beoogde leerresultaten',
-          url: '/standaard/standaard-1',
-        },
-        {
-          text: 'Onderwijsleeromgeving',
-          url: '/standaard/standaard-2',
-        },
-        {
-          text: 'Toetsing',
-          url: '/standaard/standaard-3',
-        },
-        {
-          text: 'Gerealiseerde toetsresultaten',
-          url: '/standaard/standaard-4',
-        },
-      ],
-    }
-  },
+  name: 'PrismicHeader',
 }
 </script>
 
-<style scoped>
+<style>
 .navbar {
   display: flex;
   align-items: center;
@@ -50,7 +36,9 @@ export default {
 
   background-color: #fff021;
   background-color: var(--geel);
-  width: 100vw;
+  /* width: 100vw; */
+  width: 100%;
+  /* width: calc(100% - 2em); */
   position: fixed;
   top: 0;
   left: 0;
@@ -140,4 +128,6 @@ li:hover {
     padding: 0em;
   }
 }
+</style>
+
 </style>
