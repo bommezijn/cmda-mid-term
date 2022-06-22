@@ -7,7 +7,7 @@
     <div class="speech-bubble">
       <div class="bubble">
         <div class="color-picker">
-          <input type="color" id="colorWell" value="#e66465" />
+          <input id="colorWell" type="color" value="#e66465" />
           <label for="colorWell"
             ><img
               src="https://images.prismic.io/cmd-midterm/5aa4c117-b663-4f09-9144-1c33b6798026_colorpicker.png?auto=compress,format"
