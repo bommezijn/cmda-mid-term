@@ -1,8 +1,6 @@
 <template>
   <header class="navbar">
-    <p v-if="$store.state.menu === 'please create a menu document'">
-      {{ $store.state.menu }}
-    </p>
+    <p v-if="$store.state.menu === 'please create a menu document'"></p>
     <nuxt-link to="/" class="logo">{{
       $prismic.asText($store.state.menu.title)
     }}</nuxt-link>
@@ -13,12 +11,9 @@
           :key="menuLink.id"
           class="navItem"
         >
-          <a :href="$prismic.asLink(`standaard/menuLink.link`)">
-            {{ $prismic.asText(menuLink.label) }}
-          </a>
-          <!-- <prismic-link :field="menuLink.link">{{
+          <nuxt-link :to="`standaard/${menuLink.link.uid}`">{{
             $prismic.asText(menuLink.label)
-          }}</prismic-link> -->
+          }}</nuxt-link>
         </li>
       </ul>
     </nav>
@@ -26,13 +21,8 @@
 </template>
 
 <script>
-import { state } from '~/store'
-
 export default {
   name: 'PrismicHeader',
-  created() {
-    console.log(state)
-  },
 }
 </script>
 
