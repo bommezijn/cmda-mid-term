@@ -82,16 +82,15 @@ export default {
 </script>
 
 <style scoped>
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap'); */
 #speech {
   display: flex;
 }
-
 #content {
   display: flex;
   flex-direction: column;
   width: 40em;
 }
-
 h2 {
   margin-top: 5em;
   margin-left: 1em;
@@ -99,40 +98,35 @@ h2 {
   font-weight: 700;
   font-size: 1.7em;
 }
-
 .main-text {
   margin-left: 1.8em;
   margin-top: 3em;
   font-family: 'Open Sans';
   font-size: 1em;
 }
-
 .speech-bubble {
   margin: 0 auto;
   margin-top: 16em;
   margin-bottom: -10em;
 }
-
 .bubble {
   --border-color: #f8f0d5;
-
   position: relative;
   background: #f8f0d5;
   color: #000000;
   /* font-family: 'Open Sans'; */
   font-size: 1em;
   text-align: center;
-  width: 28em;
-  height: 18em;
+  /* width: 28em; */
+  /* height: 18em; */
   border-radius: 10px;
-  padding: 5em;
+  padding: 6em;
   border: #000000 solid 2px;
   z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .bubble:after {
   content: '';
   position: absolute;
@@ -146,7 +140,6 @@ h2 {
   left: 19%;
   margin-left: -16px;
 }
-
 .bubble:before {
   content: '';
   position: absolute;
@@ -160,7 +153,6 @@ h2 {
   margin-left: -18px;
   display: block;
 }
-
 .BackBubble {
   position: relative;
   background: #000000;
@@ -175,7 +167,6 @@ h2 {
   left: 11em;
   transform: scaleX(-1);
 }
-
 .BackBubble:after {
   content: '';
   position: absolute;
@@ -189,7 +180,6 @@ h2 {
   left: 19%;
   margin-left: -16px;
 }
-
 .semi-collom-up {
   position: absolute;
   font-family: 'Open Sans';
@@ -198,7 +188,6 @@ h2 {
   top: 0em;
   left: 0.5em;
 }
-
 .semi-collom-down {
   position: absolute;
   font-family: 'Open Sans';
@@ -208,7 +197,6 @@ h2 {
   bottom: 0em;
   transform: scaleY(-1);
 }
-
 svg {
   position: absolute;
   height: 7em;
@@ -216,7 +204,6 @@ svg {
   right: 22em;
   bottom: 0.6em;
 }
-
 .name-arrow-tag {
   font-family: 'Open Sans';
   position: absolute;
@@ -226,9 +213,8 @@ svg {
   position: absolute;
   z-index: 13;
   right: 14em;
-  bottom: 0.2em;
+  bottom: 2.3em;
 }
-
 .color-picker img {
   position: absolute;
   top: 0em;
@@ -237,15 +223,27 @@ svg {
   z-index: 13;
   transition: transform 0.2s;
 }
-
 .color-picker img:hover {
   transform: scale(1.2);
 }
-
 input {
   position: absolute;
   visibility: hidden;
   right: 10em;
   top: 3em;
+}
+@media only screen and (max-device-width: 1200px) {
+  #speech {
+    display: flex;
+    flex-direction: column;
+  }
+  .speech-bubble {
+    margin-top: 3em;
+    margin: 3em 2em;
+  }
+  #content {
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>
