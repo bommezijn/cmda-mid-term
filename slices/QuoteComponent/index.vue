@@ -1,13 +1,13 @@
 <template>
   <section id="speech">
-    <div id="content">
+    <!-- <div id="content">
       <span class="componentIndex">{{ slice.primary.componentIndex }}</span>
       <PrismicRichText :field="slice.primary.title" />
-    </div>
+    </div> -->
     <div class="speech-bubble">
       <div class="bubble">
         <div class="color-picker">
-          <input type="color" id="colorWell" value="#e66465" />
+          <input id="colorWell" type="color" value="#e66465" />
           <label for="colorWell"
             ><img
               src="https://images.prismic.io/cmd-midterm/5aa4c117-b663-4f09-9144-1c33b6798026_colorpicker.png?auto=compress,format"
@@ -83,6 +83,7 @@ export default {
 
 <style scoped>
 /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap'); */
+
 #speech {
   display: flex;
 }
@@ -106,7 +107,7 @@ h2 {
 }
 .speech-bubble {
   margin: 0 auto;
-  margin-top: 16em;
+  margin-top: 4em;
   margin-bottom: -10em;
 }
 .bubble {
@@ -231,19 +232,5 @@ input {
   visibility: hidden;
   right: 10em;
   top: 3em;
-}
-@media only screen and (max-device-width: 1200px) {
-  #speech {
-    display: flex;
-    flex-direction: column;
-  }
-  .speech-bubble {
-    margin-top: 3em;
-    margin: 3em 2em;
-  }
-  #content {
-    display: flex;
-    flex-direction: column;
-  }
 }
 </style>

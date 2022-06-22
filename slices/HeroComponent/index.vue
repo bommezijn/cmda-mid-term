@@ -46,7 +46,7 @@ section {
   position: absolute;
   top: 1em;
   left: 0;
-  margin-bottom: 200px;
+  /* margin-bottom: 10em; */
 }
 
 .header-content {

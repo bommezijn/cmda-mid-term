@@ -55,7 +55,9 @@ export default {
 .CardCon {
   /* font-family: 'Open Sans'; */
   font-weight: 500;
-  height: 35em;
+  /* height: 35em; */
+  height: clamp(35em, fit-content, 60em);
+
   width: 30em;
   margin: auto;
 
@@ -133,6 +135,8 @@ export default {
   list-style: none;
   padding: 0;
   margin-bottom: 1.8em;
+  display: flex;
+  flex-direction: column;
 }
 
 .CardCon ul li {

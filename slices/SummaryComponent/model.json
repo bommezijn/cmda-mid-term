@@ -28,6 +28,13 @@
         }
       },
       "items": {
+        "number": {
+          "type": "Text",
+          "config": {
+            "label": "Number",
+            "placeholder": ""
+          }
+        },
         "summary": {
           "type": "StructuredText",
           "config": {

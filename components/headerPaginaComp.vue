@@ -25,27 +25,25 @@ export default {
 /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap'); */
 
 section {
-  top: -7em;
+    height: 25vw;
+    background-image: url('https://images.prismic.io/midtermacc/630fba58-4e9f-4156-acd9-a9b81ad90a74_cmd_daantjebons_0032-960x640.jpg?auto=compress,format');
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: #ffcc00;
+    width: 100%;
+    position: absolute;
+    top: 3em;
+    left: 0;
+    margin-bottom: 10em;
 }
+
 
 @media only screen and (max-device-width: 820px) {
-  section {
-    top: 0;
-  }
-}
-
-section {
-  height: 25vw;
-  background-image: url('https://images.prismic.io/midtermacc/630fba58-4e9f-4156-acd9-a9b81ad90a74_cmd_daantjebons_0032-960x640.jpg?auto=compress,format');
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  background-color: #ffcc00;
-  width: 100%;
-  position: absolute;
-  top: 1em;
-  left: 0;
+    section {
+        top: 12em;
+    }
 }
 
 .header-content {
