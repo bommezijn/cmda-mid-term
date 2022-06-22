@@ -1,9 +1,9 @@
 <template>
   <section id="speech">
-    <div id="content">
+    <!-- <div id="content">
       <span class="componentIndex">{{ slice.primary.componentIndex }}</span>
       <PrismicRichText :field="slice.primary.title" />
-    </div>
+    </div> -->
     <div class="speech-bubble">
       <div class="bubble">
         <div class="color-picker">
@@ -111,7 +111,7 @@ h2 {
 
 .speech-bubble {
   margin: 0 auto;
-  margin-top: 16em;
+  margin-top: 4em;
   margin-bottom: -10em;
 }
 
