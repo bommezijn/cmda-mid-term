@@ -2,6 +2,7 @@
   <div class="indexContainer">
     <HeaderPaginaComp />
     <ArticleSection pos="" :content="singleText" />
+    <BulletPointsComp />
     <ArticleSection pos="imgLeft" img="/TestImage.jpeg" :content="singleText" />
     <ArticleSection
       pos="imgRight"
