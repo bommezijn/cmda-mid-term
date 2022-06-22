@@ -11,9 +11,9 @@
           :key="menuLink.id"
           class="navItem"
         >
-          <nuxt-link :to="`standaard/${menuLink.link.uid}`">{{
+          <NuxtLink :to="menuLink.link.url">{{
             $prismic.asText(menuLink.label)
-          }}</nuxt-link>
+          }}</NuxtLink>
         </li>
       </ul>
     </nav>

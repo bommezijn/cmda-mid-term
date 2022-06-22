@@ -80,6 +80,14 @@ export default {
   prismic: {
     endpoint: apiEndpoint,
     modern: true,
+    apiOptions: {
+      routes: [
+        {
+          type: 'standaard',
+          path: '/standaard/:uid',
+        },
+      ],
+    },
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
