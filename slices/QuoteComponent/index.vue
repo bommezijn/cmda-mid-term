@@ -82,6 +82,8 @@ export default {
 </script>
 
 <style scoped>
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap'); */
+
 #speech {
   display: flex;
 }
@@ -115,17 +117,16 @@ h2 {
 
 .bubble {
   --border-color: #f8f0d5;
-
   position: relative;
   background: #f8f0d5;
   color: #000000;
   /* font-family: 'Open Sans'; */
   font-size: 1em;
   text-align: center;
-  width: 28em;
-  height: 18em;
+  /* width: 28em; */
+  /* height: 18em; */
   border-radius: 10px;
-  padding: 5em;
+  padding: 6em;
   border: #000000 solid 2px;
   z-index: 10;
   display: flex;
@@ -226,7 +227,7 @@ svg {
   position: absolute;
   z-index: 13;
   right: 14em;
-  bottom: 0.2em;
+  bottom: 2.3em;
 }
 
 .color-picker img {
@@ -247,5 +248,22 @@ input {
   visibility: hidden;
   right: 10em;
   top: 3em;
+}
+
+@media only screen and (max-device-width: 1200px) {
+  #speech {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .speech-bubble {
+    margin-top: 3em;
+    margin: 3em 2em;
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>
