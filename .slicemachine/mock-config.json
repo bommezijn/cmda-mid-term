@@ -1,17 +1,45 @@
 {
+  "_cts": {
+    "page": {
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
+    },
+    "menu": {
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "menuLinks": {
+        "label": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        }
+      }
+    }
+  },
   "slices": {
-    "FirstSlice": {},
-    "Heading": {},
-    "HeadingElement": {
+    "TitleElement": {
       "default": {
         "primary": {
-          "title": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          },
-          "description": {
+          "componentIndex": {
+            "content": "1.2"
+          }
+        }
+      }
+    },
+    "ArticleSlice": {
+      "default": {
+        "primary": {},
+        "items": {
+          "content": {
             "config": {
               "patternType": "PARAGRAPH",
               "blocks": 1
@@ -19,28 +47,38 @@
           }
         }
       },
-      "subheading": {
+      "single": {
+        "items": {}
+      },
+      "imgLeft": {
+        "items": {},
         "primary": {
-          "title": {
+          "content": {
             "config": {
-              "patternType": "HEADING",
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      },
+      "imgRight": {
+        "primary": {
+          "content": {
+            "config": {
+              "patternType": "PARAGRAPH",
               "blocks": 1
             }
           }
         }
       }
     },
-    "ChapterSection": {
+    "PopupComponent": {},
+    "TimelineComponent": {},
+    "SummaryComponent": {
       "default": {
-        "primary": {
-          "chapterimage": {
-            "content": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85"
-          }
-        }
+        "primary": {}
       }
-    }
-  },
-  "_cts": {
-    "test": {}
+    },
+    "HeroComponent": {}
   }
 }

@@ -1,0 +1,76 @@
+{
+  "id": "competencies_card",
+  "type": "SharedSlice",
+  "name": "CompetenciesCard",
+  "description": "CompetenciesCard",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "CompetenciesCard",
+      "primary": {
+        "componentIndex": {
+          "type": "Text",
+          "config": {
+            "label": "Component Index",
+            "placeholder": ""
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph",
+            "label": "Description",
+            "placeholder": "A nice description of your product"
+          }
+        },
+        "compTitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Comp Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "compDescription": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Comp Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      },
+      "items": {
+        "compOld": {
+          "type": "Text",
+          "config": {
+            "label": "Comp Old",
+            "placeholder": ""
+          }
+        },
+        "compNew": {
+          "type": "Text",
+          "config": {
+            "label": "Comp New",
+            "placeholder": ""
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

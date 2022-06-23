@@ -1,6 +1,6 @@
 {
   "_latest": "0.3.8",
-  "apiEndpoint": "https://cmd-midterm.prismic.io/api/v2",
+  "apiEndpoint": "https://midtermacc.prismic.io/api/v2",
   "libraries": [
     "@/slices"
   ],

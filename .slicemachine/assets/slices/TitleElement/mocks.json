@@ -1,0 +1,25 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "title_element",
+    "items": [],
+    "primary": {
+      "componentIndex": "1.2",
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Generate strategic ROI",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Laboris aliqua eu laboris. Nisi reprehenderit deserunt amet excepteur ad in nisi.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]
