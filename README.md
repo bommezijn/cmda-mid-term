@@ -1,5 +1,6 @@
 
 # CMDA-midterm
+<img src="https://github.com/KaivWezel/cmda-mid-term/blob/main/Assets%20rm/Header-readme.jpg" width=500>
 
 # Introduction
 Dit is een website gerealiseerd voor CMD mid-terms. De website is duurzaam en maakt gebruikt van een headless CMS om de content aanpasbaar te maken. De website is een downloadbare PWA + Cache voor offline gebruik. 
