@@ -45,20 +45,24 @@ De keuze van Nuxt is ook gefaciliteerd door prismic omdat zijn ondersteuning heb
 
 # Installing
 1. Clone deze repository naar jouw lokale folder
-```
+```BASH
 git clone https://github.com/KaivWezel/cmda-mid-term.git
 ```
 2. Open de folder in jouw code applicatie [zoals VSCODE](https://code.visualstudio.com/Download)
 4. Install all packages
-```
+```BASH
 npm install || npm i
 ```
 5. Start de applicatie met de volgende command
-```
+```BASH
 npm install || npm run dev
 ```
 6. Open de de localhost:3000 in je browser
 
+*extra*. Statisch genereren van de website
+```BASH
+npm run generate && npm run build && npm run start
+```
 # Presentation
 Lees meer over de presentatie van deze website in de [wiki](https://github.com/KaivWezel/cmda-mid-term/wiki)
 
