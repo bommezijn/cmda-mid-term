@@ -27,40 +27,48 @@
       </div>
       <div class="links">
         <div class="link-container">
-          <a class="heading">1.0 title</a>
+          <a class="heading" href="/standaard/standaard-1"
+            >1.0 Beoogde leerresultaten</a
+          >
+
           <hr />
-          <div class="heading-1">
+          <!-- <div class="heading-1">
             <a>1.1 wow</a>
             <a>1.2 geweldig</a>
             <a>1.3 meen je niet?</a>
-          </div>
+          </div> -->
         </div>
         <div class="link-container">
-          <a class="heading">1.0 title</a>
+          <a class="heading" href="/standaard/standaard-2"
+            >2.0 Onderwijsleeromgeving</a
+          >
+
           <hr />
-          <div class="heading-1">
+          <!-- <div class="heading-1">
             <a>1.1 wow</a>
             <a>1.2 geweldig</a>
             <a>1.3 meen je niet?</a>
-          </div>
+          </div> -->
         </div>
         <div class="link-container">
-          <a class="heading">1.0 title</a>
+          <a class="heading" href="/standaard/standaard-3">3.0 Toetsing</a>
           <hr />
-          <div class="heading-1">
+          <!-- <div class="heading-1">
             <a>1.1 wow</a>
             <a>1.2 geweldig</a>
             <a>1.3 meen je niet?</a>
-          </div>
+          </div> -->
         </div>
         <div class="link-container">
-          <a class="heading">1.0 title</a>
+          <a class="heading" href="/standaard/standaard-4"
+            >4.0 Gerealiseerde resultaten</a
+          >
           <hr />
-          <div class="heading-1">
+          <!-- <div class="heading-1">
             <a>1.1 wow</a>
             <a>1.2 geweldig</a>
             <a>1.3 meen je niet?</a>
-          </div>
+          </div> -->
         </div>
       </div>
     </body>
