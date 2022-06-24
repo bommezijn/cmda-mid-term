@@ -15,11 +15,7 @@
       <div class="yellow-container">
         <div class="text">
           <h2>Index</h2>
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis.
-          </p>
+          <p>Hier komt een voorwoord voor de mid term accreditatie.</p>
         </div>
         <img
           src="https://images.prismic.io/cmd-midterm/131455d4-d639-44b2-afc4-019646b25f60_laptop.png?auto=compress,format"
