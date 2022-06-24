@@ -42,6 +42,7 @@ De keuze van Nuxt is ook gefaciliteerd door prismic omdat zijn ondersteuning heb
 - 3D CMD blokken
 - Up to date component designs
 - Interactieve content
+- Documentatie voor doorontwikkeling
 
 # Installing
 1. Clone deze repository naar jouw lokale folder
