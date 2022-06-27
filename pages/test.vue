@@ -15,6 +15,7 @@
     <PopupComponent />
     <TimeLineComp />
     <SummaryComponent />
+    <footerComponent />
   </div>
 </template>
 
