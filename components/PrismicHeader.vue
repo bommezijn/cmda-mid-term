@@ -87,11 +87,11 @@ li a {
   color: var(--white);
 }
 
-li:hover {
+/* li:hover {
   background: var(--black);
   color: var(--white);
   cursor: pointer;
-}
+} */
 
 .nuxt-link-active {
   font-weight: bold;
