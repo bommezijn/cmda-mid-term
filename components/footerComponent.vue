@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="footerComponent">
         <p>&#169; 2022 CMD AMSTERDAM</p>
         <p>Gerealiseerd door:</p>
         <ul>
@@ -21,7 +21,7 @@ export default {}
 </script>
 
 <style>
-section {
+.footerComponent {
     background-color: #595959;
 }
 
