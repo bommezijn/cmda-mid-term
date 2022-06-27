@@ -1,0 +1,57 @@
+:root {
+  --geel: #fff021;
+  --pepermunt: #e0f5df;
+  --papaya: #faf0d7;
+  --lavendel: #f0ebf0;
+  --lavendel-dark: hsl(300, 14%, 85%);
+  --black: #000000;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Specifically for the navbar and scrolling */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding: 5em;
+}
+
+body {
+  font-size: 1.1em;
+  line-height: 1.5;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+*:focus,
+*:focus-visible {
+  /* border: 5px solid var(--geel); */
+  /* box-shadow: 0 0 0.2em 0.2em var(--black); */
+  outline: 0.3em solid #25167A;
+  outline-offset: 0.2em;
+  transition: 200ms;
+}
+
+/* Max width for paragraph */
+p {
+  max-width: 65ch;
+}
+
+.indexContainer {
+  /* margin-top: 75px; */
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+.indexContainer:nth-child(2) {
+  margin-top: calc(25vw + 3em);
+}
+
+@media only screen and (max-device-width: 820px) {
+  .indexContainer {
+    margin-top: 200px;
+  }
+}

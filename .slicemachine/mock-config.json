@@ -1,0 +1,84 @@
+{
+  "_cts": {
+    "page": {
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
+    },
+    "menu": {
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "menuLinks": {
+        "label": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        }
+      }
+    }
+  },
+  "slices": {
+    "TitleElement": {
+      "default": {
+        "primary": {
+          "componentIndex": {
+            "content": "1.2"
+          }
+        }
+      }
+    },
+    "ArticleSlice": {
+      "default": {
+        "primary": {},
+        "items": {
+          "content": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      },
+      "single": {
+        "items": {}
+      },
+      "imgLeft": {
+        "items": {},
+        "primary": {
+          "content": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      },
+      "imgRight": {
+        "primary": {
+          "content": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "PopupComponent": {},
+    "TimelineComponent": {},
+    "SummaryComponent": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "HeroComponent": {}
+  }
+}
